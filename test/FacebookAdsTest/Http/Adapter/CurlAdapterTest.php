@@ -24,12 +24,12 @@
 
 namespace FacebookAdsTest\Http\Adapter;
 
-use FacebookAds\Exception\Exception;
-use FacebookAds\Http\Adapter\Curl\CurlInterface;
-use FacebookAds\Http\Adapter\CurlAdapter;
-use FacebookAds\Http\Client;
-use FacebookAds\Http\RequestInterface;
-use FacebookAds\Http\ResponseInterface;
+use FacebookAdsV18\Exception\Exception;
+use FacebookAdsV18\Http\Adapter\Curl\CurlInterface;
+use FacebookAdsV18\Http\Adapter\CurlAdapter;
+use FacebookAdsV18\Http\Client;
+use FacebookAdsV18\Http\RequestInterface;
+use FacebookAdsV18\Http\ResponseInterface;
 use \PHPUnit_Framework_MockObject_Builder_InvocationMocker as Mock;
 
 class CurlAdapterTest extends AbstractAdapterTest {

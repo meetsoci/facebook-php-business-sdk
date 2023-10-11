@@ -24,8 +24,8 @@
 
 namespace FacebookAdsTest\Object;
 
-use FacebookAds\Object\ProductCatalog;
-use FacebookAds\Object\Fields\ProductCatalogFields;
+use FacebookAdsV18\Object\ProductCatalog;
+use FacebookAdsV18\Object\Fields\ProductCatalogFields;
 
 class ProductCatalogTest extends AbstractCrudObjectTestCase {
 

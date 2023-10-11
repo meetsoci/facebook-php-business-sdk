@@ -24,10 +24,10 @@
 
 namespace FacebookAdsTest\Object;
 
-use FacebookAds\Object\ProductCatalog;
-use FacebookAds\Object\ProductFeed;
-use FacebookAds\Object\Fields\ProductCatalogFields;
-use FacebookAds\Object\Fields\ProductFeedFields;
+use FacebookAdsV18\Object\ProductCatalog;
+use FacebookAdsV18\Object\ProductFeed;
+use FacebookAdsV18\Object\Fields\ProductCatalogFields;
+use FacebookAdsV18\Object\Fields\ProductFeedFields;
 
 class ProductFeedTest extends AbstractCrudObjectTestCase {
 

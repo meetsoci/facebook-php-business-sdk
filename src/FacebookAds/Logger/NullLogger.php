@@ -22,10 +22,10 @@
  *
  */
 
-namespace FacebookAds\Logger;
+namespace FacebookAdsV18\Logger;
 
-use FacebookAds\Http\RequestInterface;
-use FacebookAds\Http\ResponseInterface;
+use FacebookAdsV18\Http\RequestInterface;
+use FacebookAdsV18\Http\ResponseInterface;
 
 class NullLogger implements LoggerInterface {
 

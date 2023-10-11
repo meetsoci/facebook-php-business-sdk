@@ -22,7 +22,7 @@
  *
  */
 
-namespace FacebookAds\Enum;
+namespace FacebookAdsV18\Enum;
 
 interface EnumInstanceInterface {
 

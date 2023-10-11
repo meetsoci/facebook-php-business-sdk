@@ -24,13 +24,13 @@
 
 namespace FacebookAdsTest\Object;
 
-use FacebookAds\Object\AdUser;
-use FacebookAds\Object\Business;
-use FacebookAds\Object\Fields\AdUserFields;
-use FacebookAds\Object\Fields\BusinessFields;
-use FacebookAds\Object\Values\AdAccountRoles;
+use FacebookAdsV18\Object\AdUser;
+use FacebookAdsV18\Object\Business;
+use FacebookAdsV18\Object\Fields\AdUserFields;
+use FacebookAdsV18\Object\Fields\BusinessFields;
+use FacebookAdsV18\Object\Values\AdAccountRoles;
 use FacebookAdsTest\Config\SkippableFeatureTestInterface;
-use FacebookAds\Object\Values\BusinessRoles;
+use FacebookAdsV18\Object\Values\BusinessRoles;
 
 class BusinessTest extends AbstractCrudObjectTestCase
   implements SkippableFeatureTestInterface {

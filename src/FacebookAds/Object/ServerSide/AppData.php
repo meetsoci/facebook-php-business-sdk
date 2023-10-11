@@ -22,7 +22,7 @@
  *
  */
 
-namespace FacebookAds\Object\ServerSide;
+namespace FacebookAdsV18\Object\ServerSide;
 
 use ArrayAccess;
 
@@ -48,7 +48,7 @@ class AppData implements ArrayAccess {
     'app_user_id' => 'string',
     'campaign_ids' => 'string',
     'consider_views' => 'bool',
-    'extinfo' => 'FacebookAds\Object\ServerSide\ExtendedDeviceInfo',
+    'extinfo' => 'FacebookAdsV18\Object\ServerSide\ExtendedDeviceInfo',
     'include_dwell_data' => 'bool',
     'include_video_data' => 'bool',
     'install_referrer' => 'string',

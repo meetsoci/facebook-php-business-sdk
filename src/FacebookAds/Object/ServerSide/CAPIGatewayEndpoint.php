@@ -22,7 +22,7 @@
  *
  */
 
-namespace FacebookAds\Object\ServerSide;
+namespace FacebookAdsV18\Object\ServerSide;
 
 use Exception;
 use GuzzleHttp\Client;
@@ -166,4 +166,3 @@ class CAPIGatewayEndpoint implements CustomEndpointRequest {
         return $this->endpoint_URL;
     }
 }
-

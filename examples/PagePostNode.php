@@ -24,9 +24,9 @@
 
 require __DIR__ . '/vendor/autoload.php';
 
-use FacebookAds\Object\PagePost;
-use FacebookAds\Api;
-use FacebookAds\Logger\CurlLogger;
+use FacebookAdsV18\Object\PagePost;
+use FacebookAdsV18\Api;
+use FacebookAdsV18\Logger\CurlLogger;
 
 $access_token = '<ACCESS_TOKEN>';
 $app_secret = '<APP_SECRET>';

@@ -22,16 +22,16 @@
  *
  */
 
-namespace FacebookAds\Object\ServerSide;
+namespace FacebookAdsV18\Object\ServerSide;
 
-use FacebookAds\Enum\AbstractEnum;
+use FacebookAdsV18\Enum\AbstractEnum;
 
 /**
  * Class ActionSource
  *
  * Where the conversion event occurred.
  *
- * @package FacebookAds\Object\ServerSide
+ * @package FacebookAdsV18\Object\ServerSide
  */
 class ActionSource extends AbstractEnum {
 

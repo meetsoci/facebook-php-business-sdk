@@ -22,12 +22,12 @@
  *
  */
 
-namespace FacebookAds\Object\Signal;
+namespace FacebookAdsV18\Object\Signal;
 
 use Util;
 
-use FacebookAds\Object\BusinessDataAPI\UserData as BusinessDataUserData;
-use FacebookAds\Object\ServerSide\UserData as ServerSideUserData;
+use FacebookAdsV18\Object\BusinessDataAPI\UserData as BusinessDataUserData;
+use FacebookAdsV18\Object\ServerSide\UserData as ServerSideUserData;
 
 /**
  * UserData is a set of identifiers Facebook can use for targeted attribution.
@@ -86,7 +86,7 @@ class UserData {
 
   /**
    * Sets Gender, in lowercase. Either f or m.
-   * @param FacebookAds\Object\ServerSide\Gender $gender Gender, in lowercase. Either f or m.
+   * @param FacebookAdsV18\Object\ServerSide\Gender $gender Gender, in lowercase. Either f or m.
    * @return $this
    */
   public function setGender($gender) {

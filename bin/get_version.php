@@ -24,7 +24,7 @@
  */
 
 use \FacebookAdsDocsmith\Bootstrap\IntegrationBootstrap;
-use FacebookAds\Api;
+use FacebookAdsV18\Api;
 
 chdir(__DIR__);
 

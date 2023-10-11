@@ -24,9 +24,9 @@
 
 namespace FacebookAdsTest\Object\ServerSide;
 
-use FacebookAds\Object\ServerSide\CAPIGatewayEndpoint;
-use FacebookAds\Object\ServerSide\Event;
-use FacebookAds\Object\ServerSide\Filter;
+use FacebookAdsV18\Object\ServerSide\CAPIGatewayEndpoint;
+use FacebookAdsV18\Object\ServerSide\Event;
+use FacebookAdsV18\Object\ServerSide\Filter;
 use FacebookAdsTest\AbstractUnitTestCase;
 
 class filterAllEvents implements Filter {

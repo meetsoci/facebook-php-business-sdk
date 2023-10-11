@@ -7,17 +7,17 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-namespace FacebookAds\Object;
+namespace FacebookAdsV18\Object;
 
-use FacebookAds\ApiRequest;
-use FacebookAds\Cursor;
-use FacebookAds\Http\RequestInterface;
-use FacebookAds\TypeChecker;
-use FacebookAds\Object\Fields\LocalServiceBusinessFields;
-use FacebookAds\Object\Values\LocalServiceBusinessAvailabilityValues;
-use FacebookAds\Object\Values\LocalServiceBusinessConditionValues;
-use FacebookAds\Object\Values\LocalServiceBusinessImageFetchStatusValues;
-use FacebookAds\Object\Values\LocalServiceBusinessVisibilityValues;
+use FacebookAdsV18\ApiRequest;
+use FacebookAdsV18\Cursor;
+use FacebookAdsV18\Http\RequestInterface;
+use FacebookAdsV18\TypeChecker;
+use FacebookAdsV18\Object\Fields\LocalServiceBusinessFields;
+use FacebookAdsV18\Object\Values\LocalServiceBusinessAvailabilityValues;
+use FacebookAdsV18\Object\Values\LocalServiceBusinessConditionValues;
+use FacebookAdsV18\Object\Values\LocalServiceBusinessImageFetchStatusValues;
+use FacebookAdsV18\Object\Values\LocalServiceBusinessVisibilityValues;
 
 /**
  * This class is auto-generated.

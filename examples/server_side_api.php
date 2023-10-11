@@ -25,13 +25,13 @@
 define('SDK_DIR', __DIR__ . '/..'); // Path to the SDK directory
 $loader = include SDK_DIR . '/vendor/autoload.php';
 
-use FacebookAds\Api;
-use FacebookAds\Object\ServerSide\Content;
-use FacebookAds\Object\ServerSide\CustomData;
-use FacebookAds\Object\ServerSide\Event;
-use FacebookAds\Object\ServerSide\EventRequest;
-use FacebookAds\Object\ServerSide\Gender;
-use FacebookAds\Object\ServerSide\UserData;
+use FacebookAdsV18\Api;
+use FacebookAdsV18\Object\ServerSide\Content;
+use FacebookAdsV18\Object\ServerSide\CustomData;
+use FacebookAdsV18\Object\ServerSide\Event;
+use FacebookAdsV18\Object\ServerSide\EventRequest;
+use FacebookAdsV18\Object\ServerSide\Gender;
+use FacebookAdsV18\Object\ServerSide\UserData;
 
 // Configuration.
 // Should fill in value before running this script

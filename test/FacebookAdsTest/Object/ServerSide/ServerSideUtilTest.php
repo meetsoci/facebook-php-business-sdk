@@ -25,7 +25,7 @@
 namespace FacebookAdsTest\Object\ServerSide;
 
 use PHPUnit\Framework\TestCase;
-use FacebookAds\Object\ServerSide\Util;
+use FacebookAdsV18\Object\ServerSide\Util;
 
 class ServerSideUtilTest extends TestCase {
 

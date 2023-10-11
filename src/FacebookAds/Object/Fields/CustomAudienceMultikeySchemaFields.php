@@ -7,9 +7,9 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-namespace FacebookAds\Object\Fields;
+namespace FacebookAdsV18\Object\Fields;
 
-use FacebookAds\Enum\AbstractEnum;
+use FacebookAdsV18\Enum\AbstractEnum;
 
 /**
  * @method static CustomAudienceMultikeySchemaFields getInstance()

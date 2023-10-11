@@ -7,23 +7,23 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-namespace FacebookAds\Object;
+namespace FacebookAdsV18\Object;
 
-use FacebookAds\ApiRequest;
-use FacebookAds\Cursor;
-use FacebookAds\Http\RequestInterface;
-use FacebookAds\TypeChecker;
-use FacebookAds\Object\Fields\ProductFeedFields;
-use FacebookAds\Object\Values\ProductFeedDelimiterValues;
-use FacebookAds\Object\Values\ProductFeedEncodingValues;
-use FacebookAds\Object\Values\ProductFeedFeedTypeValues;
-use FacebookAds\Object\Values\ProductFeedIngestionSourceTypeValues;
-use FacebookAds\Object\Values\ProductFeedItemSubTypeValues;
-use FacebookAds\Object\Values\ProductFeedOverrideTypeValues;
-use FacebookAds\Object\Values\ProductFeedQuotedFieldsModeValues;
-use FacebookAds\Object\Values\ProductFeedRuleRuleTypeValues;
-use FacebookAds\Object\Values\ProductItemErrorPriorityValues;
-use FacebookAds\Object\Values\ProductItemErrorTypeValues;
+use FacebookAdsV18\ApiRequest;
+use FacebookAdsV18\Cursor;
+use FacebookAdsV18\Http\RequestInterface;
+use FacebookAdsV18\TypeChecker;
+use FacebookAdsV18\Object\Fields\ProductFeedFields;
+use FacebookAdsV18\Object\Values\ProductFeedDelimiterValues;
+use FacebookAdsV18\Object\Values\ProductFeedEncodingValues;
+use FacebookAdsV18\Object\Values\ProductFeedFeedTypeValues;
+use FacebookAdsV18\Object\Values\ProductFeedIngestionSourceTypeValues;
+use FacebookAdsV18\Object\Values\ProductFeedItemSubTypeValues;
+use FacebookAdsV18\Object\Values\ProductFeedOverrideTypeValues;
+use FacebookAdsV18\Object\Values\ProductFeedQuotedFieldsModeValues;
+use FacebookAdsV18\Object\Values\ProductFeedRuleRuleTypeValues;
+use FacebookAdsV18\Object\Values\ProductItemErrorPriorityValues;
+use FacebookAdsV18\Object\Values\ProductItemErrorTypeValues;
 
 /**
  * This class is auto-generated.

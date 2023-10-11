@@ -22,10 +22,10 @@
  *
  */
 
-namespace FacebookAds\Http\Exception;
+namespace FacebookAdsV18\Http\Exception;
 
-use FacebookAds\Exception\Exception;
-use FacebookAds\Http\ResponseInterface;
+use FacebookAdsV18\Exception\Exception;
+use FacebookAdsV18\Http\ResponseInterface;
 
 class RequestException extends Exception {
 

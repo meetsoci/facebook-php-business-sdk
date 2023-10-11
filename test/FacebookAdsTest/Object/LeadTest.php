@@ -24,11 +24,11 @@
 
 namespace FacebookAdsTest\Object;
 
-use FacebookAds\Object\Fields\LeadFields;
-use FacebookAds\Object\Fields\LeadgenFormFields;
-use FacebookAds\Object\Lead;
-use FacebookAds\Object\LeadgenForm;
-use FacebookAds\Object\Page;
+use FacebookAdsV18\Object\Fields\LeadFields;
+use FacebookAdsV18\Object\Fields\LeadgenFormFields;
+use FacebookAdsV18\Object\Lead;
+use FacebookAdsV18\Object\LeadgenForm;
+use FacebookAdsV18\Object\Page;
 
 class LeadTest extends AbstractCrudObjectTestCase {
 

@@ -7,10 +7,10 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-namespace FacebookAds\Object;
-use FacebookAds\ApiConfig;
-use FacebookAds\TypeChecker;
-use FacebookAds\Enum\EmptyEnum;
+namespace FacebookAdsV18\Object;
+use FacebookAdsV18\ApiConfig;
+use FacebookAdsV18\TypeChecker;
+use FacebookAdsV18\Enum\EmptyEnum;
 class AbstractObject {
   /**
    * @var mixed[] set of key value pairs representing data

@@ -25,9 +25,9 @@
 namespace FacebookAdsTest\Object\ServerSide;
 
 use FacebookAdsTest\AbstractUnitTestCase;
-use FacebookAds\Object\ServerSide\Event;
-use FacebookAds\Object\ServerSide\UserData;
-use FacebookAds\Object\ServerSide\BatchProcessor;
+use FacebookAdsV18\Object\ServerSide\Event;
+use FacebookAdsV18\Object\ServerSide\UserData;
+use FacebookAdsV18\Object\ServerSide\BatchProcessor;
 use GuzzleHttp\Promise\Utils;
 use Mockery as m;
 
@@ -55,7 +55,7 @@ class BatchProcessorTest extends AbstractUnitTestCase {
       'test_event_code' => $this->test_event_code,
     );
 
-    $mock_event_request_async = m::mock('overload:FacebookAds\Object\ServerSide\EventRequestAsync');
+    $mock_event_request_async = m::mock('overload:FacebookAdsV18\Object\ServerSide\EventRequestAsync');
     $mock_guzzle_promise = m::mock();
 
     $mock_event_request_async
@@ -88,7 +88,7 @@ class BatchProcessorTest extends AbstractUnitTestCase {
       'test_event_code' => $this->test_event_code,
     );
 
-    $mock_event_request_async = m::mock('overload:FacebookAds\Object\ServerSide\EventRequestAsync');
+    $mock_event_request_async = m::mock('overload:FacebookAdsV18\Object\ServerSide\EventRequestAsync');
     $mock_guzzle_promise = m::mock();
 
     $mock_event_request_async

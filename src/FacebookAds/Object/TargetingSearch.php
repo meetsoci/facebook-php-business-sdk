@@ -7,11 +7,11 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-namespace FacebookAds\Object;
+namespace FacebookAdsV18\Object;
 
-use FacebookAds\Api;
-use FacebookAds\Cursor;
-use FacebookAds\Http\RequestInterface;
+use FacebookAdsV18\Api;
+use FacebookAdsV18\Cursor;
+use FacebookAdsV18\Http\RequestInterface;
 
 class TargetingSearch extends AbstractObject {
 
@@ -35,7 +35,7 @@ class TargetingSearch extends AbstractObject {
     if (!$api) {
       throw new \InvalidArgumentException(
         'An Api instance must be provided as argument or '.
-        'set as instance in the \FacebookAds\Api');
+        'set as instance in the \FacebookAdsV18\Api');
     }
 
     $params['type'] = $type;

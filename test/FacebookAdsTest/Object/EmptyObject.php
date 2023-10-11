@@ -24,8 +24,8 @@
 
 namespace FacebookAdsTest\Object;
 
-use FacebookAds\Object\AbstractCrudObject;
-use FacebookAds\Object\AbstractObject;
+use FacebookAdsV18\Object\AbstractCrudObject;
+use FacebookAdsV18\Object\AbstractObject;
 
 class EmptyObject extends AbstractObject {
 

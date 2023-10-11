@@ -22,9 +22,9 @@
  *
  */
 
-namespace FacebookAds\Logger\CurlLogger;
+namespace FacebookAdsV18\Logger\CurlLogger;
 
-use FacebookAds\Http\Parameters;
+use FacebookAdsV18\Http\Parameters;
 
 class JsonAwareParameters extends Parameters {
 

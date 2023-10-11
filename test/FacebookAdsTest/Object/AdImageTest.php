@@ -24,8 +24,8 @@
 
 namespace FacebookAdsTest\Object;
 
-use FacebookAds\Object\AdImage;
-use FacebookAds\Object\Fields\AdImageFields;
+use FacebookAdsV18\Object\AdImage;
+use FacebookAdsV18\Object\Fields\AdImageFields;
 
 class AdImageTest extends AbstractCrudObjectTestCase {
 

@@ -7,18 +7,18 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-namespace FacebookAds\Object;
+namespace FacebookAdsV18\Object;
 
-use FacebookAds\ApiRequest;
-use FacebookAds\Cursor;
-use FacebookAds\Http\RequestInterface;
-use FacebookAds\TypeChecker;
-use FacebookAds\Object\Fields\AdMonetizationPropertyFields;
-use FacebookAds\Object\Values\AdNetworkAnalyticsSyncQueryResultAggregationPeriodValues;
-use FacebookAds\Object\Values\AdNetworkAnalyticsSyncQueryResultBreakdownsValues;
-use FacebookAds\Object\Values\AdNetworkAnalyticsSyncQueryResultMetricsValues;
-use FacebookAds\Object\Values\AdNetworkAnalyticsSyncQueryResultOrderingColumnValues;
-use FacebookAds\Object\Values\AdNetworkAnalyticsSyncQueryResultOrderingTypeValues;
+use FacebookAdsV18\ApiRequest;
+use FacebookAdsV18\Cursor;
+use FacebookAdsV18\Http\RequestInterface;
+use FacebookAdsV18\TypeChecker;
+use FacebookAdsV18\Object\Fields\AdMonetizationPropertyFields;
+use FacebookAdsV18\Object\Values\AdNetworkAnalyticsSyncQueryResultAggregationPeriodValues;
+use FacebookAdsV18\Object\Values\AdNetworkAnalyticsSyncQueryResultBreakdownsValues;
+use FacebookAdsV18\Object\Values\AdNetworkAnalyticsSyncQueryResultMetricsValues;
+use FacebookAdsV18\Object\Values\AdNetworkAnalyticsSyncQueryResultOrderingColumnValues;
+use FacebookAdsV18\Object\Values\AdNetworkAnalyticsSyncQueryResultOrderingTypeValues;
 
 /**
  * This class is auto-generated.

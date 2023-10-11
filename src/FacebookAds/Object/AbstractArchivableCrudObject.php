@@ -7,9 +7,9 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-namespace FacebookAds\Object;
+namespace FacebookAdsV18\Object;
 
-use FacebookAds\Http\RequestInterface;
+use FacebookAdsV18\Http\RequestInterface;
 
 abstract class AbstractArchivableCrudObject extends AbstractCrudObject {
 

@@ -22,9 +22,9 @@
  *
  */
 
-namespace FacebookAds\Http\Adapter\Curl;
+namespace FacebookAdsV18\Http\Adapter\Curl;
 
-use FacebookAds\Http\FileParameter;
+use FacebookAdsV18\Http\FileParameter;
 
 class Curl55 extends AbstractCurl {
 

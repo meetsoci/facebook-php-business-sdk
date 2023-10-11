@@ -24,7 +24,7 @@
 
 namespace FacebookAdsTest\Logger\CurlLogger;
 
-use FacebookAds\Logger\CurlLogger\JsonNode;
+use FacebookAdsV18\Logger\CurlLogger\JsonNode;
 
 trait JsonAwareTestTrait {
 

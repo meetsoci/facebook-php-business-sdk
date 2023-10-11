@@ -7,10 +7,10 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-namespace FacebookAds\Object\CustomAudienceNormalizers;
+namespace FacebookAdsV18\Object\CustomAudienceNormalizers;
 
-use FacebookAds\Object\Fields\CustomAudienceMultikeySchemaFields;
-use FacebookAds\Object\CustomAudienceNormalizers\ValueNormalizerInterface;
+use FacebookAdsV18\Object\Fields\CustomAudienceMultikeySchemaFields;
+use FacebookAdsV18\Object\CustomAudienceNormalizers\ValueNormalizerInterface;
 
 class LastNameNormalizer implements ValueNormalizerInterface {
 

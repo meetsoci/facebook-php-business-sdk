@@ -7,26 +7,26 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-namespace FacebookAds\Object;
+namespace FacebookAdsV18\Object;
 
-use FacebookAds\ApiRequest;
-use FacebookAds\Cursor;
-use FacebookAds\Http\RequestInterface;
-use FacebookAds\TypeChecker;
-use FacebookAds\Object\Fields\AdCreativeFields;
-use FacebookAds\Object\Values\AdCreativeApplinkTreatmentValues;
-use FacebookAds\Object\Values\AdCreativeAuthorizationCategoryValues;
-use FacebookAds\Object\Values\AdCreativeCallToActionTypeValues;
-use FacebookAds\Object\Values\AdCreativeCategorizationCriteriaValues;
-use FacebookAds\Object\Values\AdCreativeCategoryMediaSourceValues;
-use FacebookAds\Object\Values\AdCreativeDynamicAdVoiceValues;
-use FacebookAds\Object\Values\AdCreativeObjectTypeValues;
-use FacebookAds\Object\Values\AdCreativeOperatorValues;
-use FacebookAds\Object\Values\AdCreativeStatusValues;
-use FacebookAds\Object\Values\AdPreviewAdFormatValues;
-use FacebookAds\Object\Values\AdPreviewCreativeFeatureValues;
-use FacebookAds\Object\Values\AdPreviewRenderTypeValues;
-use FacebookAds\Object\Traits\AdLabelAwareCrudObjectTrait;
+use FacebookAdsV18\ApiRequest;
+use FacebookAdsV18\Cursor;
+use FacebookAdsV18\Http\RequestInterface;
+use FacebookAdsV18\TypeChecker;
+use FacebookAdsV18\Object\Fields\AdCreativeFields;
+use FacebookAdsV18\Object\Values\AdCreativeApplinkTreatmentValues;
+use FacebookAdsV18\Object\Values\AdCreativeAuthorizationCategoryValues;
+use FacebookAdsV18\Object\Values\AdCreativeCallToActionTypeValues;
+use FacebookAdsV18\Object\Values\AdCreativeCategorizationCriteriaValues;
+use FacebookAdsV18\Object\Values\AdCreativeCategoryMediaSourceValues;
+use FacebookAdsV18\Object\Values\AdCreativeDynamicAdVoiceValues;
+use FacebookAdsV18\Object\Values\AdCreativeObjectTypeValues;
+use FacebookAdsV18\Object\Values\AdCreativeOperatorValues;
+use FacebookAdsV18\Object\Values\AdCreativeStatusValues;
+use FacebookAdsV18\Object\Values\AdPreviewAdFormatValues;
+use FacebookAdsV18\Object\Values\AdPreviewCreativeFeatureValues;
+use FacebookAdsV18\Object\Values\AdPreviewRenderTypeValues;
+use FacebookAdsV18\Object\Traits\AdLabelAwareCrudObjectTrait;
 
 /**
  * This class is auto-generated.

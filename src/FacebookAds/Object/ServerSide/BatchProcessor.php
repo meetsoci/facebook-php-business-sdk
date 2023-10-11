@@ -22,7 +22,7 @@
  *
  */
 
-namespace FacebookAds\Object\ServerSide;
+namespace FacebookAdsV18\Object\ServerSide;
 
 use GuzzleHttp\Promise\Utils;
 
@@ -47,7 +47,7 @@ class BatchProcessor {
   /**
    * Processes events that have identical event_request params
    * @param array $event_request_params
-   * @param array|\FacebookAds\Object\ServerSide\Event $events
+   * @param array|\FacebookAdsV18\Object\ServerSide\Event $events
    * @return void
    */
   public function processEvents($event_request_params, $events) {
@@ -60,7 +60,7 @@ class BatchProcessor {
   /**
    * This generator returns event_requests promises for events that have identical event_request params
    * @param array $event_request_params
-   * @param array|\FacebookAds\Object\ServerSide\Event $events
+   * @param array|\FacebookAdsV18\Object\ServerSide\Event $events
    * @return Generator|array|\GuzzleHttp\Promise\PromiseInterface $promises
    */
   public function processEventsGenerator($event_request_params, $events) {
@@ -88,7 +88,7 @@ class BatchProcessor {
 
   /**
    * Processes async event_requests
-   * @param array|\FacebookAds\Object\ServerSide\EventRequestAsync $event_requests_async
+   * @param array|\FacebookAdsV18\Object\ServerSide\EventRequestAsync $event_requests_async
    * @return void
    */
   public function processEventRequests($event_requests_async) {
@@ -100,7 +100,7 @@ class BatchProcessor {
 
   /**
    * This generator returns event_requests promises
-   * @param array|\FacebookAds\Object\ServerSide\EventRequestAsync $event_requests_async
+   * @param array|\FacebookAdsV18\Object\ServerSide\EventRequestAsync $event_requests_async
    * @return Generator|array|\GuzzleHttp\Promise\PromiseInterface $promises
    */
   public function processEventRequestsGenerator($event_requests_async) {

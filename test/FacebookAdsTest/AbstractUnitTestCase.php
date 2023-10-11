@@ -24,15 +24,15 @@
 
 namespace FacebookAdsTest;
 
-use FacebookAds\Http\Adapter\AdapterInterface;
-use FacebookAds\Http\Adapter\Curl\CurlInterface;
-use FacebookAds\Http\Client;
-use FacebookAds\Http\Headers;
-use FacebookAds\Http\Parameters;
-use FacebookAds\Http\RequestInterface;
-use FacebookAds\Http\ResponseInterface;
-use FacebookAds\Logger\LoggerInterface;
-use FacebookAds\Session;
+use FacebookAdsV18\Http\Adapter\AdapterInterface;
+use FacebookAdsV18\Http\Adapter\Curl\CurlInterface;
+use FacebookAdsV18\Http\Client;
+use FacebookAdsV18\Http\Headers;
+use FacebookAdsV18\Http\Parameters;
+use FacebookAdsV18\Http\RequestInterface;
+use FacebookAdsV18\Http\ResponseInterface;
+use FacebookAdsV18\Logger\LoggerInterface;
+use FacebookAdsV18\Session;
 use PHPUnit_Framework_MockObject_Builder_InvocationMocker as Mocker;
 use PHPUnit_Framework_MockObject_MockObject as Mock;
 
@@ -44,53 +44,53 @@ abstract class AbstractUnitTestCase extends AbstractTestCase {
   /**
    * @var string
    */
-  const FQN_ADAPTER_INTERFACE = '\FacebookAds\Http\Adapter\AdapterInterface';
+  const FQN_ADAPTER_INTERFACE = '\FacebookAdsV18\Http\Adapter\AdapterInterface';
 
   /**
    * @var string
    */
-  const FQN_CLIENT = '\FacebookAds\Http\Client';
+  const FQN_CLIENT = '\FacebookAdsV18\Http\Client';
 
   /**
    * @var string
    */
-  const FQN_CURL_INTERFACE = '\FacebookAds\Http\Adapter\Curl\CurlInterface';
+  const FQN_CURL_INTERFACE = '\FacebookAdsV18\Http\Adapter\Curl\CurlInterface';
 
   /**
    * @var string
    */
-  const FQN_HEADERS = '\FacebookAds\Http\Headers';
+  const FQN_HEADERS = '\FacebookAdsV18\Http\Headers';
 
   /**
    * @var string
    */
-  const FQN_LOGGER_INTERFACE = '\FacebookAds\Logger\LoggerInterface';
+  const FQN_LOGGER_INTERFACE = '\FacebookAdsV18\Logger\LoggerInterface';
 
   /**
    * @var string
    */
-  const FQN_PARAMETERS = '\FacebookAds\Http\Parameters';
+  const FQN_PARAMETERS = '\FacebookAdsV18\Http\Parameters';
 
   /**
    * @var string
    */
   const FQN_JSON_AWARE_PARAMETERS
-    = '\FacebookAds\Logger\CurlLogger\JsonAwareParameters';
+    = '\FacebookAdsV18\Logger\CurlLogger\JsonAwareParameters';
 
   /**
    * @var string
    */
-  const FQN_REQUEST_INTERFACE = '\FacebookAds\Http\RequestInterface';
+  const FQN_REQUEST_INTERFACE = '\FacebookAdsV18\Http\RequestInterface';
 
   /**
    * @var string
    */
-  const FQN_RESPONSE_INTERFACE = '\FacebookAds\Http\ResponseInterface';
+  const FQN_RESPONSE_INTERFACE = '\FacebookAdsV18\Http\ResponseInterface';
 
   /**
    * @var string
    */
-  const FQN_SESSION = '\FacebookAds\Session';
+  const FQN_SESSION = '\FacebookAdsV18\Session';
 
   /**
    * @var string

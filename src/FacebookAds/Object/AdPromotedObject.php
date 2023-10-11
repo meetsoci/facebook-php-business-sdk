@@ -7,14 +7,14 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-namespace FacebookAds\Object;
+namespace FacebookAdsV18\Object;
 
-use FacebookAds\ApiRequest;
-use FacebookAds\Cursor;
-use FacebookAds\Http\RequestInterface;
-use FacebookAds\TypeChecker;
-use FacebookAds\Object\Fields\AdPromotedObjectFields;
-use FacebookAds\Object\Values\AdPromotedObjectCustomEventTypeValues;
+use FacebookAdsV18\ApiRequest;
+use FacebookAdsV18\Cursor;
+use FacebookAdsV18\Http\RequestInterface;
+use FacebookAdsV18\TypeChecker;
+use FacebookAdsV18\Object\Fields\AdPromotedObjectFields;
+use FacebookAdsV18\Object\Values\AdPromotedObjectCustomEventTypeValues;
 
 /**
  * This class is auto-generated.

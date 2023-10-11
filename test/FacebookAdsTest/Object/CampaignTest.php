@@ -24,8 +24,8 @@
 
 namespace FacebookAdsTest\Object;
 
-use FacebookAds\Object\Campaign;
-use FacebookAds\Object\Fields\CampaignFields;
+use FacebookAdsV18\Object\Campaign;
+use FacebookAdsV18\Object\Fields\CampaignFields;
 
 class CampaignTest extends AbstractCrudObjectTestCase {
 

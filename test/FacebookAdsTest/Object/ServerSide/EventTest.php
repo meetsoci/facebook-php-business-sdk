@@ -25,10 +25,10 @@
 namespace FacebookAdsTest\Object\ServerSide;
 
 use FacebookAdsTest\AbstractUnitTestCase;
-use FacebookAds\Object\ServerSide\ActionSource;
-use FacebookAds\Object\ServerSide\CustomData;
-use FacebookAds\Object\ServerSide\Event;
-use FacebookAds\Object\ServerSide\UserData;
+use FacebookAdsV18\Object\ServerSide\ActionSource;
+use FacebookAdsV18\Object\ServerSide\CustomData;
+use FacebookAdsV18\Object\ServerSide\Event;
+use FacebookAdsV18\Object\ServerSide\UserData;
 
 class EventTest extends AbstractUnitTestCase {
   public function testBuilder() {

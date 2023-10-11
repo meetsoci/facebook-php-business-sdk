@@ -7,11 +7,11 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-namespace FacebookAds\Object;
-use FacebookAds\Api;
-use FacebookAds\Cursor;
-use FacebookAds\Http\RequestInterface;
-use FacebookAds\Http\ResponseInterface;
+namespace FacebookAdsV18\Object;
+use FacebookAdsV18\Api;
+use FacebookAdsV18\Cursor;
+use FacebookAdsV18\Http\RequestInterface;
+use FacebookAdsV18\Http\ResponseInterface;
 class AbstractCrudObject extends AbstractObject {
   /**
    * @var string
@@ -118,7 +118,7 @@ class AbstractCrudObject extends AbstractObject {
     if (!$instance) {
       throw new \InvalidArgumentException(
         'An Api instance must be provided as argument or '.
-        'set as instance in the \FacebookAds\Api');
+        'set as instance in the \FacebookAdsV18\Api');
     }
     return $instance;
   }

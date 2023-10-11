@@ -7,20 +7,20 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-namespace FacebookAds\Object;
+namespace FacebookAdsV18\Object;
 
-use FacebookAds\ApiRequest;
-use FacebookAds\Cursor;
-use FacebookAds\Http\RequestInterface;
-use FacebookAds\TypeChecker;
-use FacebookAds\Object\Fields\OfflineConversionDataSetFields;
-use FacebookAds\Object\Values\AdAccountActionSourceValues;
-use FacebookAds\Object\Values\BusinessActionSourceValues;
-use FacebookAds\Object\Values\CustomAudienceActionSourceValues;
-use FacebookAds\Object\Values\OfflineConversionDataSetPermittedRolesValues;
-use FacebookAds\Object\Values\OfflineConversionDataSetRelationshipTypeValues;
-use FacebookAds\Object\Values\OfflineConversionDataSetUploadOrderValues;
-use FacebookAds\Object\Values\OfflineConversionDataSetUploadSortByValues;
+use FacebookAdsV18\ApiRequest;
+use FacebookAdsV18\Cursor;
+use FacebookAdsV18\Http\RequestInterface;
+use FacebookAdsV18\TypeChecker;
+use FacebookAdsV18\Object\Fields\OfflineConversionDataSetFields;
+use FacebookAdsV18\Object\Values\AdAccountActionSourceValues;
+use FacebookAdsV18\Object\Values\BusinessActionSourceValues;
+use FacebookAdsV18\Object\Values\CustomAudienceActionSourceValues;
+use FacebookAdsV18\Object\Values\OfflineConversionDataSetPermittedRolesValues;
+use FacebookAdsV18\Object\Values\OfflineConversionDataSetRelationshipTypeValues;
+use FacebookAdsV18\Object\Values\OfflineConversionDataSetUploadOrderValues;
+use FacebookAdsV18\Object\Values\OfflineConversionDataSetUploadSortByValues;
 
 /**
  * This class is auto-generated.

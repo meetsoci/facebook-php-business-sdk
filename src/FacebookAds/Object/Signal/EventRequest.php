@@ -22,13 +22,13 @@
  *
  */
 
-namespace FacebookAds\Object\Signal;
+namespace FacebookAdsV18\Object\Signal;
 
-use FacebookAds\Api;
-use FacebookAds\Object\AdsPixel;
-use FacebookAds\Object\Page;
-use FacebookAds\Object\BusinessDataAPI\EventRequest as BusinessDataEventRequest;
-use FacebookAds\Object\ServerSide\EventRequest as ServerSideEventRequest;
+use FacebookAdsV18\Api;
+use FacebookAdsV18\Object\AdsPixel;
+use FacebookAdsV18\Object\Page;
+use FacebookAdsV18\Object\BusinessDataAPI\EventRequest as BusinessDataEventRequest;
+use FacebookAdsV18\Object\ServerSide\EventRequest as ServerSideEventRequest;
 
 /**
  * Event Request
@@ -75,7 +75,7 @@ class EventRequest {
 
   /**
    * Sets an array of Signal Event objects
-   * @param FacebookAds\Object\Signal\Event[] $events An array of Signal Event objects
+   * @param FacebookAdsV18\Object\Signal\Event[] $events An array of Signal Event objects
    * @return $this
    */
   public function setEvents($events) {

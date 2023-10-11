@@ -7,13 +7,13 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-namespace FacebookAds\Object;
+namespace FacebookAdsV18\Object;
 
-use FacebookAds\Http\RequestInterface;
-use FacebookAds\Object\Values\CustomAudienceTypes;
-use FacebookAds\Object\Fields\CustomAudienceFields;
-use FacebookAds\Object\CustomAudienceNormalizers\HashNormalizer;
-use FacebookAds\Object\Fields\CustomAudienceMultikeySchemaFields;
+use FacebookAdsV18\Http\RequestInterface;
+use FacebookAdsV18\Object\Values\CustomAudienceTypes;
+use FacebookAdsV18\Object\Fields\CustomAudienceFields;
+use FacebookAdsV18\Object\CustomAudienceNormalizers\HashNormalizer;
+use FacebookAdsV18\Object\Fields\CustomAudienceMultikeySchemaFields;
 
 /**
  * @deprecated

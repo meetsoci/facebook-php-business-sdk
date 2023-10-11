@@ -22,7 +22,7 @@
  *
  */
 
-namespace FacebookAds\Logger\CurlLogger;
+namespace FacebookAdsV18\Logger\CurlLogger;
 
 final class JsonNode {
 

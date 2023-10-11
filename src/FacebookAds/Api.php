@@ -7,14 +7,14 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-namespace FacebookAds;
+namespace FacebookAdsV18;
 
-use FacebookAds\Http\Client;
-use FacebookAds\Http\RequestInterface;
-use FacebookAds\Http\ResponseInterface;
-use FacebookAds\Logger\LoggerInterface;
-use FacebookAds\Logger\NullLogger;
-use FacebookAds\CrashReporter;
+use FacebookAdsV18\Http\Client;
+use FacebookAdsV18\Http\RequestInterface;
+use FacebookAdsV18\Http\ResponseInterface;
+use FacebookAdsV18\Logger\LoggerInterface;
+use FacebookAdsV18\Logger\NullLogger;
+use FacebookAdsV18\CrashReporter;
 
 class Api {
 

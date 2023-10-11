@@ -7,11 +7,11 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-namespace FacebookAds;
+namespace FacebookAdsV18;
 
 class TypeChecker {
 
-  const ABSTRACT_OBJECT_PREFIX = "FacebookAds\\Object\\";
+  const ABSTRACT_OBJECT_PREFIX = "FacebookAdsV18\\Object\\";
   private $type_data;
   private $enum_data;
   private $primitive_types = ["unsigned int", "int", "bool", "string",

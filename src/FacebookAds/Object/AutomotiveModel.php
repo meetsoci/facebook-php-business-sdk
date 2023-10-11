@@ -7,15 +7,15 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-namespace FacebookAds\Object;
+namespace FacebookAdsV18\Object;
 
-use FacebookAds\ApiRequest;
-use FacebookAds\Cursor;
-use FacebookAds\Http\RequestInterface;
-use FacebookAds\TypeChecker;
-use FacebookAds\Object\Fields\AutomotiveModelFields;
-use FacebookAds\Object\Values\AutomotiveModelImageFetchStatusValues;
-use FacebookAds\Object\Values\AutomotiveModelVisibilityValues;
+use FacebookAdsV18\ApiRequest;
+use FacebookAdsV18\Cursor;
+use FacebookAdsV18\Http\RequestInterface;
+use FacebookAdsV18\TypeChecker;
+use FacebookAdsV18\Object\Fields\AutomotiveModelFields;
+use FacebookAdsV18\Object\Values\AutomotiveModelImageFetchStatusValues;
+use FacebookAdsV18\Object\Values\AutomotiveModelVisibilityValues;
 
 /**
  * This class is auto-generated.

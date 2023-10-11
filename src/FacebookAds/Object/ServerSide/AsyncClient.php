@@ -22,9 +22,9 @@
  *
  */
 
-namespace FacebookAds\Object\ServerSide;
+namespace FacebookAdsV18\Object\ServerSide;
 
-use FacebookAds\Api;
+use FacebookAdsV18\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\HandlerStack;

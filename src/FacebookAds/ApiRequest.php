@@ -7,10 +7,10 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-namespace FacebookAds;
+namespace FacebookAdsV18;
 
-use FacebookAds\Cursor;
-use FacebookAds\AbstractObject;
+use FacebookAdsV18\Cursor;
+use FacebookAdsV18\AbstractObject;
 
 class ApiRequest {
   protected $api;

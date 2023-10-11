@@ -7,41 +7,41 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-namespace FacebookAds\Object;
+namespace FacebookAdsV18\Object;
 
-use FacebookAds\ApiRequest;
-use FacebookAds\Cursor;
-use FacebookAds\Http\RequestInterface;
-use FacebookAds\TypeChecker;
-use FacebookAds\Object\Fields\AdSetFields;
-use FacebookAds\Object\Values\AdActivityCategoryValues;
-use FacebookAds\Object\Values\AdAsyncRequestStatusesValues;
-use FacebookAds\Object\Values\AdCampaignDeliveryEstimateOptimizationGoalValues;
-use FacebookAds\Object\Values\AdDatePresetValues;
-use FacebookAds\Object\Values\AdSetBidStrategyValues;
-use FacebookAds\Object\Values\AdSetBillingEventValues;
-use FacebookAds\Object\Values\AdSetConfiguredStatusValues;
-use FacebookAds\Object\Values\AdSetDatePresetValues;
-use FacebookAds\Object\Values\AdSetDestinationTypeValues;
-use FacebookAds\Object\Values\AdSetEffectiveStatusValues;
-use FacebookAds\Object\Values\AdSetExecutionOptionsValues;
-use FacebookAds\Object\Values\AdSetFullFunnelExplorationModeValues;
-use FacebookAds\Object\Values\AdSetMultiOptimizationGoalWeightValues;
-use FacebookAds\Object\Values\AdSetOperatorValues;
-use FacebookAds\Object\Values\AdSetOptimizationGoalValues;
-use FacebookAds\Object\Values\AdSetOptimizationSubEventValues;
-use FacebookAds\Object\Values\AdSetStatusOptionValues;
-use FacebookAds\Object\Values\AdSetStatusValues;
-use FacebookAds\Object\Values\AdSetTuneForCategoryValues;
-use FacebookAds\Object\Values\AdsInsightsActionAttributionWindowsValues;
-use FacebookAds\Object\Values\AdsInsightsActionBreakdownsValues;
-use FacebookAds\Object\Values\AdsInsightsActionReportTimeValues;
-use FacebookAds\Object\Values\AdsInsightsBreakdownsValues;
-use FacebookAds\Object\Values\AdsInsightsDatePresetValues;
-use FacebookAds\Object\Values\AdsInsightsLevelValues;
-use FacebookAds\Object\Values\AdsInsightsSummaryActionBreakdownsValues;
-use FacebookAds\Object\Traits\AdLabelAwareCrudObjectTrait;
-use FacebookAds\Object\Traits\ObjectValidation;
+use FacebookAdsV18\ApiRequest;
+use FacebookAdsV18\Cursor;
+use FacebookAdsV18\Http\RequestInterface;
+use FacebookAdsV18\TypeChecker;
+use FacebookAdsV18\Object\Fields\AdSetFields;
+use FacebookAdsV18\Object\Values\AdActivityCategoryValues;
+use FacebookAdsV18\Object\Values\AdAsyncRequestStatusesValues;
+use FacebookAdsV18\Object\Values\AdCampaignDeliveryEstimateOptimizationGoalValues;
+use FacebookAdsV18\Object\Values\AdDatePresetValues;
+use FacebookAdsV18\Object\Values\AdSetBidStrategyValues;
+use FacebookAdsV18\Object\Values\AdSetBillingEventValues;
+use FacebookAdsV18\Object\Values\AdSetConfiguredStatusValues;
+use FacebookAdsV18\Object\Values\AdSetDatePresetValues;
+use FacebookAdsV18\Object\Values\AdSetDestinationTypeValues;
+use FacebookAdsV18\Object\Values\AdSetEffectiveStatusValues;
+use FacebookAdsV18\Object\Values\AdSetExecutionOptionsValues;
+use FacebookAdsV18\Object\Values\AdSetFullFunnelExplorationModeValues;
+use FacebookAdsV18\Object\Values\AdSetMultiOptimizationGoalWeightValues;
+use FacebookAdsV18\Object\Values\AdSetOperatorValues;
+use FacebookAdsV18\Object\Values\AdSetOptimizationGoalValues;
+use FacebookAdsV18\Object\Values\AdSetOptimizationSubEventValues;
+use FacebookAdsV18\Object\Values\AdSetStatusOptionValues;
+use FacebookAdsV18\Object\Values\AdSetStatusValues;
+use FacebookAdsV18\Object\Values\AdSetTuneForCategoryValues;
+use FacebookAdsV18\Object\Values\AdsInsightsActionAttributionWindowsValues;
+use FacebookAdsV18\Object\Values\AdsInsightsActionBreakdownsValues;
+use FacebookAdsV18\Object\Values\AdsInsightsActionReportTimeValues;
+use FacebookAdsV18\Object\Values\AdsInsightsBreakdownsValues;
+use FacebookAdsV18\Object\Values\AdsInsightsDatePresetValues;
+use FacebookAdsV18\Object\Values\AdsInsightsLevelValues;
+use FacebookAdsV18\Object\Values\AdsInsightsSummaryActionBreakdownsValues;
+use FacebookAdsV18\Object\Traits\AdLabelAwareCrudObjectTrait;
+use FacebookAdsV18\Object\Traits\ObjectValidation;
 
 /**
  * This class is auto-generated.

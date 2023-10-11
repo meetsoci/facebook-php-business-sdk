@@ -24,15 +24,15 @@
 
 namespace FacebookAdsTest\Object;
 
-use FacebookAds\Cursor;
-use FacebookAds\Object\AbstractCrudObject;
-use FacebookAds\Object\AbstractObject;
-use FacebookAds\Object\AbstractArchivableCrudObject;
-use FacebookAds\Object\AdLabel;
-use FacebookAds\Object\CanRedownloadInterface;
-use FacebookAds\Object\Fields\AbstractArchivableCrudObjectFields;
-use FacebookAds\Object\Fields\AdLabelFields;
-use FacebookAds\Object\Traits\AdLabelAwareCrudObjectTrait;
+use FacebookAdsV18\Cursor;
+use FacebookAdsV18\Object\AbstractCrudObject;
+use FacebookAdsV18\Object\AbstractObject;
+use FacebookAdsV18\Object\AbstractArchivableCrudObject;
+use FacebookAdsV18\Object\AdLabel;
+use FacebookAdsV18\Object\CanRedownloadInterface;
+use FacebookAdsV18\Object\Fields\AbstractArchivableCrudObjectFields;
+use FacebookAdsV18\Object\Fields\AdLabelFields;
+use FacebookAdsV18\Object\Traits\AdLabelAwareCrudObjectTrait;
 use FacebookAdsTest\AbstractIntegrationTestCase;
 
 abstract class AbstractCrudObjectTestCase extends AbstractIntegrationTestCase {

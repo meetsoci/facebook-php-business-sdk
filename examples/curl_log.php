@@ -43,8 +43,8 @@ if (is_null($account_id)) {
     'You must set your account id before executing');
 }
 
-use FacebookAds\Api;
-use FacebookAds\Logger\CurlLogger;
+use FacebookAdsV18\Api;
+use FacebookAdsV18\Logger\CurlLogger;
 
 Api::init($app_id, $app_secret, $access_token);
 
@@ -57,8 +57,8 @@ $logger = new CurlLogger();
 // Attach the logger to the Api instance
 Api::instance()->setLogger($logger);
 
-use FacebookAds\Object\AdAccount;
-use FacebookAds\Object\Fields\AdAccountFields;
+use FacebookAdsV18\Object\AdAccount;
+use FacebookAdsV18\Object\Fields\AdAccountFields;
 
 $account = (new AdAccount($account_id))->read(array(
   AdAccountFields::ID,

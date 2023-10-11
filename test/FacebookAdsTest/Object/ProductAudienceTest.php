@@ -24,15 +24,15 @@
 
 namespace FacebookAdsTest\Object;
 
-use FacebookAds\Object\AdAccount;
-use FacebookAds\Object\AdsPixel;
-use FacebookAds\Object\ProductAudience;
-use FacebookAds\Object\ProductCatalog;
-use FacebookAds\Object\ProductSet;
-use FacebookAds\Object\Fields\AdsPixelsFields;
-use FacebookAds\Object\Fields\ProductAudienceFields;
-use FacebookAds\Object\Fields\ProductCatalogFields;
-use FacebookAds\Object\Fields\ProductSetFields;
+use FacebookAdsV18\Object\AdAccount;
+use FacebookAdsV18\Object\AdsPixel;
+use FacebookAdsV18\Object\ProductAudience;
+use FacebookAdsV18\Object\ProductCatalog;
+use FacebookAdsV18\Object\ProductSet;
+use FacebookAdsV18\Object\Fields\AdsPixelsFields;
+use FacebookAdsV18\Object\Fields\ProductAudienceFields;
+use FacebookAdsV18\Object\Fields\ProductCatalogFields;
+use FacebookAdsV18\Object\Fields\ProductSetFields;
 
 class ProductAudienceTest extends AbstractCrudObjectTestCase {
 

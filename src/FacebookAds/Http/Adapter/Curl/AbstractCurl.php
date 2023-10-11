@@ -22,7 +22,7 @@
  *
  */
 
-namespace FacebookAds\Http\Adapter\Curl;
+namespace FacebookAdsV18\Http\Adapter\Curl;
 
 abstract class AbstractCurl implements CurlInterface {
 

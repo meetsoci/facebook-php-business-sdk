@@ -7,47 +7,47 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-namespace FacebookAds\Object;
+namespace FacebookAdsV18\Object;
 
-use FacebookAds\ApiRequest;
-use FacebookAds\Cursor;
-use FacebookAds\Http\RequestInterface;
-use FacebookAds\TypeChecker;
-use FacebookAds\Object\Fields\BusinessFields;
-use FacebookAds\Object\Values\AdNetworkAnalyticsSyncQueryResultAggregationPeriodValues;
-use FacebookAds\Object\Values\AdNetworkAnalyticsSyncQueryResultBreakdownsValues;
-use FacebookAds\Object\Values\AdNetworkAnalyticsSyncQueryResultMetricsValues;
-use FacebookAds\Object\Values\AdNetworkAnalyticsSyncQueryResultOrderingColumnValues;
-use FacebookAds\Object\Values\AdNetworkAnalyticsSyncQueryResultOrderingTypeValues;
-use FacebookAds\Object\Values\AdStudyTypeValues;
-use FacebookAds\Object\Values\AdVideoContainerTypeValues;
-use FacebookAds\Object\Values\AdVideoContentCategoryValues;
-use FacebookAds\Object\Values\AdVideoFormattingValues;
-use FacebookAds\Object\Values\AdVideoOriginalProjectionTypeValues;
-use FacebookAds\Object\Values\AdVideoSwapModeValues;
-use FacebookAds\Object\Values\AdVideoUnpublishedContentTypeValues;
-use FacebookAds\Object\Values\AdVideoUploadPhaseValues;
-use FacebookAds\Object\Values\AdVideoValidationAdPlacementsValues;
-use FacebookAds\Object\Values\AdsPixelSortByValues;
-use FacebookAds\Object\Values\BusinessActionSourceValues;
-use FacebookAds\Object\Values\BusinessAssetSharingAgreementRequestStatusValues;
-use FacebookAds\Object\Values\BusinessImageValidationAdPlacementsValues;
-use FacebookAds\Object\Values\BusinessPagePermittedTasksValues;
-use FacebookAds\Object\Values\BusinessPermittedTasksValues;
-use FacebookAds\Object\Values\BusinessSubverticalV2Values;
-use FacebookAds\Object\Values\BusinessSurveyBusinessTypeValues;
-use FacebookAds\Object\Values\BusinessTwoFactorTypeValues;
-use FacebookAds\Object\Values\BusinessUserRoleValues;
-use FacebookAds\Object\Values\BusinessVerticalV2Values;
-use FacebookAds\Object\Values\BusinessVerticalValues;
-use FacebookAds\Object\Values\CPASCollaborationRequestRequesterAgencyOrBrandValues;
-use FacebookAds\Object\Values\CustomConversionCustomEventTypeValues;
-use FacebookAds\Object\Values\OmegaCustomerTrxTypeValues;
-use FacebookAds\Object\Values\ProductCatalogVerticalValues;
-use FacebookAds\Object\Values\ProfilePictureSourceBreakingChangeValues;
-use FacebookAds\Object\Values\ProfilePictureSourceTypeValues;
-use FacebookAds\Object\Values\SystemUserRoleValues;
-use FacebookAds\Object\Values\WhatsAppBusinessPreVerifiedPhoneNumberCodeVerificationStatusValues;
+use FacebookAdsV18\ApiRequest;
+use FacebookAdsV18\Cursor;
+use FacebookAdsV18\Http\RequestInterface;
+use FacebookAdsV18\TypeChecker;
+use FacebookAdsV18\Object\Fields\BusinessFields;
+use FacebookAdsV18\Object\Values\AdNetworkAnalyticsSyncQueryResultAggregationPeriodValues;
+use FacebookAdsV18\Object\Values\AdNetworkAnalyticsSyncQueryResultBreakdownsValues;
+use FacebookAdsV18\Object\Values\AdNetworkAnalyticsSyncQueryResultMetricsValues;
+use FacebookAdsV18\Object\Values\AdNetworkAnalyticsSyncQueryResultOrderingColumnValues;
+use FacebookAdsV18\Object\Values\AdNetworkAnalyticsSyncQueryResultOrderingTypeValues;
+use FacebookAdsV18\Object\Values\AdStudyTypeValues;
+use FacebookAdsV18\Object\Values\AdVideoContainerTypeValues;
+use FacebookAdsV18\Object\Values\AdVideoContentCategoryValues;
+use FacebookAdsV18\Object\Values\AdVideoFormattingValues;
+use FacebookAdsV18\Object\Values\AdVideoOriginalProjectionTypeValues;
+use FacebookAdsV18\Object\Values\AdVideoSwapModeValues;
+use FacebookAdsV18\Object\Values\AdVideoUnpublishedContentTypeValues;
+use FacebookAdsV18\Object\Values\AdVideoUploadPhaseValues;
+use FacebookAdsV18\Object\Values\AdVideoValidationAdPlacementsValues;
+use FacebookAdsV18\Object\Values\AdsPixelSortByValues;
+use FacebookAdsV18\Object\Values\BusinessActionSourceValues;
+use FacebookAdsV18\Object\Values\BusinessAssetSharingAgreementRequestStatusValues;
+use FacebookAdsV18\Object\Values\BusinessImageValidationAdPlacementsValues;
+use FacebookAdsV18\Object\Values\BusinessPagePermittedTasksValues;
+use FacebookAdsV18\Object\Values\BusinessPermittedTasksValues;
+use FacebookAdsV18\Object\Values\BusinessSubverticalV2Values;
+use FacebookAdsV18\Object\Values\BusinessSurveyBusinessTypeValues;
+use FacebookAdsV18\Object\Values\BusinessTwoFactorTypeValues;
+use FacebookAdsV18\Object\Values\BusinessUserRoleValues;
+use FacebookAdsV18\Object\Values\BusinessVerticalV2Values;
+use FacebookAdsV18\Object\Values\BusinessVerticalValues;
+use FacebookAdsV18\Object\Values\CPASCollaborationRequestRequesterAgencyOrBrandValues;
+use FacebookAdsV18\Object\Values\CustomConversionCustomEventTypeValues;
+use FacebookAdsV18\Object\Values\OmegaCustomerTrxTypeValues;
+use FacebookAdsV18\Object\Values\ProductCatalogVerticalValues;
+use FacebookAdsV18\Object\Values\ProfilePictureSourceBreakingChangeValues;
+use FacebookAdsV18\Object\Values\ProfilePictureSourceTypeValues;
+use FacebookAdsV18\Object\Values\SystemUserRoleValues;
+use FacebookAdsV18\Object\Values\WhatsAppBusinessPreVerifiedPhoneNumberCodeVerificationStatusValues;
 
 /**
  * This class is auto-generated.

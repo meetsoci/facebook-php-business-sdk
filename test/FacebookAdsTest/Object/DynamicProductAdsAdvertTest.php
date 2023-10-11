@@ -24,33 +24,33 @@
 
 namespace FacebookAdsTest\Object;
 
-use FacebookAds\Object\AdAccount;
-use FacebookAds\Object\Campaign;
-use FacebookAds\Object\AdCreative;
-use FacebookAds\Object\Ad;
-use FacebookAds\Object\AdSet;
-use FacebookAds\Object\AdsPixel;
-use FacebookAds\Object\ObjectStorySpec;
-use FacebookAds\Object\ProductAudience;
-use FacebookAds\Object\ProductCatalog;
-use FacebookAds\Object\ProductSet;
-use FacebookAds\Object\TargetingSpecs;
-use FacebookAds\Object\ObjectStory\TemplateData;
-use FacebookAds\Object\Fields\CampaignFields;
-use FacebookAds\Object\Fields\AdCreativeFields;
-use FacebookAds\Object\Fields\AdFields;
-use FacebookAds\Object\Fields\AdSetFields;
-use FacebookAds\Object\Fields\AdsPixelsFields;
-use FacebookAds\Object\Fields\ObjectStory\TemplateDataFields;
-use FacebookAds\Object\Fields\ObjectStorySpecFields;
-use FacebookAds\Object\Fields\ProductAudienceFields;
-use FacebookAds\Object\Fields\ProductCatalogFields;
-use FacebookAds\Object\Fields\ProductSetFields;
-use FacebookAds\Object\Fields\TargetingSpecsFields;
-use FacebookAds\Object\Values\AdObjectives;
-use FacebookAds\Object\Values\BillingEvents;
-use FacebookAds\Object\Values\CallToActionTypes;
-use FacebookAds\Object\Values\OptimizationGoals;
+use FacebookAdsV18\Object\AdAccount;
+use FacebookAdsV18\Object\Campaign;
+use FacebookAdsV18\Object\AdCreative;
+use FacebookAdsV18\Object\Ad;
+use FacebookAdsV18\Object\AdSet;
+use FacebookAdsV18\Object\AdsPixel;
+use FacebookAdsV18\Object\ObjectStorySpec;
+use FacebookAdsV18\Object\ProductAudience;
+use FacebookAdsV18\Object\ProductCatalog;
+use FacebookAdsV18\Object\ProductSet;
+use FacebookAdsV18\Object\TargetingSpecs;
+use FacebookAdsV18\Object\ObjectStory\TemplateData;
+use FacebookAdsV18\Object\Fields\CampaignFields;
+use FacebookAdsV18\Object\Fields\AdCreativeFields;
+use FacebookAdsV18\Object\Fields\AdFields;
+use FacebookAdsV18\Object\Fields\AdSetFields;
+use FacebookAdsV18\Object\Fields\AdsPixelsFields;
+use FacebookAdsV18\Object\Fields\ObjectStory\TemplateDataFields;
+use FacebookAdsV18\Object\Fields\ObjectStorySpecFields;
+use FacebookAdsV18\Object\Fields\ProductAudienceFields;
+use FacebookAdsV18\Object\Fields\ProductCatalogFields;
+use FacebookAdsV18\Object\Fields\ProductSetFields;
+use FacebookAdsV18\Object\Fields\TargetingSpecsFields;
+use FacebookAdsV18\Object\Values\AdObjectives;
+use FacebookAdsV18\Object\Values\BillingEvents;
+use FacebookAdsV18\Object\Values\CallToActionTypes;
+use FacebookAdsV18\Object\Values\OptimizationGoals;
 
 class DynamicProductAdsAdvertTest extends AbstractCrudObjectTestCase {
 

@@ -24,8 +24,8 @@
 
 namespace FacebookAdsTest\Object;
 
-use FacebookAds\Object\AdLabel;
-use FacebookAds\Object\Fields\AdLabelFields;
+use FacebookAdsV18\Object\AdLabel;
+use FacebookAdsV18\Object\Fields\AdLabelFields;
 
 class AdLabelTest extends AbstractCrudObjectTestCase {
 

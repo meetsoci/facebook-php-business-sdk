@@ -24,8 +24,8 @@
 
 namespace FacebookAdsTest\Object;
 
-use FacebookAds\Object\AdCampaignDeliveryEstimate;
-use FacebookAds\Object\Fields\AdCampaignDeliveryEstimateFields;
+use FacebookAdsV18\Object\AdCampaignDeliveryEstimate;
+use FacebookAdsV18\Object\Fields\AdCampaignDeliveryEstimateFields;
 use FacebookAdsTest\AbstractTestCase;
 
 class ReachEstimateTest extends AbstractTestCase {

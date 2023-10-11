@@ -7,7 +7,7 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-namespace FacebookAds\Object\Values;
+namespace FacebookAdsV18\Object\Values;
 
 /**
  * @deprecated use AdSetBillingEventValues instead

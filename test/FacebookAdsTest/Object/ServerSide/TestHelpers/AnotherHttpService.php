@@ -23,7 +23,7 @@
  */
 
 namespace FacebookAdsTest\Object\ServerSide\TestHelpers;
-use FacebookAds\Object\ServerSide\HttpServiceInterface;
+use FacebookAdsV18\Object\ServerSide\HttpServiceInterface;
 
 class AnotherHttpService implements HttpServiceInterface {
   public function executeRequest($url, $method, array $curl_options, array $headers, array $params) {

@@ -24,21 +24,21 @@
 
 namespace FacebookAdsTest\Object;
 
-use FacebookAds\Object\AdCreative;
-use FacebookAds\Object\AdCreativeLinkData;
-use FacebookAds\Object\AdCreativeObjectStorySpec;
-use FacebookAds\Object\AdImage;
-use FacebookAds\Object\Fields\AdCreativeLinkDataChildAttachmentFields;
-use FacebookAds\Object\Fields\AdCreativeLinkDataFields;
-use FacebookAds\Object\Fields\AdCreativeObjectStorySpecFields;
-use FacebookAds\Object\ObjectStorySpec;
-use FacebookAds\Object\ObjectStory\LinkData;
-use FacebookAds\Object\ObjectStory\AttachmentData;
-use FacebookAds\Object\Fields\AdCreativeFields;
-use FacebookAds\Object\Fields\AdImageFields;
-use FacebookAds\Object\Fields\ObjectStorySpecFields;
-use FacebookAds\Object\Fields\ObjectStory\LinkDataFields;
-use FacebookAds\Object\Fields\ObjectStory\AttachmentDataFields;
+use FacebookAdsV18\Object\AdCreative;
+use FacebookAdsV18\Object\AdCreativeLinkData;
+use FacebookAdsV18\Object\AdCreativeObjectStorySpec;
+use FacebookAdsV18\Object\AdImage;
+use FacebookAdsV18\Object\Fields\AdCreativeLinkDataChildAttachmentFields;
+use FacebookAdsV18\Object\Fields\AdCreativeLinkDataFields;
+use FacebookAdsV18\Object\Fields\AdCreativeObjectStorySpecFields;
+use FacebookAdsV18\Object\ObjectStorySpec;
+use FacebookAdsV18\Object\ObjectStory\LinkData;
+use FacebookAdsV18\Object\ObjectStory\AttachmentData;
+use FacebookAdsV18\Object\Fields\AdCreativeFields;
+use FacebookAdsV18\Object\Fields\AdImageFields;
+use FacebookAdsV18\Object\Fields\ObjectStorySpecFields;
+use FacebookAdsV18\Object\Fields\ObjectStory\LinkDataFields;
+use FacebookAdsV18\Object\Fields\ObjectStory\AttachmentDataFields;
 
 class AdCreativeTest extends AbstractCrudObjectTestCase {
 

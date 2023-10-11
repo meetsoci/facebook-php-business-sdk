@@ -22,7 +22,7 @@
  *
  */
 
-namespace FacebookAds\Http;
+namespace FacebookAdsV18\Http;
 
 abstract class Util {
 

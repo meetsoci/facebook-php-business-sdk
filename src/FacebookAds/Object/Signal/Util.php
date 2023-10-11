@@ -22,7 +22,7 @@
  *
  */
 
-namespace FacebookAds\Object\Signal;
+namespace FacebookAdsV18\Object\Signal;
 
 class Util {
   /**

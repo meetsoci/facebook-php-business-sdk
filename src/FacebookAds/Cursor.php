@@ -7,12 +7,12 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-namespace FacebookAds;
+namespace FacebookAdsV18;
 
-use FacebookAds\Http\RequestInterface;
-use FacebookAds\Http\ResponseInterface;
-use FacebookAds\Http\Util;
-use FacebookAds\Object\AbstractObject;
+use FacebookAdsV18\Http\RequestInterface;
+use FacebookAdsV18\Http\ResponseInterface;
+use FacebookAdsV18\Http\Util;
+use FacebookAdsV18\Object\AbstractObject;
 
 class Cursor implements \Iterator, \Countable, \ArrayAccess {
   /**

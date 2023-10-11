@@ -22,11 +22,11 @@
  *
  */
 
-namespace FacebookAds\Object\ServerSide;
+namespace FacebookAdsV18\Object\ServerSide;
 
-use FacebookAds\Http\Client;
-use FacebookAds\Http\SimpleRequest;
-use FacebookAds\Exception\Exception;
+use FacebookAdsV18\Http\Client;
+use FacebookAdsV18\Http\SimpleRequest;
+use FacebookAdsV18\Exception\Exception;
 
 use ArrayAccess;
 

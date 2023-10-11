@@ -25,9 +25,9 @@
 namespace FacebookAdsTest\Object\Signal;
 
 use FacebookAdsTest\AbstractUnitTestCase;
-use FacebookAds\Object\Signal\CustomData;
-use FacebookAds\Object\Signal\Event;
-use FacebookAds\Object\Signal\UserData;
+use FacebookAdsV18\Object\Signal\CustomData;
+use FacebookAdsV18\Object\Signal\Event;
+use FacebookAdsV18\Object\Signal\UserData;
 
 class EventTest extends AbstractUnitTestCase {
   public function testBuilder() {

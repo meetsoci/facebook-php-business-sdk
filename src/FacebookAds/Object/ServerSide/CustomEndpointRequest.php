@@ -22,7 +22,7 @@
  *
  */
 
-namespace FacebookAds\Object\ServerSide;
+namespace FacebookAdsV18\Object\ServerSide;
 
 use GuzzleHttp\Promise\PromiseInterface;
 
@@ -72,4 +72,3 @@ interface CustomEndpointRequest {
      */
     public function getEndpoint(): string;
 }
-

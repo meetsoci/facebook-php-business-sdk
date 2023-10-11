@@ -22,10 +22,10 @@
  *
  */
 
-namespace FacebookAds\Object\Signal;
+namespace FacebookAdsV18\Object\Signal;
 
-use FacebookAds\Object\BusinessDataAPI\CustomData as BusinessDataCustomData;
-use FacebookAds\Object\ServerSide\CustomData as ServerSideCustomData;
+use FacebookAdsV18\Object\BusinessDataAPI\CustomData as BusinessDataCustomData;
+use FacebookAdsV18\Object\ServerSide\CustomData as ServerSideCustomData;
 
 class CustomData {
 

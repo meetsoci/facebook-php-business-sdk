@@ -22,7 +22,7 @@
  *
  */
 
-namespace FacebookAds\Http;
+namespace FacebookAdsV18\Http;
 
 class SimpleRequest extends Request{
 

@@ -24,12 +24,12 @@
 
 namespace FacebookAdsTest\Object;
 
-use FacebookAds\Object\AdAccount;
-use FacebookAds\Object\CustomAudience;
-use FacebookAds\Object\Fields\CustomAudienceFields;
-use FacebookAds\Object\Fields\CustomAudienceMultikeySchemaFields;
-use FacebookAds\Object\Values\CustomAudienceSubtypes;
-use FacebookAds\Object\Values\CustomAudienceTypes;
+use FacebookAdsV18\Object\AdAccount;
+use FacebookAdsV18\Object\CustomAudience;
+use FacebookAdsV18\Object\Fields\CustomAudienceFields;
+use FacebookAdsV18\Object\Fields\CustomAudienceMultikeySchemaFields;
+use FacebookAdsV18\Object\Values\CustomAudienceSubtypes;
+use FacebookAdsV18\Object\Values\CustomAudienceTypes;
 
 class CustomAudienceMultikeyTest extends AbstractCrudObjectTestCase {
 

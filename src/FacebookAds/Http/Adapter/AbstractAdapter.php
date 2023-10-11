@@ -22,9 +22,9 @@
  *
  */
 
-namespace FacebookAds\Http\Adapter;
+namespace FacebookAdsV18\Http\Adapter;
 
-use FacebookAds\Http\Client;
+use FacebookAdsV18\Http\Client;
 
 abstract class AbstractAdapter implements AdapterInterface {
 

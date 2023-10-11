@@ -7,20 +7,20 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-namespace FacebookAds\Object;
+namespace FacebookAdsV18\Object;
 
-use FacebookAds\ApiRequest;
-use FacebookAds\Cursor;
-use FacebookAds\Http\RequestInterface;
-use FacebookAds\TypeChecker;
-use FacebookAds\Object\Fields\AdCreativeLinkDataImageLayerSpecFields;
-use FacebookAds\Object\Values\AdCreativeLinkDataImageLayerSpecBlendingModeValues;
-use FacebookAds\Object\Values\AdCreativeLinkDataImageLayerSpecFrameSourceValues;
-use FacebookAds\Object\Values\AdCreativeLinkDataImageLayerSpecImageSourceValues;
-use FacebookAds\Object\Values\AdCreativeLinkDataImageLayerSpecLayerTypeValues;
-use FacebookAds\Object\Values\AdCreativeLinkDataImageLayerSpecOverlayPositionValues;
-use FacebookAds\Object\Values\AdCreativeLinkDataImageLayerSpecOverlayShapeValues;
-use FacebookAds\Object\Values\AdCreativeLinkDataImageLayerSpecTextFontValues;
+use FacebookAdsV18\ApiRequest;
+use FacebookAdsV18\Cursor;
+use FacebookAdsV18\Http\RequestInterface;
+use FacebookAdsV18\TypeChecker;
+use FacebookAdsV18\Object\Fields\AdCreativeLinkDataImageLayerSpecFields;
+use FacebookAdsV18\Object\Values\AdCreativeLinkDataImageLayerSpecBlendingModeValues;
+use FacebookAdsV18\Object\Values\AdCreativeLinkDataImageLayerSpecFrameSourceValues;
+use FacebookAdsV18\Object\Values\AdCreativeLinkDataImageLayerSpecImageSourceValues;
+use FacebookAdsV18\Object\Values\AdCreativeLinkDataImageLayerSpecLayerTypeValues;
+use FacebookAdsV18\Object\Values\AdCreativeLinkDataImageLayerSpecOverlayPositionValues;
+use FacebookAdsV18\Object\Values\AdCreativeLinkDataImageLayerSpecOverlayShapeValues;
+use FacebookAdsV18\Object\Values\AdCreativeLinkDataImageLayerSpecTextFontValues;
 
 /**
  * This class is auto-generated.

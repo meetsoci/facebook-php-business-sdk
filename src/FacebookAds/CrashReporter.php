@@ -7,16 +7,16 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-namespace FacebookAds;
+namespace FacebookAdsV18;
 
-use FacebookAds\Api;
-use FacebookAds\Exception\Exception;
-use FacebookAds\Http\RequestInterface;
-use FacebookAds\Http\Exception\RequestException;
+use FacebookAdsV18\Api;
+use FacebookAdsV18\Exception\Exception;
+use FacebookAdsV18\Http\RequestInterface;
+use FacebookAdsV18\Http\Exception\RequestException;
 
 /**
  * Class CrashReasons
- * @package FacebookAds
+ * @package FacebookAdsV18
  */
 class CrashReasons {
     const SDK = 'SDK';
@@ -25,7 +25,7 @@ class CrashReasons {
 
 /**
  * Class CrashReporter
- * @package FacebookAds
+ * @package FacebookAdsV18
  */
 class CrashReporter {
     const E_FATAL =

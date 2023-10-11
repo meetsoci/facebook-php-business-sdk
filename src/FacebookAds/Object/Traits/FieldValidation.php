@@ -7,9 +7,9 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-namespace FacebookAds\Object\Traits;
+namespace FacebookAdsV18\Object\Traits;
 
-use FacebookAds\Enum\EnumInstanceInterface;
+use FacebookAdsV18\Enum\EnumInstanceInterface;
 
 /**
  * @method static EnumInstanceInterface getFieldsEnum()

@@ -24,7 +24,7 @@
 
 namespace FacebookAdsTest\Http;
 
-use FacebookAds\Http\FileParameter;
+use FacebookAdsV18\Http\FileParameter;
 use FacebookAdsTest\AbstractUnitTestCase;
 
 class FileParameterTest extends AbstractUnitTestCase {

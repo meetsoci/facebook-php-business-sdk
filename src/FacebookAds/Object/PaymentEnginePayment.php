@@ -7,14 +7,14 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-namespace FacebookAds\Object;
+namespace FacebookAdsV18\Object;
 
-use FacebookAds\ApiRequest;
-use FacebookAds\Cursor;
-use FacebookAds\Http\RequestInterface;
-use FacebookAds\TypeChecker;
-use FacebookAds\Object\Fields\PaymentEnginePaymentFields;
-use FacebookAds\Object\Values\PaymentEnginePaymentReasonValues;
+use FacebookAdsV18\ApiRequest;
+use FacebookAdsV18\Cursor;
+use FacebookAdsV18\Http\RequestInterface;
+use FacebookAdsV18\TypeChecker;
+use FacebookAdsV18\Object\Fields\PaymentEnginePaymentFields;
+use FacebookAdsV18\Object\Values\PaymentEnginePaymentReasonValues;
 
 /**
  * This class is auto-generated.

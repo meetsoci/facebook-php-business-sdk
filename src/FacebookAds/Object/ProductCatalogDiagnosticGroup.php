@@ -7,21 +7,21 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-namespace FacebookAds\Object;
+namespace FacebookAdsV18\Object;
 
-use FacebookAds\ApiRequest;
-use FacebookAds\Cursor;
-use FacebookAds\Http\RequestInterface;
-use FacebookAds\TypeChecker;
-use FacebookAds\Object\Fields\ProductCatalogDiagnosticGroupFields;
-use FacebookAds\Object\Values\ProductCatalogDiagnosticGroupAffectedChannelsValues;
-use FacebookAds\Object\Values\ProductCatalogDiagnosticGroupAffectedEntitiesValues;
-use FacebookAds\Object\Values\ProductCatalogDiagnosticGroupAffectedEntityValues;
-use FacebookAds\Object\Values\ProductCatalogDiagnosticGroupAffectedFeaturesValues;
-use FacebookAds\Object\Values\ProductCatalogDiagnosticGroupSeveritiesValues;
-use FacebookAds\Object\Values\ProductCatalogDiagnosticGroupSeverityValues;
-use FacebookAds\Object\Values\ProductCatalogDiagnosticGroupTypeValues;
-use FacebookAds\Object\Values\ProductCatalogDiagnosticGroupTypesValues;
+use FacebookAdsV18\ApiRequest;
+use FacebookAdsV18\Cursor;
+use FacebookAdsV18\Http\RequestInterface;
+use FacebookAdsV18\TypeChecker;
+use FacebookAdsV18\Object\Fields\ProductCatalogDiagnosticGroupFields;
+use FacebookAdsV18\Object\Values\ProductCatalogDiagnosticGroupAffectedChannelsValues;
+use FacebookAdsV18\Object\Values\ProductCatalogDiagnosticGroupAffectedEntitiesValues;
+use FacebookAdsV18\Object\Values\ProductCatalogDiagnosticGroupAffectedEntityValues;
+use FacebookAdsV18\Object\Values\ProductCatalogDiagnosticGroupAffectedFeaturesValues;
+use FacebookAdsV18\Object\Values\ProductCatalogDiagnosticGroupSeveritiesValues;
+use FacebookAdsV18\Object\Values\ProductCatalogDiagnosticGroupSeverityValues;
+use FacebookAdsV18\Object\Values\ProductCatalogDiagnosticGroupTypeValues;
+use FacebookAdsV18\Object\Values\ProductCatalogDiagnosticGroupTypesValues;
 
 /**
  * This class is auto-generated.
