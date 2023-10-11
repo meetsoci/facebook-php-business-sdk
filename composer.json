@@ -1,5 +1,5 @@
 {
-  "name": "facebook/php-business-sdk",
+  "name": "meetsoci/php-business-sdk-v18",
   "description": "PHP SDK for Facebook Business",
   "type": "library",
   "keywords": [
@@ -21,7 +21,7 @@
   },
   "autoload": {
     "psr-4": {
-      "FacebookAds\\": "src/FacebookAds/"
+      "FacebookAdsV18\\": "src/FacebookAds/"
     }
   }
 }
