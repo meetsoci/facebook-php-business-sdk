@@ -68,13 +68,18 @@ class EventRequestTest extends AbstractUnitTestCase {
   public function testBuilder() {
     $event = new Event(array('event_name' => 'event-123'));
     $expected = array(
-      'data' => array(array('event_name' => $event['event_name'])),
+      'data' => [
+        array(
+          'event_name' => $event['event_name'],
+          'app_data' => null
+        ),
+      ],
       'test_event_code' => 'test-event-code-0',
       'partner_agent' => 'partner-agent-1',
       'namespace_id' => 'namespace-id-2',
       'upload_id' => 'upload-id-3',
       'upload_tag' => 'upload-tag-4',
-      'upload_source' => 'upload-source-5',
+      'upload_source' => 'upload-source-5'
     );
     $event_request = (new EventRequest('pixel-id'))
       ->setEvents(array($event))
@@ -90,7 +95,7 @@ class EventRequestTest extends AbstractUnitTestCase {
 
   public function testConstructor() {
     $event = new Event(array('event_name' => 'event-123'));
-    $expected_event = array('data' => [array('event_name' => $event['event_name'])]);
+    $expected_event = array('data' => [array('event_name' => $event['event_name'], 'app_data' => null)]);
     $state = array(
       'test_event_code' => 'test-event-code-0',
       'partner_agent' => 'partner-agent-1',

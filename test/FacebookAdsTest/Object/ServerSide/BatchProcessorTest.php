@@ -28,8 +28,7 @@ use FacebookAdsTest\AbstractUnitTestCase;
 use FacebookAds\Object\ServerSide\Event;
 use FacebookAds\Object\ServerSide\UserData;
 use FacebookAds\Object\ServerSide\BatchProcessor;
-use FacebookAds\Api;
-use GuzzleHttp\Promise;
+use GuzzleHttp\Promise\Utils;
 use Mockery as m;
 
 class BatchProcessorTest extends AbstractUnitTestCase {
@@ -114,7 +113,7 @@ class BatchProcessorTest extends AbstractUnitTestCase {
     $iterations = 0;
     foreach ($generator as $promises) {
       $iterations += 1;
-      Promise\unwrap($promises);
+      Utils::unwrap($promises);
     }
 
     $this->assertEquals($iterations, 2);
@@ -158,7 +157,7 @@ class BatchProcessorTest extends AbstractUnitTestCase {
     $iterations = 0;
     foreach ($generator as $promises) {
       $iterations += 1;
-      Promise\unwrap($promises);
+      Utils::unwrap($promises);
     }
 
     $this->assertEquals(3, $iterations);

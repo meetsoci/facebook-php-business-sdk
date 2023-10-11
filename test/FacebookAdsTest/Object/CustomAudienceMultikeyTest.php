@@ -24,6 +24,7 @@
 
 namespace FacebookAdsTest\Object;
 
+use FacebookAds\Object\AdAccount;
 use FacebookAds\Object\CustomAudience;
 use FacebookAds\Object\Fields\CustomAudienceFields;
 use FacebookAds\Object\Fields\CustomAudienceMultikeySchemaFields;
@@ -37,7 +38,7 @@ class CustomAudienceMultikeyTest extends AbstractCrudObjectTestCase {
   */
   protected $customaudience;
 
-  public function setup() {
+  public function setup(): void {
     parent::setup();
     $adaccount = new AdAccount($this->getConfig()->accountId);
     $params = array(
@@ -50,7 +51,7 @@ class CustomAudienceMultikeyTest extends AbstractCrudObjectTestCase {
     );
   }
 
-  public function tearDown() {
+  public function tearDown(): void {
     if ($this->customaudience) {
       $this->customaudience->deleteSelf();
     }

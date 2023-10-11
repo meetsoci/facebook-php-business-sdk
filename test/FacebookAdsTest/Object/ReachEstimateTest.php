@@ -24,38 +24,38 @@
 
 namespace FacebookAdsTest\Object;
 
+use FacebookAds\Object\AdCampaignDeliveryEstimate;
+use FacebookAds\Object\Fields\AdCampaignDeliveryEstimateFields;
 use FacebookAdsTest\AbstractTestCase;
-use FacebookAds\Object\ReachEstimate;
-use FacebookAds\Object\Fields\ReachEstimateFields;
 
 class ReachEstimateTest extends AbstractTestCase {
 
   public function testOnlyInnerData() {
-    $reach_estimate = new ReachEstimate();
+    $reach_estimate = new AdCampaignDeliveryEstimate();
     $reach_estimate->setData(array(
       'data' => array(
-        ReachEstimateFields::ESTIMATE_READY => true,
+		  AdCampaignDeliveryEstimateFields::ESTIMATE_READY => true,
       ),
     ));
-    $this->assertTrue($reach_estimate->{ReachEstimateFields::ESTIMATE_READY});
+    $this->assertTrue($reach_estimate->{AdCampaignDeliveryEstimateFields::ESTIMATE_READY});
   }
 
   public function testOnlyOuterData() {
-    $reach_estimate = new ReachEstimate();
+    $reach_estimate = new AdCampaignDeliveryEstimate();
     $reach_estimate->setData(array(
-      ReachEstimateFields::ESTIMATE_READY => true,
+		AdCampaignDeliveryEstimateFields::ESTIMATE_READY => true,
     ));
-    $this->assertTrue($reach_estimate->{ReachEstimateFields::ESTIMATE_READY});
+    $this->assertTrue($reach_estimate->{AdCampaignDeliveryEstimateFields::ESTIMATE_READY});
   }
 
   public function testInnerDataTakesPrecedenceOverOuterData() {
-    $reach_estimate = new ReachEstimate();
+    $reach_estimate = new AdCampaignDeliveryEstimate();
     $reach_estimate->setData(array(
-      ReachEstimateFields::ESTIMATE_READY => false,
+		AdCampaignDeliveryEstimateFields::ESTIMATE_READY => false,
       'data' => array(
-        ReachEstimateFields::ESTIMATE_READY => true,
+		  AdCampaignDeliveryEstimateFields::ESTIMATE_READY => true,
       ),
      ));
-    $this->assertTrue($reach_estimate->{ReachEstimateFields::ESTIMATE_READY});
+    $this->assertTrue($reach_estimate->{AdCampaignDeliveryEstimateFields::ESTIMATE_READY});
   }
 }

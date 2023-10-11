@@ -44,7 +44,7 @@ class EventTest extends AbstractUnitTestCase {
       'event_id' => 'event_id',
       'data_processing_options' => array('LDU'),
       'data_processing_options_country' => 1,
-      'data_processing_options_state' => 1000,
+      'data_processing_options_state' => 1000
     );
 
     $event = (new Event())
@@ -67,6 +67,7 @@ class EventTest extends AbstractUnitTestCase {
 
     $expected['user_data'] = $user_data->getServerSideUserData()->normalize();
     $expected['custom_data'] = $custom_data->getServerSideCustomData()->normalize();
+    $expected['app_data'] = null;
     $this->assertEquals($expected, $event->getServerSideEvent()->normalize());
     $this->assertEquals('order_id', $event->getServerSideEvent()->getCustomData()->getOrderId());
     $this->assertEquals('aaa@fb.com', $event->getServerSideEvent()->getUserData()->getEmail());

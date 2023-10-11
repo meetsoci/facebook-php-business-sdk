@@ -24,11 +24,12 @@
 
 namespace FacebookAdsTest\Object;
 
+use FacebookAds\Object\Fields\OutcomePredictionPointFields;
 use FacebookAds\Object\Fields\TargetingFields;
 use FacebookAds\Object\ReachFrequencyPrediction;
 use FacebookAds\Object\Fields\ReachFrequencyPredictionFields as RF;
-use FacebookAds\Object\TargetingSpecs;
-use FacebookAds\Object\Values\AdObjectives;
+use FacebookAds\Object\Targeting;
+use FacebookAds\Object\Values\AdAccountDeliveryEstimateOptimizationGoalValues;
 use FacebookAdsTest\Config\SkippableFeatureTestInterface;
 
 class ReachFrequencyPredictionTest extends AbstractCrudObjectTestCase
@@ -46,8 +47,8 @@ class ReachFrequencyPredictionTest extends AbstractCrudObjectTestCase
     $prediction
       = new ReachFrequencyPrediction(null, $this->getConfig()->accountId);
 
-    $targeting = new TargetingSpecs();
-    $targeting->{TargetingSpecsFields::GEO_LOCATIONS}
+    $targeting = new Targeting();
+    $targeting->{TargetingFields::GEO_LOCATIONS}
       = array('countries' => array('US'));
     $targeting->{TargetingFields::AGE_MAX} = 35;
     $targeting->{TargetingFields::AGE_MIN} = 20;
@@ -63,8 +64,8 @@ class ReachFrequencyPredictionTest extends AbstractCrudObjectTestCase
       RF::END_TIME => strtotime('midnight + 3 weeks'),
       RF::FREQUENCY_CAP => 4,
       RF::DESTINATION_ID => $this->getConfig()->pageId,
-      RF::PREDICTION_MODE => ReachFrequencyPrediction::PREDICTION_MODE_REACH,
-      RF::OBJECTIVE => AdObjectives::POST_ENGAGEMENT,
+      RF::PREDICTION_MODE => OutcomePredictionPointFields::REACH,
+      RF::OBJECTIVE => AdAccountDeliveryEstimateOptimizationGoalValues::POST_ENGAGEMENT,
       RF::STORY_EVENT_TYPE => 128,
     ));
 
