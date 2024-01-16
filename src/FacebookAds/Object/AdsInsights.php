@@ -7,20 +7,20 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-namespace FacebookAdsV18\Object;
+namespace FacebookAds\Object;
 
-use FacebookAdsV18\ApiRequest;
-use FacebookAdsV18\Cursor;
-use FacebookAdsV18\Http\RequestInterface;
-use FacebookAdsV18\TypeChecker;
-use FacebookAdsV18\Object\Fields\AdsInsightsFields;
-use FacebookAdsV18\Object\Values\AdsInsightsActionAttributionWindowsValues;
-use FacebookAdsV18\Object\Values\AdsInsightsActionBreakdownsValues;
-use FacebookAdsV18\Object\Values\AdsInsightsActionReportTimeValues;
-use FacebookAdsV18\Object\Values\AdsInsightsBreakdownsValues;
-use FacebookAdsV18\Object\Values\AdsInsightsDatePresetValues;
-use FacebookAdsV18\Object\Values\AdsInsightsLevelValues;
-use FacebookAdsV18\Object\Values\AdsInsightsSummaryActionBreakdownsValues;
+use FacebookAds\ApiRequest;
+use FacebookAds\Cursor;
+use FacebookAds\Http\RequestInterface;
+use FacebookAds\TypeChecker;
+use FacebookAds\Object\Fields\AdsInsightsFields;
+use FacebookAds\Object\Values\AdsInsightsActionAttributionWindowsValues;
+use FacebookAds\Object\Values\AdsInsightsActionBreakdownsValues;
+use FacebookAds\Object\Values\AdsInsightsActionReportTimeValues;
+use FacebookAds\Object\Values\AdsInsightsBreakdownsValues;
+use FacebookAds\Object\Values\AdsInsightsDatePresetValues;
+use FacebookAds\Object\Values\AdsInsightsLevelValues;
+use FacebookAds\Object\Values\AdsInsightsSummaryActionBreakdownsValues;
 
 /**
  * This class is auto-generated.

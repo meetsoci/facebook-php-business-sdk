@@ -24,15 +24,15 @@
 
 require __DIR__ . '/vendor/autoload.php';
 
-use FacebookAdsV18\Api;
-use FacebookAdsV18\Logger\CurlLogger;
-use FacebookAdsV18\Object\ServerSide\ActionSource;
-use FacebookAdsV18\Object\ServerSide\Content;
-use FacebookAdsV18\Object\ServerSide\CustomData;
-use FacebookAdsV18\Object\ServerSide\DeliveryCategory;
-use FacebookAdsV18\Object\ServerSide\Event;
-use FacebookAdsV18\Object\ServerSide\EventRequest;
-use FacebookAdsV18\Object\ServerSide\UserData;
+use FacebookAds\Api;
+use FacebookAds\Logger\CurlLogger;
+use FacebookAds\Object\ServerSide\ActionSource;
+use FacebookAds\Object\ServerSide\Content;
+use FacebookAds\Object\ServerSide\CustomData;
+use FacebookAds\Object\ServerSide\DeliveryCategory;
+use FacebookAds\Object\ServerSide\Event;
+use FacebookAds\Object\ServerSide\EventRequest;
+use FacebookAds\Object\ServerSide\UserData;
 
 $access_token = '<ACCESS_TOKEN>';
 $pixel_id = '<ADS_PIXEL_ID>';

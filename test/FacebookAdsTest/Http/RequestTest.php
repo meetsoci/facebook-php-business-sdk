@@ -24,13 +24,13 @@
 
 namespace FacebookAdsTest\Http;
 
-use FacebookAdsV18\Api;
-use FacebookAdsV18\Http\Client;
-use FacebookAdsV18\Http\Headers;
-use FacebookAdsV18\Http\Parameters;
-use FacebookAdsV18\Http\Request;
-use FacebookAdsV18\Http\ResponseInterface;
-use FacebookAdsV18\Http\Util;
+use FacebookAds\Api;
+use FacebookAds\Http\Client;
+use FacebookAds\Http\Headers;
+use FacebookAds\Http\Parameters;
+use FacebookAds\Http\Request;
+use FacebookAds\Http\ResponseInterface;
+use FacebookAds\Http\Util;
 use FacebookAdsTest\AbstractUnitTestCase;
 
 class RequestTest extends AbstractUnitTestCase {

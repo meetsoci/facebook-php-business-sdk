@@ -22,7 +22,7 @@
  *
  */
 
-namespace FacebookAdsV18\Object\ServerSide;
+namespace FacebookAds\Object\ServerSide;
 
 use GuzzleHttp\Promise\PromiseInterface;
 

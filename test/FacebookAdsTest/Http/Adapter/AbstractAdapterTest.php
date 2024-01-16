@@ -24,8 +24,8 @@
 
 namespace FacebookAdsTest\Http\Adapter;
 
-use FacebookAdsV18\Http\Adapter\AdapterInterface;
-use FacebookAdsV18\Http\Client;
+use FacebookAds\Http\Adapter\AdapterInterface;
+use FacebookAds\Http\Client;
 use FacebookAdsTest\AbstractUnitTestCase;
 
 abstract class AbstractAdapterTest extends AbstractUnitTestCase {

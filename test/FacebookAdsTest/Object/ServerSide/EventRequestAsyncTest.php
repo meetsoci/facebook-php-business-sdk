@@ -25,9 +25,9 @@
 namespace FacebookAdsTest\Object\ServerSide;
 
 use FacebookAdsTest\AbstractUnitTestCase;
-use FacebookAdsV18\Object\ServerSide\Event;
-use FacebookAdsV18\Object\ServerSide\EventRequestAsync;
-use FacebookAdsV18\Api;
+use FacebookAds\Object\ServerSide\Event;
+use FacebookAds\Object\ServerSide\EventRequestAsync;
+use FacebookAds\Api;
 
 class EventRequestAsyncTest extends AbstractUnitTestCase {
   public function testBuilder() {

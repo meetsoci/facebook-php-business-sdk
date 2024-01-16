@@ -24,8 +24,8 @@
 
 namespace FacebookAdsTest\Object;
 
-use FacebookAdsV18\Object\Project;
-use FacebookAdsV18\Object\Fields\ProjectFields;
+use FacebookAds\Object\Project;
+use FacebookAds\Object\Fields\ProjectFields;
 use FacebookAdsTest\Config\SkippableFeatureTestInterface;
 
 class ProjectTest extends AbstractCrudObjectTestCase

@@ -23,7 +23,7 @@
  */
 
 namespace FacebookAdsTest\Object\ServerSide\TestHelpers;
-use FacebookAdsV18\Object\ServerSide\HttpServiceInterface;
+use FacebookAds\Object\ServerSide\HttpServiceInterface;
 
 class FakeHttpService implements HttpServiceInterface {
   public function executeRequest($url, $method, array $curl_options, array $headers, array $params) {

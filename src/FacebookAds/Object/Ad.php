@@ -7,33 +7,33 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-namespace FacebookAdsV18\Object;
+namespace FacebookAds\Object;
 
-use FacebookAdsV18\ApiRequest;
-use FacebookAdsV18\Cursor;
-use FacebookAdsV18\Http\RequestInterface;
-use FacebookAdsV18\TypeChecker;
-use FacebookAdsV18\Object\Fields\AdFields;
-use FacebookAdsV18\Object\Values\AdBidTypeValues;
-use FacebookAdsV18\Object\Values\AdConfiguredStatusValues;
-use FacebookAdsV18\Object\Values\AdDatePresetValues;
-use FacebookAdsV18\Object\Values\AdEffectiveStatusValues;
-use FacebookAdsV18\Object\Values\AdExecutionOptionsValues;
-use FacebookAdsV18\Object\Values\AdMetaRewardAdgroupStatusValues;
-use FacebookAdsV18\Object\Values\AdOperatorValues;
-use FacebookAdsV18\Object\Values\AdPreviewAdFormatValues;
-use FacebookAdsV18\Object\Values\AdPreviewCreativeFeatureValues;
-use FacebookAdsV18\Object\Values\AdPreviewRenderTypeValues;
-use FacebookAdsV18\Object\Values\AdStatusOptionValues;
-use FacebookAdsV18\Object\Values\AdStatusValues;
-use FacebookAdsV18\Object\Values\AdsInsightsActionAttributionWindowsValues;
-use FacebookAdsV18\Object\Values\AdsInsightsActionBreakdownsValues;
-use FacebookAdsV18\Object\Values\AdsInsightsActionReportTimeValues;
-use FacebookAdsV18\Object\Values\AdsInsightsBreakdownsValues;
-use FacebookAdsV18\Object\Values\AdsInsightsDatePresetValues;
-use FacebookAdsV18\Object\Values\AdsInsightsLevelValues;
-use FacebookAdsV18\Object\Values\AdsInsightsSummaryActionBreakdownsValues;
-use FacebookAdsV18\Object\Traits\AdLabelAwareCrudObjectTrait;
+use FacebookAds\ApiRequest;
+use FacebookAds\Cursor;
+use FacebookAds\Http\RequestInterface;
+use FacebookAds\TypeChecker;
+use FacebookAds\Object\Fields\AdFields;
+use FacebookAds\Object\Values\AdBidTypeValues;
+use FacebookAds\Object\Values\AdConfiguredStatusValues;
+use FacebookAds\Object\Values\AdDatePresetValues;
+use FacebookAds\Object\Values\AdEffectiveStatusValues;
+use FacebookAds\Object\Values\AdExecutionOptionsValues;
+use FacebookAds\Object\Values\AdMetaRewardAdgroupStatusValues;
+use FacebookAds\Object\Values\AdOperatorValues;
+use FacebookAds\Object\Values\AdPreviewAdFormatValues;
+use FacebookAds\Object\Values\AdPreviewCreativeFeatureValues;
+use FacebookAds\Object\Values\AdPreviewRenderTypeValues;
+use FacebookAds\Object\Values\AdStatusOptionValues;
+use FacebookAds\Object\Values\AdStatusValues;
+use FacebookAds\Object\Values\AdsInsightsActionAttributionWindowsValues;
+use FacebookAds\Object\Values\AdsInsightsActionBreakdownsValues;
+use FacebookAds\Object\Values\AdsInsightsActionReportTimeValues;
+use FacebookAds\Object\Values\AdsInsightsBreakdownsValues;
+use FacebookAds\Object\Values\AdsInsightsDatePresetValues;
+use FacebookAds\Object\Values\AdsInsightsLevelValues;
+use FacebookAds\Object\Values\AdsInsightsSummaryActionBreakdownsValues;
+use FacebookAds\Object\Traits\AdLabelAwareCrudObjectTrait;
 
 /**
  * This class is auto-generated.

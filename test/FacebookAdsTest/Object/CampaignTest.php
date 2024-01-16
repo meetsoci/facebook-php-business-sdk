@@ -24,15 +24,15 @@
 
 namespace FacebookAdsTest\Object;
 
-use FacebookAdsV18\Object\Campaign;
-use FacebookAdsV18\Object\Fields\CampaignFields;
+use FacebookAds\Object\Campaign;
+use FacebookAds\Object\Fields\CampaignFields;
 
 class CampaignTest extends AbstractCrudObjectTestCase {
 
   public function testCrud() {
     $campaign = new Campaign(null, $this->getConfig()->accountId);
     $campaign->{CampaignFields::NAME} = $this->getConfig()->testRunId;
-    
+
     $this->assertCanCreate($campaign);
     $this->assertCanRead($campaign);
     $this->assertCanUpdate(

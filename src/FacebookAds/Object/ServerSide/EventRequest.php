@@ -22,12 +22,12 @@
  *
  */
 
-namespace FacebookAdsV18\Object\ServerSide;
+namespace FacebookAds\Object\ServerSide;
 
 use ArrayAccess;
-use FacebookAdsV18\Api;
-use FacebookAdsV18\ApiConfig;
-use FacebookAdsV18\Object\AdsPixel;
+use FacebookAds\Api;
+use FacebookAds\ApiConfig;
+use FacebookAds\Object\AdsPixel;
 
 /**
  * Conversions API Event Request
@@ -40,7 +40,7 @@ class EventRequest implements ArrayAccess {
    * @var string[]
    */
   protected static $param_types = array(
-    'events' => '\FacebookAdsV18\Object\ServerSide\Event[]',
+    'events' => '\FacebookAds\Object\ServerSide\Event[]',
     'test_event_code' => 'string',
     'partner_agent' => 'string',
     'namespace_id' => 'string',
@@ -157,7 +157,7 @@ class EventRequest implements ArrayAccess {
 
   /**
    * Sets an array of Server Event objects
-   * @param FacebookAdsV18\Object\ServerSide\Event[] $events An array of Server Event objects
+   * @param FacebookAds\Object\ServerSide\Event[] $events An array of Server Event objects
    * @return $this
    */
   public function setEvents($events) {
@@ -361,7 +361,7 @@ class EventRequest implements ArrayAccess {
 
   /**
    * Gets an array of Server Event objects
-   * @return FacebookAdsV18\Object\ServerSide\Event[]
+   * @return FacebookAds\Object\ServerSide\Event[]
    */
   public function getEvents() {
     return $this->container['events'];

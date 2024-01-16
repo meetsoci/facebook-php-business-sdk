@@ -24,12 +24,12 @@
 
 namespace FacebookAdsTest\Object;
 
-use FacebookAdsV18\Object\Fields\OutcomePredictionPointFields;
-use FacebookAdsV18\Object\Fields\TargetingFields;
-use FacebookAdsV18\Object\ReachFrequencyPrediction;
-use FacebookAdsV18\Object\Fields\ReachFrequencyPredictionFields as RF;
-use FacebookAdsV18\Object\Targeting;
-use FacebookAdsV18\Object\Values\AdAccountDeliveryEstimateOptimizationGoalValues;
+use FacebookAds\Object\Fields\OutcomePredictionPointFields;
+use FacebookAds\Object\Fields\TargetingFields;
+use FacebookAds\Object\ReachFrequencyPrediction;
+use FacebookAds\Object\Fields\ReachFrequencyPredictionFields as RF;
+use FacebookAds\Object\Targeting;
+use FacebookAds\Object\Values\AdAccountDeliveryEstimateOptimizationGoalValues;
 use FacebookAdsTest\Config\SkippableFeatureTestInterface;
 
 class ReachFrequencyPredictionTest extends AbstractCrudObjectTestCase

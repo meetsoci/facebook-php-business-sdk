@@ -22,10 +22,10 @@
  *
  */
 
-namespace FacebookAdsV18\Object\Signal;
+namespace FacebookAds\Object\Signal;
 
-use FacebookAdsV18\Object\BusinessDataAPI\Event as BusinessDataEvent;
-use FacebookAdsV18\Object\ServerSide\Event as ServerSideEvent;
+use FacebookAds\Object\BusinessDataAPI\Event as BusinessDataEvent;
+use FacebookAds\Object\ServerSide\Event as ServerSideEvent;
 
 
 class Event {
@@ -99,7 +99,7 @@ class Event {
 
   /**
    * Sets UserData object that contains user data.
-   * @param FacebookAdsV18\Object\Signal\UserData $user_data
+   * @param FacebookAds\Object\Signal\UserData $user_data
    * @return $this
    */
   public function setUserData($user_data) {
@@ -111,7 +111,7 @@ class Event {
 
   /**
    * Sets CustomData object that includes additional business data about the event.
-   * @param FacebookAdsV18\Object\Signal\CustomData $custom_data
+   * @param FacebookAds\Object\Signal\CustomData $custom_data
    * @return $this
    */
   public function setCustomData($custom_data) {

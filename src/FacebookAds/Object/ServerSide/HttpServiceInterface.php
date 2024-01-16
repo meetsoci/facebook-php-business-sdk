@@ -22,16 +22,16 @@
  *
  */
 
-namespace FacebookAdsV18\Object\ServerSide;
+namespace FacebookAds\Object\ServerSide;
 
 interface HttpServiceInterface {
   /**
    * @param string $url The graph API endpoint that will be requested
-   * @param FacebookAdsV18\Object\ServerSide\HttpMethod $method The HTTP request method
+   * @param FacebookAds\Object\ServerSide\HttpMethod $method The HTTP request method
    * @param array $curl_options Contains curl options
    * @param array $headers Contains HTTP request headers including User-Agent and Accept-Encoding
    * @param array $params Contains request parameters including access_token, data, test_event_code, etc.
-   * @return FacebookAdsV18\Object\ServerSide\EventResponse
+   * @return FacebookAds\Object\ServerSide\EventResponse
    */
   public function executeRequest($url, $method, array $curl_options, array $headers, array $params);
 }

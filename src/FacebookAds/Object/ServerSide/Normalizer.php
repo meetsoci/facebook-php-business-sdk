@@ -22,7 +22,7 @@
  *
  */
 
-namespace FacebookAdsV18\Object\ServerSide;
+namespace FacebookAds\Object\ServerSide;
 
 use InvalidArgumentException;
 
@@ -30,7 +30,7 @@ use InvalidArgumentException;
  * Normalizer Class
  *
  * @category    Class
- * @package     FacebookAdsV18\Object\ServerSide
+ * @package     FacebookAds\Object\ServerSide
  */
 class Normalizer {
   /**

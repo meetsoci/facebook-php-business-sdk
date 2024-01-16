@@ -24,7 +24,7 @@
 
 namespace FacebookAdsTest\Exception;
 
-use FacebookAdsV18\Http\Exception\RequestException;
+use FacebookAds\Http\Exception\RequestException;
 
 class PHPUnitRequestExceptionWrapper
   extends \PHPUnit_Framework_ExceptionWrapper {

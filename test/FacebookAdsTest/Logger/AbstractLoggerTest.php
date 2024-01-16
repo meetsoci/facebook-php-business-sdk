@@ -24,7 +24,7 @@
 
 namespace FacebookAdsTest\Logger;
 
-use FacebookAdsV18\Logger\LoggerInterface;
+use FacebookAds\Logger\LoggerInterface;
 use FacebookAdsTest\AbstractUnitTestCase;
 
 abstract class AbstractLoggerTest extends AbstractUnitTestCase {

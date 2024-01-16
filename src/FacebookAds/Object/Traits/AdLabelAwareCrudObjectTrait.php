@@ -7,10 +7,10 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-namespace FacebookAdsV18\Object\Traits;
+namespace FacebookAds\Object\Traits;
 
-use FacebookAdsV18\Api;
-use FacebookAdsV18\Http\RequestInterface;
+use FacebookAds\Api;
+use FacebookAds\Http\RequestInterface;
 
 /**
  * @method Api getApi()

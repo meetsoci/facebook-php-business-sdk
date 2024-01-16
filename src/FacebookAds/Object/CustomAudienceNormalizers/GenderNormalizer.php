@@ -7,10 +7,10 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-namespace FacebookAdsV18\Object\CustomAudienceNormalizers;
+namespace FacebookAds\Object\CustomAudienceNormalizers;
 
-use FacebookAdsV18\Object\Fields\CustomAudienceMultikeySchemaFields;
-use FacebookAdsV18\Object\CustomAudienceNormalizers\ValueNormalizerInterface;
+use FacebookAds\Object\Fields\CustomAudienceMultikeySchemaFields;
+use FacebookAds\Object\CustomAudienceNormalizers\ValueNormalizerInterface;
 
 class GenderNormalizer implements ValueNormalizerInterface {
 

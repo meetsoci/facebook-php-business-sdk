@@ -22,7 +22,7 @@
  *
  */
 
-namespace FacebookAdsV18\Object\BusinessDataAPI;
+namespace FacebookAds\Object\BusinessDataAPI;
 
 /**
  * UserData is a set of identifiers Facebook can use for targeted attribution.

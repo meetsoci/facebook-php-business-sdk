@@ -24,7 +24,7 @@
 
 namespace FacebookAdsTest;
 
-use FacebookAdsV18\Cursor;
+use FacebookAds\Cursor;
 
 class CursorDegradationTest extends CursorTest {
 

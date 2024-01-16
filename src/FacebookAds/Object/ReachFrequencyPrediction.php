@@ -7,16 +7,16 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-namespace FacebookAdsV18\Object;
+namespace FacebookAds\Object;
 
-use FacebookAdsV18\ApiRequest;
-use FacebookAdsV18\Cursor;
-use FacebookAdsV18\Http\RequestInterface;
-use FacebookAdsV18\TypeChecker;
-use FacebookAdsV18\Object\Fields\ReachFrequencyPredictionFields;
-use FacebookAdsV18\Object\Values\ReachFrequencyPredictionActionValues;
-use FacebookAdsV18\Object\Values\ReachFrequencyPredictionBuyingTypeValues;
-use FacebookAdsV18\Object\Values\ReachFrequencyPredictionInstreamPackagesValues;
+use FacebookAds\ApiRequest;
+use FacebookAds\Cursor;
+use FacebookAds\Http\RequestInterface;
+use FacebookAds\TypeChecker;
+use FacebookAds\Object\Fields\ReachFrequencyPredictionFields;
+use FacebookAds\Object\Values\ReachFrequencyPredictionActionValues;
+use FacebookAds\Object\Values\ReachFrequencyPredictionBuyingTypeValues;
+use FacebookAds\Object\Values\ReachFrequencyPredictionInstreamPackagesValues;
 
 /**
  * This class is auto-generated.

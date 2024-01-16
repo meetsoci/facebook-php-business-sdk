@@ -7,9 +7,9 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-namespace FacebookAdsV18\Object;
+namespace FacebookAds\Object;
 
-use FacebookAdsV18\Object\Fields\ProductAudienceFields;
+use FacebookAds\Object\Fields\ProductAudienceFields;
 
 class ProductAudience extends AbstractCrudObject {
 

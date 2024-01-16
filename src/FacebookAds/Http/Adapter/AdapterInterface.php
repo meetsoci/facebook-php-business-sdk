@@ -22,11 +22,11 @@
  *
  */
 
-namespace FacebookAdsV18\Http\Adapter;
+namespace FacebookAds\Http\Adapter;
 
-use FacebookAdsV18\Http\Client;
-use FacebookAdsV18\Http\RequestInterface;
-use FacebookAdsV18\Http\ResponseInterface;
+use FacebookAds\Http\Client;
+use FacebookAds\Http\RequestInterface;
+use FacebookAds\Http\ResponseInterface;
 
 interface AdapterInterface {
 

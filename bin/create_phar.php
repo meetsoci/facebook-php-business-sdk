@@ -89,7 +89,7 @@ Phar::mapPhar('%s');
 
 if (%d) {
   spl_autoload_register(function($class) {
-    $prefix = 'FacebookAdsV18\\';
+    $prefix = 'FacebookAds\\';
     $base_dir = 'phar://%s/src/FacebookAds/';
     $len = strlen($prefix);
     if (strncmp($prefix, $class, $len) !== 0) {

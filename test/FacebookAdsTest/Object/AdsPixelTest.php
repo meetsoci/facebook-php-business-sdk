@@ -24,12 +24,12 @@
 
 namespace FacebookAdsTest\Object;
 
-use FacebookAdsV18\Object\AbstractCrudObject;
-use FacebookAdsV18\Object\AdAccount;
-use FacebookAdsV18\Object\AdsPixel;
-use FacebookAdsV18\Object\Business;
-use FacebookAdsV18\Object\Fields\AdsPixelsFields;
-use FacebookAdsV18\Object\Values\AdsPixelStatAggregations;
+use FacebookAds\Object\AbstractCrudObject;
+use FacebookAds\Object\AdAccount;
+use FacebookAds\Object\AdsPixel;
+use FacebookAds\Object\Business;
+use FacebookAds\Object\Fields\AdsPixelsFields;
+use FacebookAds\Object\Values\AdsPixelStatAggregations;
 
 class AdsPixelTest extends AbstractCrudObjectTestCase {
 

@@ -7,10 +7,10 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-namespace FacebookAdsV18\Object;
+namespace FacebookAds\Object;
 
-use FacebookAdsV18\Object\Fields\ClickTrackingTagFields;
-use FacebookAdsV18\Http\RequestInterface;
+use FacebookAds\Object\Fields\ClickTrackingTagFields;
+use FacebookAds\Http\RequestInterface;
 
 class ClickTrackingTag extends AbstractCrudObject {
 

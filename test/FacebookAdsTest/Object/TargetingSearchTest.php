@@ -24,9 +24,9 @@
 
 namespace FacebookAdsTest\Object;
 
-use FacebookAdsV18\Object\AbstractCrudObject;
-use FacebookAdsV18\Object\TargetingSearch;
-use FacebookAdsV18\Object\Search\TargetingSearchTypes;
+use FacebookAds\Object\AbstractCrudObject;
+use FacebookAds\Object\TargetingSearch;
+use FacebookAds\Object\Search\TargetingSearchTypes;
 
 class TargetingSearchTest extends AbstractCrudObjectTestCase {
 

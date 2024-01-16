@@ -24,9 +24,9 @@
 
 namespace FacebookAdsTest\Object;
 
-use FacebookAdsV18\Object\AdAccount;
-use FacebookAdsV18\Object\AdUser;
-use FacebookAdsV18\Object\Fields\AdUserFields;
+use FacebookAds\Object\AdAccount;
+use FacebookAds\Object\AdUser;
+use FacebookAds\Object\Fields\AdUserFields;
 
 class AdUserTest extends AbstractCrudObjectTestCase {
 

@@ -24,7 +24,7 @@
 
 namespace FacebookAdsTest\Logger\CurlLogger;
 
-use FacebookAdsV18\Logger\CurlLogger\JsonAwareParameters;
+use FacebookAds\Logger\CurlLogger\JsonAwareParameters;
 use FacebookAdsTest\AbstractUnitTestCase;
 
 class JsonAwareParametersTest extends AbstractUnitTestCase {

@@ -25,7 +25,7 @@
 namespace FacebookAdsTest\Object\ServerSide;
 
 use FacebookAdsTest\AbstractUnitTestCase;
-use FacebookAdsV18\Object\ServerSide\Normalizer;
+use FacebookAds\Object\ServerSide\Normalizer;
 
 
 class ServerSideNormalizeTest extends AbstractUnitTestCase {

@@ -24,24 +24,24 @@
 
 namespace FacebookAdsTest\Object;
 
-use FacebookAdsV18\Object\Campaign;
-use FacebookAdsV18\Object\AdCreative;
-use FacebookAdsV18\Object\Ad;
-use FacebookAdsV18\Object\AdImage;
-use FacebookAdsV18\Object\AdSet;
-use FacebookAdsV18\Object\Fields\CampaignFields;
-use FacebookAdsV18\Object\Fields\AdCreativeFields;
-use FacebookAdsV18\Object\Fields\AdFields;
-use FacebookAdsV18\Object\Fields\AdImageFields;
-use FacebookAdsV18\Object\Fields\AdSetFields;
-use FacebookAdsV18\Object\Fields\ObjectStory\LinkDataFields;
-use FacebookAdsV18\Object\Fields\ObjectStorySpecFields;
-use FacebookAdsV18\Object\ObjectStory\LinkData;
-use FacebookAdsV18\Object\ObjectStorySpec;
-use FacebookAdsV18\Object\TargetingSpecs;
-use FacebookAdsV18\Object\Fields\TargetingSpecsFields;
-use FacebookAdsV18\Object\Values\BillingEvents;
-use FacebookAdsV18\Object\Values\OptimizationGoals;
+use FacebookAds\Object\Campaign;
+use FacebookAds\Object\AdCreative;
+use FacebookAds\Object\Ad;
+use FacebookAds\Object\AdImage;
+use FacebookAds\Object\AdSet;
+use FacebookAds\Object\Fields\CampaignFields;
+use FacebookAds\Object\Fields\AdCreativeFields;
+use FacebookAds\Object\Fields\AdFields;
+use FacebookAds\Object\Fields\AdImageFields;
+use FacebookAds\Object\Fields\AdSetFields;
+use FacebookAds\Object\Fields\ObjectStory\LinkDataFields;
+use FacebookAds\Object\Fields\ObjectStorySpecFields;
+use FacebookAds\Object\ObjectStory\LinkData;
+use FacebookAds\Object\ObjectStorySpec;
+use FacebookAds\Object\TargetingSpecs;
+use FacebookAds\Object\Fields\TargetingSpecsFields;
+use FacebookAds\Object\Values\BillingEvents;
+use FacebookAds\Object\Values\OptimizationGoals;
 use FacebookAdsTest\Config\SkippableFeatureTestInterface;
 
 class AdTest extends AbstractCrudObjectTestCase

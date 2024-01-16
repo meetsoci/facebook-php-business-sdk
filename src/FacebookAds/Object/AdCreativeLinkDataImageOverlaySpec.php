@@ -7,19 +7,19 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-namespace FacebookAdsV18\Object;
+namespace FacebookAds\Object;
 
-use FacebookAdsV18\ApiRequest;
-use FacebookAdsV18\Cursor;
-use FacebookAdsV18\Http\RequestInterface;
-use FacebookAdsV18\TypeChecker;
-use FacebookAdsV18\Object\Fields\AdCreativeLinkDataImageOverlaySpecFields;
-use FacebookAdsV18\Object\Values\AdCreativeLinkDataImageOverlaySpecCustomTextTypeValues;
-use FacebookAdsV18\Object\Values\AdCreativeLinkDataImageOverlaySpecOverlayTemplateValues;
-use FacebookAdsV18\Object\Values\AdCreativeLinkDataImageOverlaySpecPositionValues;
-use FacebookAdsV18\Object\Values\AdCreativeLinkDataImageOverlaySpecTextFontValues;
-use FacebookAdsV18\Object\Values\AdCreativeLinkDataImageOverlaySpecTextTypeValues;
-use FacebookAdsV18\Object\Values\AdCreativeLinkDataImageOverlaySpecThemeColorValues;
+use FacebookAds\ApiRequest;
+use FacebookAds\Cursor;
+use FacebookAds\Http\RequestInterface;
+use FacebookAds\TypeChecker;
+use FacebookAds\Object\Fields\AdCreativeLinkDataImageOverlaySpecFields;
+use FacebookAds\Object\Values\AdCreativeLinkDataImageOverlaySpecCustomTextTypeValues;
+use FacebookAds\Object\Values\AdCreativeLinkDataImageOverlaySpecOverlayTemplateValues;
+use FacebookAds\Object\Values\AdCreativeLinkDataImageOverlaySpecPositionValues;
+use FacebookAds\Object\Values\AdCreativeLinkDataImageOverlaySpecTextFontValues;
+use FacebookAds\Object\Values\AdCreativeLinkDataImageOverlaySpecTextTypeValues;
+use FacebookAds\Object\Values\AdCreativeLinkDataImageOverlaySpecThemeColorValues;
 
 /**
  * This class is auto-generated.

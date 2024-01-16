@@ -7,16 +7,16 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-namespace FacebookAdsV18\Object;
+namespace FacebookAds\Object;
 
-use FacebookAdsV18\ApiRequest;
-use FacebookAdsV18\Cursor;
-use FacebookAdsV18\Http\RequestInterface;
-use FacebookAdsV18\TypeChecker;
-use FacebookAdsV18\Object\Fields\IGMediaFields;
-use FacebookAdsV18\Object\Values\InstagramInsightsResultBreakdownValues;
-use FacebookAdsV18\Object\Values\InstagramInsightsResultMetricValues;
-use FacebookAdsV18\Object\Values\InstagramInsightsResultPeriodValues;
+use FacebookAds\ApiRequest;
+use FacebookAds\Cursor;
+use FacebookAds\Http\RequestInterface;
+use FacebookAds\TypeChecker;
+use FacebookAds\Object\Fields\IGMediaFields;
+use FacebookAds\Object\Values\InstagramInsightsResultBreakdownValues;
+use FacebookAds\Object\Values\InstagramInsightsResultMetricValues;
+use FacebookAds\Object\Values\InstagramInsightsResultPeriodValues;
 
 /**
  * This class is auto-generated.

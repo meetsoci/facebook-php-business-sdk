@@ -22,7 +22,7 @@
  *
  */
 
-namespace FacebookAdsV18\Object\BusinessDataAPI;
+namespace FacebookAds\Object\BusinessDataAPI;
 
 class Content {
   /**

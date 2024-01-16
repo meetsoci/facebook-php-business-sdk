@@ -24,7 +24,7 @@
 
 namespace FacebookAdsTest;
 
-use FacebookAdsV18\Session;
+use FacebookAds\Session;
 
 class SessionTest extends AbstractUnitTestCase {
 

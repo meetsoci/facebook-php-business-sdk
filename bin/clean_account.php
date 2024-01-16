@@ -23,11 +23,11 @@
  *
  */
 
-use FacebookAdsV18\Api;
-use FacebookAdsV18\Cursor;
-use FacebookAdsV18\Object\AbstractCrudObject;
-use FacebookAdsV18\Object\AdAccount;
-use FacebookAdsV18\Logger\CurlLogger;
+use FacebookAds\Api;
+use FacebookAds\Cursor;
+use FacebookAds\Object\AbstractCrudObject;
+use FacebookAds\Object\AdAccount;
+use FacebookAds\Logger\CurlLogger;
 use FacebookAdsTest\Bootstrap\IntegrationBootstrap;
 
 chdir(__DIR__);
@@ -82,7 +82,7 @@ $clean_edge = function($cursor_provider) use ($get_class_name, $delete_object) {
           $get_class_name($object)));
       }
 
-      $trait = 'FacebookAdsV18\Object\Traits\CannotDelete';
+      $trait = 'FacebookAds\Object\Traits\CannotDelete';
       if (in_array($trait, (new ReflectionClass($object))->getTraitNames())) {
         break;
       }
