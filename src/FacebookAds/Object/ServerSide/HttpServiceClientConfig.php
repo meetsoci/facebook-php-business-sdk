@@ -22,7 +22,7 @@
  *
  */
 
-namespace FacebookAdsV18\Object\ServerSide;
+namespace FacebookAds\Object\ServerSide;
 
 class HttpServiceClientConfig extends Singleton {
   protected $client = null;

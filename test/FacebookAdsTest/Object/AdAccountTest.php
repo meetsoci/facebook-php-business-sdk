@@ -24,17 +24,17 @@
 
 namespace FacebookAdsTest\Object;
 
-use FacebookAdsV18\Object\AdAccount;
-use FacebookAdsV18\Object\AdCreative;
-use FacebookAdsV18\Object\AdLabel;
-use FacebookAdsV18\Object\Fields\AdAccountFields;
-use FacebookAdsV18\Object\Fields\AdCreativeFields;
-use FacebookAdsV18\Object\Fields\AdLabelFields;
-use FacebookAdsV18\Object\Values\AdAccountRoles;
-use FacebookAdsV18\Object\Fields\TargetingSpecsFields;
-use FacebookAdsV18\Object\TargetingSpecs;
-use FacebookAdsV18\Object\Values\AdFormats;
-use FacebookAdsV18\Object\Values\OptimizationGoals;
+use FacebookAds\Object\AdAccount;
+use FacebookAds\Object\AdCreative;
+use FacebookAds\Object\AdLabel;
+use FacebookAds\Object\Fields\AdAccountFields;
+use FacebookAds\Object\Fields\AdCreativeFields;
+use FacebookAds\Object\Fields\AdLabelFields;
+use FacebookAds\Object\Values\AdAccountRoles;
+use FacebookAds\Object\Fields\TargetingSpecsFields;
+use FacebookAds\Object\TargetingSpecs;
+use FacebookAds\Object\Values\AdFormats;
+use FacebookAds\Object\Values\OptimizationGoals;
 
 class AdAccountTest extends AbstractCrudObjectTestCase {
 

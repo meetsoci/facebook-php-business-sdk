@@ -25,8 +25,8 @@
 namespace FacebookAdsTest\Object;
 
 use FacebookAdsTest\AbstractUnitTestCase;
-use FacebookAdsV18\Object\ServerSide\Content;
-use FacebookAdsV18\Object\ServerSide\DeliveryCategory;
+use FacebookAds\Object\ServerSide\Content;
+use FacebookAds\Object\ServerSide\DeliveryCategory;
 
 
 class ContentTest extends AbstractUnitTestCase {

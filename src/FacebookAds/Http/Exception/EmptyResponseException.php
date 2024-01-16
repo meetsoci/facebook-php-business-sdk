@@ -22,9 +22,9 @@
  *
  */
 
-namespace FacebookAdsV18\Http\Exception;
+namespace FacebookAds\Http\Exception;
 
-use FacebookAdsV18\Http\ResponseInterface;
+use FacebookAds\Http\ResponseInterface;
 
 class EmptyResponseException extends RequestException {
 

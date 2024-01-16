@@ -7,7 +7,7 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-namespace FacebookAdsV18;
+namespace FacebookAds;
 class ApiConfig {
   const APIVersion = '18.0';
   const SDKVersion = '18.0.1';

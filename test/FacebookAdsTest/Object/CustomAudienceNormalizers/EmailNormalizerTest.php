@@ -25,7 +25,7 @@
 namespace FacebookAdsTest\Object\CustomAudienceNormalizers;
 
 use FacebookAdsTest\AbstractUnitTestCase;
-use FacebookAdsV18\Object\CustomAudienceNormalizers\EmailNormalizer;
+use FacebookAds\Object\CustomAudienceNormalizers\EmailNormalizer;
 
 class EmailNormalizerTest extends AbstractUnitTestCase {
 

@@ -24,8 +24,8 @@
 
 namespace FacebookAdsTest\Object;
 
-use FacebookAdsV18\Object\AdVideo;
-use FacebookAdsV18\Object\Fields\AdVideoFields;
+use FacebookAds\Object\AdVideo;
+use FacebookAds\Object\Fields\AdVideoFields;
 use FacebookAdsTest\Config\SkippableFeatureTestInterface;
 
 class AdVideoTest extends AbstractCrudObjectTestCase

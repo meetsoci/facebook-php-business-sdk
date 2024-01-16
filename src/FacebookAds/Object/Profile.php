@@ -7,17 +7,17 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-namespace FacebookAdsV18\Object;
+namespace FacebookAds\Object;
 
-use FacebookAdsV18\ApiRequest;
-use FacebookAdsV18\Cursor;
-use FacebookAdsV18\Http\RequestInterface;
-use FacebookAdsV18\TypeChecker;
-use FacebookAdsV18\Object\Fields\ProfileFields;
-use FacebookAdsV18\Object\Values\ProfilePictureSourceBreakingChangeValues;
-use FacebookAdsV18\Object\Values\ProfilePictureSourceTypeValues;
-use FacebookAdsV18\Object\Values\ProfileProfileTypeValues;
-use FacebookAdsV18\Object\Values\ProfileTypeValues;
+use FacebookAds\ApiRequest;
+use FacebookAds\Cursor;
+use FacebookAds\Http\RequestInterface;
+use FacebookAds\TypeChecker;
+use FacebookAds\Object\Fields\ProfileFields;
+use FacebookAds\Object\Values\ProfilePictureSourceBreakingChangeValues;
+use FacebookAds\Object\Values\ProfilePictureSourceTypeValues;
+use FacebookAds\Object\Values\ProfileProfileTypeValues;
+use FacebookAds\Object\Values\ProfileTypeValues;
 
 /**
  * This class is auto-generated.

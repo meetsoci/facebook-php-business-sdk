@@ -22,11 +22,11 @@
  *
  */
 
-namespace FacebookAdsV18\Object\BusinessDataAPI;
+namespace FacebookAds\Object\BusinessDataAPI;
 
-use FacebookAdsV18\Api;
-use FacebookAdsV18\ApiConfig;
-use FacebookAdsV18\Object\Page;
+use FacebookAds\Api;
+use FacebookAds\ApiConfig;
+use FacebookAds\Object\Page;
 
 /**
  * Business Data API Event Request
@@ -53,7 +53,7 @@ class EventRequest {
 
   /**
    * Sets an array of Business Data Event objects
-   * @param FacebookAdsV18\Object\BusinessDataAPI\Event[] $events An array of Business Data Event objects
+   * @param FacebookAds\Object\BusinessDataAPI\Event[] $events An array of Business Data Event objects
    * @return $this
    */
   public function setEvents($events) {
@@ -113,7 +113,7 @@ class EventRequest {
 
   /**
    * Gets an array of Event objects
-   * @return FacebookAdsV18\Object\BusinessDataAPI\Event[]
+   * @return FacebookAds\Object\BusinessDataAPI\Event[]
    */
   public function getEvents() {
     return $this->container['events'];

@@ -22,9 +22,9 @@
  *
  */
 
-namespace FacebookAdsV18\Object\ServerSide;
+namespace FacebookAds\Object\ServerSide;
 
-use FacebookAdsV18\Enum\AbstractEnum;
+use FacebookAds\Enum\AbstractEnum;
 
 final class HttpMethod extends AbstractEnum {
   const POST = 'POST';

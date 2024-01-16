@@ -24,7 +24,7 @@
 
 namespace FacebookAdsTest\Enum;
 
-use FacebookAdsV18\Enum\EmptyEnum;
+use FacebookAds\Enum\EmptyEnum;
 use FacebookAdsTest\AbstractUnitTestCase;
 
 class EnumTest extends AbstractUnitTestCase {

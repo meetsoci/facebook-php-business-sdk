@@ -22,7 +22,7 @@
  *
  */
 
-namespace FacebookAdsV18\Http;
+namespace FacebookAds\Http;
 
 class Headers extends \ArrayObject {
 

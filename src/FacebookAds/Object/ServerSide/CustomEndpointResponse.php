@@ -22,7 +22,7 @@
  *
  */
 
-namespace FacebookAdsV18\Object\ServerSide;
+namespace FacebookAds\Object\ServerSide;
 
 /**
  * Server side response to a custom endpoint

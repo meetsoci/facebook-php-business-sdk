@@ -7,9 +7,9 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-namespace FacebookAdsV18\Object\Search;
+namespace FacebookAds\Object\Search;
 
-use FacebookAdsV18\Enum\AbstractEnum;
+use FacebookAds\Enum\AbstractEnum;
 
 /**
  * @method static DemographicSearchClasses getInstance()

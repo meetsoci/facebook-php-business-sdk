@@ -44,15 +44,15 @@ if (is_null($account_id)) {
 define('SDK_DIR', __DIR__ . '/..'); // Path to the SDK directory
 $loader = include SDK_DIR.'/vendor/autoload.php';
 
-use FacebookAdsV18\Api;
+use FacebookAds\Api;
 
 Api::init($app_id, $app_secret, $access_token);
 
 // use the namespace for Custom Audiences and Fields
-use FacebookAdsV18\Object\CustomAudience;
-use FacebookAdsV18\Object\Fields\CustomAudienceFields;
-use FacebookAdsV18\Object\Values\CustomAudienceTypes;
-use FacebookAdsV18\Object\Values\CustomAudienceSubtypes;
+use FacebookAds\Object\CustomAudience;
+use FacebookAds\Object\Fields\CustomAudienceFields;
+use FacebookAds\Object\Values\CustomAudienceTypes;
+use FacebookAds\Object\Values\CustomAudienceSubtypes;
 
 // Create a custom audience object, setting the parent to be the account id
 $audience = new CustomAudience(null, $account_id);

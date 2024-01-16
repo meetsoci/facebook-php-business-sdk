@@ -24,10 +24,10 @@
 
 namespace FacebookAdsTest;
 
-use FacebookAdsV18\Api;
-use FacebookAdsV18\Http\RequestInterface;
-use FacebookAdsV18\Http\ResponseInterface;
-use FacebookAdsV18\Logger\NullLogger;
+use FacebookAds\Api;
+use FacebookAds\Http\RequestInterface;
+use FacebookAds\Http\ResponseInterface;
+use FacebookAds\Logger\NullLogger;
 
 class ApiTest extends AbstractUnitTestCase {
 

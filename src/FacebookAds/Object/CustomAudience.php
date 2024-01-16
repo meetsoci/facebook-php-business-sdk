@@ -7,34 +7,34 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-namespace FacebookAdsV18\Object;
+namespace FacebookAds\Object;
 
-use FacebookAdsV18\ApiRequest;
-use FacebookAdsV18\Cursor;
-use FacebookAdsV18\Http\RequestInterface;
-use FacebookAdsV18\TypeChecker;
-use FacebookAdsV18\Object\Fields\CustomAudienceFields;
-use FacebookAdsV18\Object\Values\CustomAudienceActionSourceValues;
-use FacebookAdsV18\Object\Values\CustomAudienceClaimObjectiveValues;
-use FacebookAdsV18\Object\Values\CustomAudienceContentTypeValues;
-use FacebookAdsV18\Object\Values\CustomAudienceCustomerFileSourceValues;
-use FacebookAdsV18\Object\Values\CustomAudienceSubtypeValues;
-use FacebookAdsV18\Object\Values\CustomAudienceTypes;
-use FacebookAdsV18\Object\Fields\CustomAudienceMultikeySchemaFields;
-use FacebookAdsV18\Object\CustomAudienceNormalizers\EmailNormalizer;
-use FacebookAdsV18\Object\CustomAudienceNormalizers\PhoneNormalizer;
-use FacebookAdsV18\Object\CustomAudienceNormalizers\MadidNormalizer;
-use FacebookAdsV18\Object\CustomAudienceNormalizers\GenderNormalizer;
-use FacebookAdsV18\Object\CustomAudienceNormalizers\BirthYearNormalizer;
-use FacebookAdsV18\Object\CustomAudienceNormalizers\DateNormalizer;
-use FacebookAdsV18\Object\CustomAudienceNormalizers\FirstNameNormalizer;
-use FacebookAdsV18\Object\CustomAudienceNormalizers\LastNameNormalizer;
-use FacebookAdsV18\Object\CustomAudienceNormalizers\FirstNameInitialNormalizer;
-use FacebookAdsV18\Object\CustomAudienceNormalizers\StateNormalizer;
-use FacebookAdsV18\Object\CustomAudienceNormalizers\CityNormalizer;
-use FacebookAdsV18\Object\CustomAudienceNormalizers\ZipNormalizer;
-use FacebookAdsV18\Object\CustomAudienceNormalizers\CountryNormalizer;
-use FacebookAdsV18\Object\CustomAudienceNormalizers\HashNormalizer;
+use FacebookAds\ApiRequest;
+use FacebookAds\Cursor;
+use FacebookAds\Http\RequestInterface;
+use FacebookAds\TypeChecker;
+use FacebookAds\Object\Fields\CustomAudienceFields;
+use FacebookAds\Object\Values\CustomAudienceActionSourceValues;
+use FacebookAds\Object\Values\CustomAudienceClaimObjectiveValues;
+use FacebookAds\Object\Values\CustomAudienceContentTypeValues;
+use FacebookAds\Object\Values\CustomAudienceCustomerFileSourceValues;
+use FacebookAds\Object\Values\CustomAudienceSubtypeValues;
+use FacebookAds\Object\Values\CustomAudienceTypes;
+use FacebookAds\Object\Fields\CustomAudienceMultikeySchemaFields;
+use FacebookAds\Object\CustomAudienceNormalizers\EmailNormalizer;
+use FacebookAds\Object\CustomAudienceNormalizers\PhoneNormalizer;
+use FacebookAds\Object\CustomAudienceNormalizers\MadidNormalizer;
+use FacebookAds\Object\CustomAudienceNormalizers\GenderNormalizer;
+use FacebookAds\Object\CustomAudienceNormalizers\BirthYearNormalizer;
+use FacebookAds\Object\CustomAudienceNormalizers\DateNormalizer;
+use FacebookAds\Object\CustomAudienceNormalizers\FirstNameNormalizer;
+use FacebookAds\Object\CustomAudienceNormalizers\LastNameNormalizer;
+use FacebookAds\Object\CustomAudienceNormalizers\FirstNameInitialNormalizer;
+use FacebookAds\Object\CustomAudienceNormalizers\StateNormalizer;
+use FacebookAds\Object\CustomAudienceNormalizers\CityNormalizer;
+use FacebookAds\Object\CustomAudienceNormalizers\ZipNormalizer;
+use FacebookAds\Object\CustomAudienceNormalizers\CountryNormalizer;
+use FacebookAds\Object\CustomAudienceNormalizers\HashNormalizer;
 
 /**
  * This class is auto-generated.

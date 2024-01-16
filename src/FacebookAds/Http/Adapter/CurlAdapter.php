@@ -22,16 +22,16 @@
  *
  */
 
-namespace FacebookAdsV18\Http\Adapter;
+namespace FacebookAds\Http\Adapter;
 
-use FacebookAdsV18\Exception\Exception;
-use FacebookAdsV18\Http\Adapter\Curl\AbstractCurl;
-use FacebookAdsV18\Http\Adapter\Curl\Curl;
-use FacebookAdsV18\Http\Adapter\Curl\CurlInterface;
-use FacebookAdsV18\Http\Client;
-use FacebookAdsV18\Http\Headers;
-use FacebookAdsV18\Http\RequestInterface;
-use FacebookAdsV18\Http\ResponseInterface;
+use FacebookAds\Exception\Exception;
+use FacebookAds\Http\Adapter\Curl\AbstractCurl;
+use FacebookAds\Http\Adapter\Curl\Curl;
+use FacebookAds\Http\Adapter\Curl\CurlInterface;
+use FacebookAds\Http\Client;
+use FacebookAds\Http\Headers;
+use FacebookAds\Http\RequestInterface;
+use FacebookAds\Http\ResponseInterface;
 
 class CurlAdapter extends AbstractAdapter {
 

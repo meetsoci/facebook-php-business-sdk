@@ -24,9 +24,9 @@
 
 namespace FacebookAdsTest\Object;
 
-use FacebookAdsV18\Object\AbstractCrudObject;
-use FacebookAdsV18\Object\AdAccount;
-use FacebookAdsV18\Object\PartnerCategory;
+use FacebookAds\Object\AbstractCrudObject;
+use FacebookAds\Object\AdAccount;
+use FacebookAds\Object\PartnerCategory;
 use FacebookAdsTest\Config\SkippableFeatureTestInterface;
 
 class PartnerCategoryTest extends AbstractCrudObjectTestCase

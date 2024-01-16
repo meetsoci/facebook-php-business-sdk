@@ -25,8 +25,8 @@
 namespace FacebookAdsTest\Object;
 
 use FacebookAdsTest\AbstractUnitTestCase;
-use FacebookAdsV18\Object\ServerSide\UserData;
-use FacebookAdsV18\Object\ServerSide\Util;
+use FacebookAds\Object\ServerSide\UserData;
+use FacebookAds\Object\ServerSide\Util;
 use InvalidArgumentException;
 
 

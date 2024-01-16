@@ -7,10 +7,10 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-namespace FacebookAdsV18\Object;
+namespace FacebookAds\Object;
 
-use FacebookAdsV18\Object\Fields\AdCreativeObjectStorySpecFields;
-use FacebookAdsV18\Object\Traits\FieldValidation;
+use FacebookAds\Object\Fields\AdCreativeObjectStorySpecFields;
+use FacebookAds\Object\Traits\FieldValidation;
 
 /**
  * @deprecated use AdCreativeObjectStorySpec instead

@@ -24,7 +24,7 @@
 
 namespace FacebookAdsTest\Enum;
 
-use FacebookAdsV18\Enum\AbstractEnum;
+use FacebookAds\Enum\AbstractEnum;
 
 class DummyEnum extends AbstractEnum {
 

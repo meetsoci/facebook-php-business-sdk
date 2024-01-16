@@ -24,17 +24,17 @@
 
 namespace FacebookAdsTest\Http;
 
-use FacebookAdsV18\ApiConfig;
-use FacebookAdsV18\Http\Adapter\AdapterInterface;
-use FacebookAdsV18\Http\Adapter\CurlAdapter;
-use FacebookAdsV18\Http\Client;
-use FacebookAdsV18\Http\Exception\EmptyResponseException;
-use FacebookAdsV18\Http\Exception\RequestException;
-use FacebookAdsV18\Http\Headers;
-use FacebookAdsV18\Http\Request;
-use FacebookAdsV18\Http\RequestInterface;
-use FacebookAdsV18\Http\Response;
-use FacebookAdsV18\Http\ResponseInterface;
+use FacebookAds\ApiConfig;
+use FacebookAds\Http\Adapter\AdapterInterface;
+use FacebookAds\Http\Adapter\CurlAdapter;
+use FacebookAds\Http\Client;
+use FacebookAds\Http\Exception\EmptyResponseException;
+use FacebookAds\Http\Exception\RequestException;
+use FacebookAds\Http\Headers;
+use FacebookAds\Http\Request;
+use FacebookAds\Http\RequestInterface;
+use FacebookAds\Http\Response;
+use FacebookAds\Http\ResponseInterface;
 use FacebookAdsTest\AbstractUnitTestCase;
 use \PHPUnit_Framework_MockObject_Builder_InvocationMocker as Mock;
 

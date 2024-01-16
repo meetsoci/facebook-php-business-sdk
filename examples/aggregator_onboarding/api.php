@@ -22,39 +22,39 @@
  *
  */
 
-use FacebookAdsV18\Api;
-use FacebookAdsV18\Logger\CurlLogger;
-use FacebookAdsV18\Object\AbstractObject;
-use FacebookAdsV18\Object\AbstractCrudObject;
-use FacebookAdsV18\Object\AdAccount;
-use FacebookAdsV18\Object\Campaign;
-use FacebookAdsV18\Object\Fields\AdAccountFields;
-use FacebookAdsV18\Object\Fields\CampaignFields;
-use FacebookAdsV18\ApiRequest;
-use FacebookAdsV18\Http\RequestInterface;
-use FacebookAdsV18\Object\Targeting;
-use FacebookAdsV18\Object\Fields\TargetingFields;
-use FacebookAdsV18\Object\AdSet;
-use FacebookAdsV18\Object\Fields\AdSetFields;
-use FacebookAdsV18\Object\Values\AdSetBillingEventValues;
-use FacebookAdsV18\Object\Values\AdSetOptimizationGoalValues;
-use FacebookAdsV18\Object\Ad;
-use FacebookAdsV18\Object\Fields\AdFields;
-use FacebookAdsV18\Object\AdImage;
-use FacebookAdsV18\Object\Fields\AdImageFields;
-use FacebookAdsV18\Object\AdCreative;
-use FacebookAdsV18\Object\Values\AdCreativeCallToActionTypeValues;
-use FacebookAdsV18\Object\AdCreativeLinkData;
-use FacebookAdsV18\Object\Fields\AdCreativeLinkDataCallToActionValueFields;
-use FacebookAdsV18\Object\Fields\AdCreativeLinkDataFields;
-use FacebookAdsV18\Object\AdCreativeObjectStorySpec;
-use FacebookAdsV18\Object\Fields\AdCreativeObjectStorySpecFields;
-use FacebookAdsV18\Object\Fields\AdCreativeFields;
-use FacebookAdsV18\Object\Values\PageCallToActionWebDestinationTypeValues;
+use FacebookAds\Api;
+use FacebookAds\Logger\CurlLogger;
+use FacebookAds\Object\AbstractObject;
+use FacebookAds\Object\AbstractCrudObject;
+use FacebookAds\Object\AdAccount;
+use FacebookAds\Object\Campaign;
+use FacebookAds\Object\Fields\AdAccountFields;
+use FacebookAds\Object\Fields\CampaignFields;
+use FacebookAds\ApiRequest;
+use FacebookAds\Http\RequestInterface;
+use FacebookAds\Object\Targeting;
+use FacebookAds\Object\Fields\TargetingFields;
+use FacebookAds\Object\AdSet;
+use FacebookAds\Object\Fields\AdSetFields;
+use FacebookAds\Object\Values\AdSetBillingEventValues;
+use FacebookAds\Object\Values\AdSetOptimizationGoalValues;
+use FacebookAds\Object\Ad;
+use FacebookAds\Object\Fields\AdFields;
+use FacebookAds\Object\AdImage;
+use FacebookAds\Object\Fields\AdImageFields;
+use FacebookAds\Object\AdCreative;
+use FacebookAds\Object\Values\AdCreativeCallToActionTypeValues;
+use FacebookAds\Object\AdCreativeLinkData;
+use FacebookAds\Object\Fields\AdCreativeLinkDataCallToActionValueFields;
+use FacebookAds\Object\Fields\AdCreativeLinkDataFields;
+use FacebookAds\Object\AdCreativeObjectStorySpec;
+use FacebookAds\Object\Fields\AdCreativeObjectStorySpecFields;
+use FacebookAds\Object\Fields\AdCreativeFields;
+use FacebookAds\Object\Values\PageCallToActionWebDestinationTypeValues;
 
-use FacebookAdsV18\Object\Business;
-use FacebookAdsV18\Object\Fields\BusinessFields;
-use FacebookAdsV18\Object\ExtendedCredit;
+use FacebookAds\Object\Business;
+use FacebookAds\Object\Fields\BusinessFields;
+use FacebookAds\Object\ExtendedCredit;
 
 // Run with command: php -S localhost:8000
 

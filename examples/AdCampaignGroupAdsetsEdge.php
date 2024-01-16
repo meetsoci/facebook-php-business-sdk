@@ -24,10 +24,10 @@
 
 require __DIR__ . '/vendor/autoload.php';
 
-use FacebookAdsV18\Object\Campaign;
-use FacebookAdsV18\Object\AdSet;
-use FacebookAdsV18\Api;
-use FacebookAdsV18\Logger\CurlLogger;
+use FacebookAds\Object\Campaign;
+use FacebookAds\Object\AdSet;
+use FacebookAds\Api;
+use FacebookAds\Logger\CurlLogger;
 
 $access_token = '<ACCESS_TOKEN>';
 $app_secret = '<APP_SECRET>';

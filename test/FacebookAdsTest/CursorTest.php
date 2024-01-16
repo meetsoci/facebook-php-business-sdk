@@ -24,14 +24,14 @@
 
 namespace FacebookAdsTest;
 
-use FacebookAdsV18\Http\Client;
-use FacebookAdsV18\Http\Parameters;
-use FacebookAdsV18\Http\Request;
-use FacebookAdsV18\Http\RequestInterface;
-use FacebookAdsV18\Http\ResponseInterface;
-use FacebookAdsV18\Object\AbstractCrudObject;
-use FacebookAdsV18\Object\AbstractObject;
-use FacebookAdsV18\Cursor;
+use FacebookAds\Http\Client;
+use FacebookAds\Http\Parameters;
+use FacebookAds\Http\Request;
+use FacebookAds\Http\RequestInterface;
+use FacebookAds\Http\ResponseInterface;
+use FacebookAds\Object\AbstractCrudObject;
+use FacebookAds\Object\AbstractObject;
+use FacebookAds\Cursor;
 use FacebookAdsTest\Object\EmptyObject;
 use \PHPUnit_Framework_MockObject_Builder_InvocationMocker as Mock;
 

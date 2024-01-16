@@ -25,14 +25,14 @@
 namespace FacebookAdsTest\Object\ServerSide;
 
 use FacebookAdsTest\AbstractUnitTestCase;
-use FacebookAdsV18\Api;
-use FacebookAdsV18\ApiConfig;
-use FacebookAdsV18\Object\AbstractObject;
-use FacebookAdsV18\Object\ServerSide\Event;
-use FacebookAdsV18\Object\ServerSide\EventRequest;
-use FacebookAdsV18\Object\ServerSide\EventResponse;
-use FacebookAdsV18\Object\ServerSide\HttpServiceClientConfig;
-use FacebookAdsV18\Object\ServerSide\Util;
+use FacebookAds\Api;
+use FacebookAds\ApiConfig;
+use FacebookAds\Object\AbstractObject;
+use FacebookAds\Object\ServerSide\Event;
+use FacebookAds\Object\ServerSide\EventRequest;
+use FacebookAds\Object\ServerSide\EventResponse;
+use FacebookAds\Object\ServerSide\HttpServiceClientConfig;
+use FacebookAds\Object\ServerSide\Util;
 use Mockery as m;
 
 class EventRequestTest extends AbstractUnitTestCase {
@@ -112,7 +112,7 @@ class EventRequestTest extends AbstractUnitTestCase {
   }
 
   public function testDefaultHttpService() {
-    $mock_ads_pixel = m::mock('overload:FacebookAdsV18\Object\AdsPixel');
+    $mock_ads_pixel = m::mock('overload:FacebookAds\Object\AdsPixel');
     $mock_ads_pixel
       ->shouldReceive('__construct')
       ->once()

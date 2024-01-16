@@ -7,28 +7,28 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-namespace FacebookAdsV18\Object;
+namespace FacebookAds\Object;
 
-use FacebookAdsV18\ApiRequest;
-use FacebookAdsV18\Cursor;
-use FacebookAdsV18\Http\RequestInterface;
-use FacebookAdsV18\TypeChecker;
-use FacebookAdsV18\Object\Fields\ApplicationFields;
-use FacebookAdsV18\Object\Values\AdNetworkAnalyticsSyncQueryResultAggregationPeriodValues;
-use FacebookAdsV18\Object\Values\AdNetworkAnalyticsSyncQueryResultBreakdownsValues;
-use FacebookAdsV18\Object\Values\AdNetworkAnalyticsSyncQueryResultMetricsValues;
-use FacebookAdsV18\Object\Values\AdNetworkAnalyticsSyncQueryResultOrderingColumnValues;
-use FacebookAdsV18\Object\Values\AdNetworkAnalyticsSyncQueryResultOrderingTypeValues;
-use FacebookAdsV18\Object\Values\ApplicationAnPlatformsValues;
-use FacebookAdsV18\Object\Values\ApplicationLoggingSourceValues;
-use FacebookAdsV18\Object\Values\ApplicationLoggingTargetValues;
-use FacebookAdsV18\Object\Values\ApplicationMutationMethodValues;
-use FacebookAdsV18\Object\Values\ApplicationPlatformValues;
-use FacebookAdsV18\Object\Values\ApplicationPostMethodValues;
-use FacebookAdsV18\Object\Values\ApplicationRequestTypeValues;
-use FacebookAdsV18\Object\Values\ApplicationSupportedPlatformsValues;
-use FacebookAdsV18\Object\Values\DACheckConnectionMethodValues;
-use FacebookAdsV18\Object\Values\EventTypeValues;
+use FacebookAds\ApiRequest;
+use FacebookAds\Cursor;
+use FacebookAds\Http\RequestInterface;
+use FacebookAds\TypeChecker;
+use FacebookAds\Object\Fields\ApplicationFields;
+use FacebookAds\Object\Values\AdNetworkAnalyticsSyncQueryResultAggregationPeriodValues;
+use FacebookAds\Object\Values\AdNetworkAnalyticsSyncQueryResultBreakdownsValues;
+use FacebookAds\Object\Values\AdNetworkAnalyticsSyncQueryResultMetricsValues;
+use FacebookAds\Object\Values\AdNetworkAnalyticsSyncQueryResultOrderingColumnValues;
+use FacebookAds\Object\Values\AdNetworkAnalyticsSyncQueryResultOrderingTypeValues;
+use FacebookAds\Object\Values\ApplicationAnPlatformsValues;
+use FacebookAds\Object\Values\ApplicationLoggingSourceValues;
+use FacebookAds\Object\Values\ApplicationLoggingTargetValues;
+use FacebookAds\Object\Values\ApplicationMutationMethodValues;
+use FacebookAds\Object\Values\ApplicationPlatformValues;
+use FacebookAds\Object\Values\ApplicationPostMethodValues;
+use FacebookAds\Object\Values\ApplicationRequestTypeValues;
+use FacebookAds\Object\Values\ApplicationSupportedPlatformsValues;
+use FacebookAds\Object\Values\DACheckConnectionMethodValues;
+use FacebookAds\Object\Values\EventTypeValues;
 
 /**
  * This class is auto-generated.

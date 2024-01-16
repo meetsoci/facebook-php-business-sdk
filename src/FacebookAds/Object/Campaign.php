@@ -7,38 +7,38 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-namespace FacebookAdsV18\Object;
+namespace FacebookAds\Object;
 
-use FacebookAdsV18\ApiRequest;
-use FacebookAdsV18\Cursor;
-use FacebookAdsV18\Http\RequestInterface;
-use FacebookAdsV18\TypeChecker;
-use FacebookAdsV18\Object\Fields\CampaignFields;
-use FacebookAdsV18\Object\Values\AdDatePresetValues;
-use FacebookAdsV18\Object\Values\AdSetDatePresetValues;
-use FacebookAdsV18\Object\Values\AdSetEffectiveStatusValues;
-use FacebookAdsV18\Object\Values\AdsInsightsActionAttributionWindowsValues;
-use FacebookAdsV18\Object\Values\AdsInsightsActionBreakdownsValues;
-use FacebookAdsV18\Object\Values\AdsInsightsActionReportTimeValues;
-use FacebookAdsV18\Object\Values\AdsInsightsBreakdownsValues;
-use FacebookAdsV18\Object\Values\AdsInsightsDatePresetValues;
-use FacebookAdsV18\Object\Values\AdsInsightsLevelValues;
-use FacebookAdsV18\Object\Values\AdsInsightsSummaryActionBreakdownsValues;
-use FacebookAdsV18\Object\Values\CampaignBidStrategyValues;
-use FacebookAdsV18\Object\Values\CampaignConfiguredStatusValues;
-use FacebookAdsV18\Object\Values\CampaignDatePresetValues;
-use FacebookAdsV18\Object\Values\CampaignEffectiveStatusValues;
-use FacebookAdsV18\Object\Values\CampaignExecutionOptionsValues;
-use FacebookAdsV18\Object\Values\CampaignObjectiveValues;
-use FacebookAdsV18\Object\Values\CampaignOperatorValues;
-use FacebookAdsV18\Object\Values\CampaignSmartPromotionTypeValues;
-use FacebookAdsV18\Object\Values\CampaignSpecialAdCategoriesValues;
-use FacebookAdsV18\Object\Values\CampaignSpecialAdCategoryCountryValues;
-use FacebookAdsV18\Object\Values\CampaignSpecialAdCategoryValues;
-use FacebookAdsV18\Object\Values\CampaignStatusOptionValues;
-use FacebookAdsV18\Object\Values\CampaignStatusValues;
-use FacebookAdsV18\Object\Traits\AdLabelAwareCrudObjectTrait;
-use FacebookAdsV18\Object\Traits\ObjectValidation;
+use FacebookAds\ApiRequest;
+use FacebookAds\Cursor;
+use FacebookAds\Http\RequestInterface;
+use FacebookAds\TypeChecker;
+use FacebookAds\Object\Fields\CampaignFields;
+use FacebookAds\Object\Values\AdDatePresetValues;
+use FacebookAds\Object\Values\AdSetDatePresetValues;
+use FacebookAds\Object\Values\AdSetEffectiveStatusValues;
+use FacebookAds\Object\Values\AdsInsightsActionAttributionWindowsValues;
+use FacebookAds\Object\Values\AdsInsightsActionBreakdownsValues;
+use FacebookAds\Object\Values\AdsInsightsActionReportTimeValues;
+use FacebookAds\Object\Values\AdsInsightsBreakdownsValues;
+use FacebookAds\Object\Values\AdsInsightsDatePresetValues;
+use FacebookAds\Object\Values\AdsInsightsLevelValues;
+use FacebookAds\Object\Values\AdsInsightsSummaryActionBreakdownsValues;
+use FacebookAds\Object\Values\CampaignBidStrategyValues;
+use FacebookAds\Object\Values\CampaignConfiguredStatusValues;
+use FacebookAds\Object\Values\CampaignDatePresetValues;
+use FacebookAds\Object\Values\CampaignEffectiveStatusValues;
+use FacebookAds\Object\Values\CampaignExecutionOptionsValues;
+use FacebookAds\Object\Values\CampaignObjectiveValues;
+use FacebookAds\Object\Values\CampaignOperatorValues;
+use FacebookAds\Object\Values\CampaignSmartPromotionTypeValues;
+use FacebookAds\Object\Values\CampaignSpecialAdCategoriesValues;
+use FacebookAds\Object\Values\CampaignSpecialAdCategoryCountryValues;
+use FacebookAds\Object\Values\CampaignSpecialAdCategoryValues;
+use FacebookAds\Object\Values\CampaignStatusOptionValues;
+use FacebookAds\Object\Values\CampaignStatusValues;
+use FacebookAds\Object\Traits\AdLabelAwareCrudObjectTrait;
+use FacebookAds\Object\Traits\ObjectValidation;
 
 /**
  * This class is auto-generated.

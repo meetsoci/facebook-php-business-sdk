@@ -22,7 +22,7 @@
  *
  */
 
-namespace FacebookAdsV18\Exception;
+namespace FacebookAds\Exception;
 
 class Exception extends \Exception {
 

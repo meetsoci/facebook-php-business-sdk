@@ -22,7 +22,7 @@
  *
  */
 
-namespace FacebookAdsV18\Enum;
+namespace FacebookAds\Enum;
 
 abstract class AbstractEnum implements EnumInstanceInterface {
 

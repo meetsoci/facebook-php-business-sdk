@@ -7,29 +7,29 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-namespace FacebookAdsV18\Object;
+namespace FacebookAds\Object;
 
-use FacebookAdsV18\ApiRequest;
-use FacebookAdsV18\Cursor;
-use FacebookAdsV18\Http\RequestInterface;
-use FacebookAdsV18\TypeChecker;
-use FacebookAdsV18\Object\Fields\PostFields;
-use FacebookAdsV18\Object\Values\CommentCommentPrivacyValueValues;
-use FacebookAdsV18\Object\Values\CommentFilterValues;
-use FacebookAdsV18\Object\Values\CommentLiveFilterValues;
-use FacebookAdsV18\Object\Values\CommentOrderValues;
-use FacebookAdsV18\Object\Values\InsightsResultDatePresetValues;
-use FacebookAdsV18\Object\Values\InsightsResultPeriodValues;
-use FacebookAdsV18\Object\Values\PostBackdatedTimeGranularityValues;
-use FacebookAdsV18\Object\Values\PostFeedStoryVisibilityValues;
-use FacebookAdsV18\Object\Values\PostFormattingValues;
-use FacebookAdsV18\Object\Values\PostPlaceAttachmentSettingValues;
-use FacebookAdsV18\Object\Values\PostPostSurfacesBlacklistValues;
-use FacebookAdsV18\Object\Values\PostPostingToRedspaceValues;
-use FacebookAdsV18\Object\Values\PostTargetSurfaceValues;
-use FacebookAdsV18\Object\Values\PostTimelineVisibilityValues;
-use FacebookAdsV18\Object\Values\PostUnpublishedContentTypeValues;
-use FacebookAdsV18\Object\Values\ProfileTypeValues;
+use FacebookAds\ApiRequest;
+use FacebookAds\Cursor;
+use FacebookAds\Http\RequestInterface;
+use FacebookAds\TypeChecker;
+use FacebookAds\Object\Fields\PostFields;
+use FacebookAds\Object\Values\CommentCommentPrivacyValueValues;
+use FacebookAds\Object\Values\CommentFilterValues;
+use FacebookAds\Object\Values\CommentLiveFilterValues;
+use FacebookAds\Object\Values\CommentOrderValues;
+use FacebookAds\Object\Values\InsightsResultDatePresetValues;
+use FacebookAds\Object\Values\InsightsResultPeriodValues;
+use FacebookAds\Object\Values\PostBackdatedTimeGranularityValues;
+use FacebookAds\Object\Values\PostFeedStoryVisibilityValues;
+use FacebookAds\Object\Values\PostFormattingValues;
+use FacebookAds\Object\Values\PostPlaceAttachmentSettingValues;
+use FacebookAds\Object\Values\PostPostSurfacesBlacklistValues;
+use FacebookAds\Object\Values\PostPostingToRedspaceValues;
+use FacebookAds\Object\Values\PostTargetSurfaceValues;
+use FacebookAds\Object\Values\PostTimelineVisibilityValues;
+use FacebookAds\Object\Values\PostUnpublishedContentTypeValues;
+use FacebookAds\Object\Values\ProfileTypeValues;
 
 /**
  * This class is auto-generated.

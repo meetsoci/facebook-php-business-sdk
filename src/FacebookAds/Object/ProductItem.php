@@ -7,28 +7,28 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-namespace FacebookAdsV18\Object;
+namespace FacebookAds\Object;
 
-use FacebookAdsV18\ApiRequest;
-use FacebookAdsV18\Cursor;
-use FacebookAdsV18\Http\RequestInterface;
-use FacebookAdsV18\TypeChecker;
-use FacebookAdsV18\Object\Fields\ProductItemFields;
-use FacebookAdsV18\Object\Values\ProductItemAgeGroupValues;
-use FacebookAdsV18\Object\Values\ProductItemAvailabilityValues;
-use FacebookAdsV18\Object\Values\ProductItemCommerceTaxCategoryValues;
-use FacebookAdsV18\Object\Values\ProductItemConditionValues;
-use FacebookAdsV18\Object\Values\ProductItemErrorPriorityValues;
-use FacebookAdsV18\Object\Values\ProductItemErrorTypeValues;
-use FacebookAdsV18\Object\Values\ProductItemGenderValues;
-use FacebookAdsV18\Object\Values\ProductItemImageFetchStatusValues;
-use FacebookAdsV18\Object\Values\ProductItemMarkedForProductLaunchValues;
-use FacebookAdsV18\Object\Values\ProductItemOriginCountryValues;
-use FacebookAdsV18\Object\Values\ProductItemReviewStatusValues;
-use FacebookAdsV18\Object\Values\ProductItemShippingWeightUnitValues;
-use FacebookAdsV18\Object\Values\ProductItemVideoFetchStatusValues;
-use FacebookAdsV18\Object\Values\ProductItemVisibilityValues;
-use FacebookAdsV18\Object\Values\ProductItemWaComplianceCategoryValues;
+use FacebookAds\ApiRequest;
+use FacebookAds\Cursor;
+use FacebookAds\Http\RequestInterface;
+use FacebookAds\TypeChecker;
+use FacebookAds\Object\Fields\ProductItemFields;
+use FacebookAds\Object\Values\ProductItemAgeGroupValues;
+use FacebookAds\Object\Values\ProductItemAvailabilityValues;
+use FacebookAds\Object\Values\ProductItemCommerceTaxCategoryValues;
+use FacebookAds\Object\Values\ProductItemConditionValues;
+use FacebookAds\Object\Values\ProductItemErrorPriorityValues;
+use FacebookAds\Object\Values\ProductItemErrorTypeValues;
+use FacebookAds\Object\Values\ProductItemGenderValues;
+use FacebookAds\Object\Values\ProductItemImageFetchStatusValues;
+use FacebookAds\Object\Values\ProductItemMarkedForProductLaunchValues;
+use FacebookAds\Object\Values\ProductItemOriginCountryValues;
+use FacebookAds\Object\Values\ProductItemReviewStatusValues;
+use FacebookAds\Object\Values\ProductItemShippingWeightUnitValues;
+use FacebookAds\Object\Values\ProductItemVideoFetchStatusValues;
+use FacebookAds\Object\Values\ProductItemVisibilityValues;
+use FacebookAds\Object\Values\ProductItemWaComplianceCategoryValues;
 
 /**
  * This class is auto-generated.

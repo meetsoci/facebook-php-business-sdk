@@ -24,9 +24,9 @@
 
 namespace FacebookAdsTest\Object;
 
-use FacebookAdsV18\Object\Fields\LeadgenFormFields;
-use FacebookAdsV18\Object\LeadgenForm;
-use FacebookAdsV18\Object\Page;
+use FacebookAds\Object\Fields\LeadgenFormFields;
+use FacebookAds\Object\LeadgenForm;
+use FacebookAds\Object\Page;
 
 class LeadgenFormTest extends AbstractCrudObjectTestCase {
 

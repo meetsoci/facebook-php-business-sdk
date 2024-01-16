@@ -24,8 +24,8 @@
 
 namespace FacebookAdsTest\Http\Exception;
 
-use FacebookAdsV18\Http\Exception\RequestException;
-use FacebookAdsV18\Http\Response;
+use FacebookAds\Http\Exception\RequestException;
+use FacebookAds\Http\Response;
 use FacebookAdsTest\AbstractUnitTestCase;
 
 class RequestExceptionTest extends AbstractUnitTestCase {
@@ -117,7 +117,7 @@ class RequestExceptionTest extends AbstractUnitTestCase {
     $response->setBody(json_encode(array('error' => $data)));
     $response->setStatusCode(400);
     $e = RequestException::create($response);
-    $fqn = '\FacebookAdsV18\Http\Exception\\'.$expected_class;
+    $fqn = '\FacebookAds\Http\Exception\\'.$expected_class;
     $this->assertTrue(is_a($e, $fqn));
   }
 }

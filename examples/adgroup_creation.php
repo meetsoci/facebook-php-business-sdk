@@ -44,8 +44,8 @@ if (is_null($account_id)) {
     'You must set your account id before executing');
 }
 
-use FacebookAdsV18\Api;
-use FacebookAdsV18\Logger\CurlLogger;
+use FacebookAds\Api;
+use FacebookAds\Logger\CurlLogger;
 
 Api::init($app_id, $app_secret, $access_token);
 $api = Api::instance();
@@ -54,8 +54,8 @@ $api->setLogger(new CurlLogger());
 /**
  * Step 1 Read the AdAccount (optional)
  */
-use FacebookAdsV18\Object\AdAccount;
-use FacebookAdsV18\Object\Fields\AdAccountFields;
+use FacebookAds\Object\AdAccount;
+use FacebookAds\Object\Fields\AdAccountFields;
 
 
 $account = (new AdAccount($account_id))->read(array(
@@ -76,9 +76,9 @@ if($account->{AdAccountFields::ACCOUNT_STATUS} !== 1) {
 /**
  * Step 2 Create the Campaign
  */
-use FacebookAdsV18\Object\Campaign;
-use FacebookAdsV18\Object\Fields\CampaignFields;
-use FacebookAdsV18\Object\Values\CampaignObjectiveValues;
+use FacebookAds\Object\Campaign;
+use FacebookAds\Object\Fields\CampaignFields;
+use FacebookAds\Object\Values\CampaignObjectiveValues;
 
 $campaign = $account->createCampaign(
   $fields = array(),
@@ -95,10 +95,10 @@ echo "Campaign ID:" . $campaign->id . "\n";
 /**
  * Step 3 Search Targeting
  */
-use FacebookAdsV18\Object\TargetingSearch;
-use FacebookAdsV18\Object\Search\TargetingSearchTypes;
-use FacebookAdsV18\Object\Targeting;
-use FacebookAdsV18\Object\Fields\TargetingFields;
+use FacebookAds\Object\TargetingSearch;
+use FacebookAds\Object\Search\TargetingSearchTypes;
+use FacebookAds\Object\Targeting;
+use FacebookAds\Object\Fields\TargetingFields;
 
 $results = TargetingSearch::search(
   $type = TargetingSearchTypes::INTEREST,
@@ -123,11 +123,11 @@ $targeting->{TargetingFields::INTERESTS} = array(
 /**
  * Step 4 Create the AdSet
  */
-use FacebookAdsV18\Object\AdSet;
-use FacebookAdsV18\Object\Fields\AdSetFields;
-use FacebookAdsV18\Object\Values\AdSetOptimizationGoalValues;
-use FacebookAdsV18\Object\Values\AdSetBillingEventValues;
-use FacebookAdsV18\Object\Values\AdSetStatusValues;
+use FacebookAds\Object\AdSet;
+use FacebookAds\Object\Fields\AdSetFields;
+use FacebookAds\Object\Values\AdSetOptimizationGoalValues;
+use FacebookAds\Object\Values\AdSetBillingEventValues;
+use FacebookAds\Object\Values\AdSetStatusValues;
 
 $adset = $account->createAdSet(
   $fields = array(),
@@ -153,8 +153,8 @@ echo 'AdSet  ID: '. $adset->id . "\n";
 /**
  * Step 5 Create an AdImage
  */
-use FacebookAdsV18\Object\AdImage;
-use FacebookAdsV18\Object\Fields\AdImageFields;
+use FacebookAds\Object\AdImage;
+use FacebookAds\Object\Fields\AdImageFields;
 
 $image = $account->createAdImage(
   array(),
@@ -167,8 +167,8 @@ echo 'Image Hash: '.$image->hash . "\n";
 /**
  * Step 6 Create an AdCreative
  */
-use FacebookAdsV18\Object\AdCreative;
-use FacebookAdsV18\Object\Fields\AdCreativeFields;
+use FacebookAds\Object\AdCreative;
+use FacebookAds\Object\Fields\AdCreativeFields;
 
 $creative = $account->createAdCreative(
   array(),
@@ -186,8 +186,8 @@ echo 'Creative ID: '.$creative->id . "\n";
 /**
  * Step 7 Create an Ad
  */
-use FacebookAdsV18\Object\Ad;
-use FacebookAdsV18\Object\Fields\AdFields;
+use FacebookAds\Object\Ad;
+use FacebookAds\Object\Fields\AdFields;
 
 $account->createAd(
   array(),

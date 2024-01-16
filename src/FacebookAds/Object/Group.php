@@ -7,43 +7,43 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-namespace FacebookAdsV18\Object;
+namespace FacebookAds\Object;
 
-use FacebookAdsV18\ApiRequest;
-use FacebookAdsV18\Cursor;
-use FacebookAdsV18\Http\RequestInterface;
-use FacebookAdsV18\TypeChecker;
-use FacebookAdsV18\Object\Fields\GroupFields;
-use FacebookAdsV18\Object\Values\AdVideoContainerTypeValues;
-use FacebookAdsV18\Object\Values\AdVideoContentCategoryValues;
-use FacebookAdsV18\Object\Values\AdVideoFormattingValues;
-use FacebookAdsV18\Object\Values\AdVideoOriginalProjectionTypeValues;
-use FacebookAdsV18\Object\Values\AdVideoSwapModeValues;
-use FacebookAdsV18\Object\Values\AdVideoTypeValues;
-use FacebookAdsV18\Object\Values\AdVideoUnpublishedContentTypeValues;
-use FacebookAdsV18\Object\Values\AdVideoUploadPhaseValues;
-use FacebookAdsV18\Object\Values\GroupGroupTypeValues;
-use FacebookAdsV18\Object\Values\GroupJoinSettingValues;
-use FacebookAdsV18\Object\Values\GroupPostPermissionsValues;
-use FacebookAdsV18\Object\Values\GroupPurposeValues;
-use FacebookAdsV18\Object\Values\LiveVideoBroadcastStatusValues;
-use FacebookAdsV18\Object\Values\LiveVideoProjectionValues;
-use FacebookAdsV18\Object\Values\LiveVideoSourceValues;
-use FacebookAdsV18\Object\Values\LiveVideoSpatialAudioFormatValues;
-use FacebookAdsV18\Object\Values\LiveVideoStatusValues;
-use FacebookAdsV18\Object\Values\LiveVideoStereoscopicModeValues;
-use FacebookAdsV18\Object\Values\LiveVideoStreamTypeValues;
-use FacebookAdsV18\Object\Values\PhotoBackdatedTimeGranularityValues;
-use FacebookAdsV18\Object\Values\PhotoUnpublishedContentTypeValues;
-use FacebookAdsV18\Object\Values\PostBackdatedTimeGranularityValues;
-use FacebookAdsV18\Object\Values\PostFormattingValues;
-use FacebookAdsV18\Object\Values\PostPlaceAttachmentSettingValues;
-use FacebookAdsV18\Object\Values\PostPostSurfacesBlacklistValues;
-use FacebookAdsV18\Object\Values\PostPostingToRedspaceValues;
-use FacebookAdsV18\Object\Values\PostTargetSurfaceValues;
-use FacebookAdsV18\Object\Values\PostUnpublishedContentTypeValues;
-use FacebookAdsV18\Object\Values\ProfilePictureSourceBreakingChangeValues;
-use FacebookAdsV18\Object\Values\ProfilePictureSourceTypeValues;
+use FacebookAds\ApiRequest;
+use FacebookAds\Cursor;
+use FacebookAds\Http\RequestInterface;
+use FacebookAds\TypeChecker;
+use FacebookAds\Object\Fields\GroupFields;
+use FacebookAds\Object\Values\AdVideoContainerTypeValues;
+use FacebookAds\Object\Values\AdVideoContentCategoryValues;
+use FacebookAds\Object\Values\AdVideoFormattingValues;
+use FacebookAds\Object\Values\AdVideoOriginalProjectionTypeValues;
+use FacebookAds\Object\Values\AdVideoSwapModeValues;
+use FacebookAds\Object\Values\AdVideoTypeValues;
+use FacebookAds\Object\Values\AdVideoUnpublishedContentTypeValues;
+use FacebookAds\Object\Values\AdVideoUploadPhaseValues;
+use FacebookAds\Object\Values\GroupGroupTypeValues;
+use FacebookAds\Object\Values\GroupJoinSettingValues;
+use FacebookAds\Object\Values\GroupPostPermissionsValues;
+use FacebookAds\Object\Values\GroupPurposeValues;
+use FacebookAds\Object\Values\LiveVideoBroadcastStatusValues;
+use FacebookAds\Object\Values\LiveVideoProjectionValues;
+use FacebookAds\Object\Values\LiveVideoSourceValues;
+use FacebookAds\Object\Values\LiveVideoSpatialAudioFormatValues;
+use FacebookAds\Object\Values\LiveVideoStatusValues;
+use FacebookAds\Object\Values\LiveVideoStereoscopicModeValues;
+use FacebookAds\Object\Values\LiveVideoStreamTypeValues;
+use FacebookAds\Object\Values\PhotoBackdatedTimeGranularityValues;
+use FacebookAds\Object\Values\PhotoUnpublishedContentTypeValues;
+use FacebookAds\Object\Values\PostBackdatedTimeGranularityValues;
+use FacebookAds\Object\Values\PostFormattingValues;
+use FacebookAds\Object\Values\PostPlaceAttachmentSettingValues;
+use FacebookAds\Object\Values\PostPostSurfacesBlacklistValues;
+use FacebookAds\Object\Values\PostPostingToRedspaceValues;
+use FacebookAds\Object\Values\PostTargetSurfaceValues;
+use FacebookAds\Object\Values\PostUnpublishedContentTypeValues;
+use FacebookAds\Object\Values\ProfilePictureSourceBreakingChangeValues;
+use FacebookAds\Object\Values\ProfilePictureSourceTypeValues;
 
 /**
  * This class is auto-generated.

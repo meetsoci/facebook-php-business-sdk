@@ -24,7 +24,7 @@
 
 namespace FacebookAdsTest\Logger\CurlLogger;
 
-use FacebookAdsV18\Logger\CurlLogger\JsonNode;
+use FacebookAds\Logger\CurlLogger\JsonNode;
 use FacebookAdsTest\AbstractUnitTestCase;
 
 class JsonNodeTest extends AbstractUnitTestCase {

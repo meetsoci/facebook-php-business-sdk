@@ -24,7 +24,7 @@
 
 namespace FacebookAdsTest\Logger;
 
-use FacebookAdsV18\Logger\NullLogger;
+use FacebookAds\Logger\NullLogger;
 
 class NullLoggerTest extends AbstractLoggerTest {
 

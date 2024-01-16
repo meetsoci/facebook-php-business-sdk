@@ -7,23 +7,23 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-namespace FacebookAdsV18\Object;
+namespace FacebookAds\Object;
 
-use FacebookAdsV18\ApiRequest;
-use FacebookAdsV18\Cursor;
-use FacebookAdsV18\Http\RequestInterface;
-use FacebookAdsV18\TypeChecker;
-use FacebookAdsV18\Object\Fields\VehicleFields;
-use FacebookAdsV18\Object\Values\VehicleAvailabilityValues;
-use FacebookAdsV18\Object\Values\VehicleBodyStyleValues;
-use FacebookAdsV18\Object\Values\VehicleConditionValues;
-use FacebookAdsV18\Object\Values\VehicleDrivetrainValues;
-use FacebookAdsV18\Object\Values\VehicleFuelTypeValues;
-use FacebookAdsV18\Object\Values\VehicleImageFetchStatusValues;
-use FacebookAdsV18\Object\Values\VehicleStateOfVehicleValues;
-use FacebookAdsV18\Object\Values\VehicleTransmissionValues;
-use FacebookAdsV18\Object\Values\VehicleVehicleTypeValues;
-use FacebookAdsV18\Object\Values\VehicleVisibilityValues;
+use FacebookAds\ApiRequest;
+use FacebookAds\Cursor;
+use FacebookAds\Http\RequestInterface;
+use FacebookAds\TypeChecker;
+use FacebookAds\Object\Fields\VehicleFields;
+use FacebookAds\Object\Values\VehicleAvailabilityValues;
+use FacebookAds\Object\Values\VehicleBodyStyleValues;
+use FacebookAds\Object\Values\VehicleConditionValues;
+use FacebookAds\Object\Values\VehicleDrivetrainValues;
+use FacebookAds\Object\Values\VehicleFuelTypeValues;
+use FacebookAds\Object\Values\VehicleImageFetchStatusValues;
+use FacebookAds\Object\Values\VehicleStateOfVehicleValues;
+use FacebookAds\Object\Values\VehicleTransmissionValues;
+use FacebookAds\Object\Values\VehicleVehicleTypeValues;
+use FacebookAds\Object\Values\VehicleVisibilityValues;
 
 /**
  * This class is auto-generated.

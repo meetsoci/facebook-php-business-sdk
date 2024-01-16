@@ -22,11 +22,11 @@
  *
  */
 
-namespace FacebookAdsV18\Object\ServerSide;
+namespace FacebookAds\Object\ServerSide;
 
-use FacebookAdsV18\Api;
-use FacebookAdsV18\ApiConfig;
-use FacebookAdsV18\Http\Client;
+use FacebookAds\Api;
+use FacebookAds\ApiConfig;
+use FacebookAds\Http\Client;
 use GuzzleHttp\Promise\Promise;
 use GuzzleHttp\Promise\Utils;
 use GuzzleHttp\Psr7\Request;

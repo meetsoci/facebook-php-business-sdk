@@ -7,20 +7,20 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-namespace FacebookAdsV18\Object;
+namespace FacebookAds\Object;
 
-use FacebookAdsV18\ApiRequest;
-use FacebookAdsV18\Cursor;
-use FacebookAdsV18\Http\RequestInterface;
-use FacebookAdsV18\TypeChecker;
-use FacebookAdsV18\Object\Fields\AdAccountTargetingUnifiedFields;
-use FacebookAdsV18\Object\Values\AdAccountTargetingUnifiedAppStoreValues;
-use FacebookAdsV18\Object\Values\AdAccountTargetingUnifiedLimitTypeValues;
-use FacebookAdsV18\Object\Values\AdAccountTargetingUnifiedModeValues;
-use FacebookAdsV18\Object\Values\AdAccountTargetingUnifiedObjectiveValues;
-use FacebookAdsV18\Object\Values\AdAccountTargetingUnifiedRegulatedCategoriesValues;
-use FacebookAdsV18\Object\Values\AdAccountTargetingUnifiedRegulatedCountriesValues;
-use FacebookAdsV18\Object\Values\AdAccountTargetingUnifiedWhitelistedTypesValues;
+use FacebookAds\ApiRequest;
+use FacebookAds\Cursor;
+use FacebookAds\Http\RequestInterface;
+use FacebookAds\TypeChecker;
+use FacebookAds\Object\Fields\AdAccountTargetingUnifiedFields;
+use FacebookAds\Object\Values\AdAccountTargetingUnifiedAppStoreValues;
+use FacebookAds\Object\Values\AdAccountTargetingUnifiedLimitTypeValues;
+use FacebookAds\Object\Values\AdAccountTargetingUnifiedModeValues;
+use FacebookAds\Object\Values\AdAccountTargetingUnifiedObjectiveValues;
+use FacebookAds\Object\Values\AdAccountTargetingUnifiedRegulatedCategoriesValues;
+use FacebookAds\Object\Values\AdAccountTargetingUnifiedRegulatedCountriesValues;
+use FacebookAds\Object\Values\AdAccountTargetingUnifiedWhitelistedTypesValues;
 
 /**
  * This class is auto-generated.

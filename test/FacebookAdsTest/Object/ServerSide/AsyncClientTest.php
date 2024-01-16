@@ -25,8 +25,8 @@
 namespace FacebookAdsTest\Object\ServerSide;
 
 use FacebookAdsTest\AbstractUnitTestCase;
-use FacebookAdsV18\Object\ServerSide\AsyncClient;
-use FacebookAdsV18\Api;
+use FacebookAds\Object\ServerSide\AsyncClient;
+use FacebookAds\Api;
 
 use GuzzleHttp\HandlerStack;
 use GuzzleHttp\Handler\CurlHandler;

@@ -7,9 +7,9 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-namespace FacebookAdsV18\Object\Fields;
+namespace FacebookAds\Object\Fields;
 
-use FacebookAdsV18\Enum\AbstractEnum;
+use FacebookAds\Enum\AbstractEnum;
 
 /**
  * This class is auto-generated.

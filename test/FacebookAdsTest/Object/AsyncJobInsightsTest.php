@@ -24,11 +24,11 @@
 
  namespace FacebookAdsTest\Object;
 
- use FacebookAdsV18\Object\AdAccount;
- use FacebookAdsV18\Object\Fields\AdAccountFields;
- use FacebookAdsV18\Object\AdReportRun;
- use FacebookAdsV18\Object\Fields\AdsInsightsFields;
- use FacebookAdsV18\Api;
+ use FacebookAds\Object\AdAccount;
+ use FacebookAds\Object\Fields\AdAccountFields;
+ use FacebookAds\Object\AdReportRun;
+ use FacebookAds\Object\Fields\AdsInsightsFields;
+ use FacebookAds\Api;
 
  class AsyncJobInsightsTest extends AbstractAsyncJobTestCase {
 

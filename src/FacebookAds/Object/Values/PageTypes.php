@@ -7,9 +7,9 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-namespace FacebookAdsV18\Object\Values;
+namespace FacebookAds\Object\Values;
 
-use FacebookAdsV18\Enum\AbstractEnum;
+use FacebookAds\Enum\AbstractEnum;
 
 /**
  * @deprecated page_types are read-only in v2.7 and to be removed in v2.8

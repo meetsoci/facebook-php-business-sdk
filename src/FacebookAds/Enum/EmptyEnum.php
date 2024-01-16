@@ -22,7 +22,7 @@
  *
  */
 
-namespace FacebookAdsV18\Enum;
+namespace FacebookAds\Enum;
 
 class EmptyEnum extends AbstractEnum {
 

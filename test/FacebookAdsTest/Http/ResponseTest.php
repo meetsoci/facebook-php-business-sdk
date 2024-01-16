@@ -24,9 +24,9 @@
 
 namespace FacebookAdsTest\Http;
 
-use FacebookAdsV18\Http\Headers;
-use FacebookAdsV18\Http\RequestInterface;
-use FacebookAdsV18\Http\Response;
+use FacebookAds\Http\Headers;
+use FacebookAds\Http\RequestInterface;
+use FacebookAds\Http\Response;
 use FacebookAdsTest\AbstractUnitTestCase;
 
 class ResponseTest extends AbstractUnitTestCase {

@@ -22,10 +22,10 @@
  *
  */
 
-namespace FacebookAdsV18\Object\Signal;
+namespace FacebookAds\Object\Signal;
 
-use FacebookAdsV18\Object\BusinessDataAPI\Content as BusinessDataContent;
-use FacebookAdsV18\Object\ServerSide\Content as ServerSideContent;
+use FacebookAds\Object\BusinessDataAPI\Content as BusinessDataContent;
+use FacebookAds\Object\ServerSide\Content as ServerSideContent;
 
 class Content {
   /**

@@ -7,32 +7,32 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-namespace FacebookAdsV18\Object;
+namespace FacebookAds\Object;
 
-use FacebookAdsV18\ApiRequest;
-use FacebookAdsV18\Cursor;
-use FacebookAdsV18\Http\RequestInterface;
-use FacebookAdsV18\TypeChecker;
-use FacebookAdsV18\Object\Fields\AdVideoFields;
-use FacebookAdsV18\Object\Values\AdVideoBackdatedTimeGranularityValues;
-use FacebookAdsV18\Object\Values\AdVideoContainerTypeValues;
-use FacebookAdsV18\Object\Values\AdVideoContentCategoryValues;
-use FacebookAdsV18\Object\Values\AdVideoFormattingValues;
-use FacebookAdsV18\Object\Values\AdVideoOriginalProjectionTypeValues;
-use FacebookAdsV18\Object\Values\AdVideoSwapModeValues;
-use FacebookAdsV18\Object\Values\AdVideoTypeValues;
-use FacebookAdsV18\Object\Values\AdVideoUnpublishedContentTypeValues;
-use FacebookAdsV18\Object\Values\AdVideoUploadPhaseValues;
-use FacebookAdsV18\Object\Values\AdVideoValidationAdPlacementsValues;
-use FacebookAdsV18\Object\Values\AdVideoVideoStateValues;
-use FacebookAdsV18\Object\Values\CommentCommentPrivacyValueValues;
-use FacebookAdsV18\Object\Values\CommentFilterValues;
-use FacebookAdsV18\Object\Values\CommentLiveFilterValues;
-use FacebookAdsV18\Object\Values\CommentOrderValues;
-use FacebookAdsV18\Object\Values\InsightsResultPeriodValues;
-use FacebookAdsV18\Object\Traits\CannotDelete;
-use FacebookAdsV18\Object\Traits\CannotUpdate;
-use FacebookAdsV18\Object\Traits\FieldValidation;
+use FacebookAds\ApiRequest;
+use FacebookAds\Cursor;
+use FacebookAds\Http\RequestInterface;
+use FacebookAds\TypeChecker;
+use FacebookAds\Object\Fields\AdVideoFields;
+use FacebookAds\Object\Values\AdVideoBackdatedTimeGranularityValues;
+use FacebookAds\Object\Values\AdVideoContainerTypeValues;
+use FacebookAds\Object\Values\AdVideoContentCategoryValues;
+use FacebookAds\Object\Values\AdVideoFormattingValues;
+use FacebookAds\Object\Values\AdVideoOriginalProjectionTypeValues;
+use FacebookAds\Object\Values\AdVideoSwapModeValues;
+use FacebookAds\Object\Values\AdVideoTypeValues;
+use FacebookAds\Object\Values\AdVideoUnpublishedContentTypeValues;
+use FacebookAds\Object\Values\AdVideoUploadPhaseValues;
+use FacebookAds\Object\Values\AdVideoValidationAdPlacementsValues;
+use FacebookAds\Object\Values\AdVideoVideoStateValues;
+use FacebookAds\Object\Values\CommentCommentPrivacyValueValues;
+use FacebookAds\Object\Values\CommentFilterValues;
+use FacebookAds\Object\Values\CommentLiveFilterValues;
+use FacebookAds\Object\Values\CommentOrderValues;
+use FacebookAds\Object\Values\InsightsResultPeriodValues;
+use FacebookAds\Object\Traits\CannotDelete;
+use FacebookAds\Object\Traits\CannotUpdate;
+use FacebookAds\Object\Traits\FieldValidation;
 
 /**
  * This class is auto-generated.

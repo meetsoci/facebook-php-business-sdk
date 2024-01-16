@@ -22,13 +22,13 @@
  *
  */
 
-namespace FacebookAdsV18\Http;
+namespace FacebookAds\Http;
 
-use FacebookAdsV18\ApiConfig;
-use FacebookAdsV18\Http\Adapter\AdapterInterface;
-use FacebookAdsV18\Http\Adapter\CurlAdapter;
-use FacebookAdsV18\Http\Exception\EmptyResponseException;
-use FacebookAdsV18\Http\Exception\RequestException;
+use FacebookAds\ApiConfig;
+use FacebookAds\Http\Adapter\AdapterInterface;
+use FacebookAds\Http\Adapter\CurlAdapter;
+use FacebookAds\Http\Exception\EmptyResponseException;
+use FacebookAds\Http\Exception\RequestException;
 
 class Client {
 

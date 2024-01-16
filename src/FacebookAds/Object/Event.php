@@ -7,23 +7,23 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-namespace FacebookAdsV18\Object;
+namespace FacebookAds\Object;
 
-use FacebookAdsV18\ApiRequest;
-use FacebookAdsV18\Cursor;
-use FacebookAdsV18\Http\RequestInterface;
-use FacebookAdsV18\TypeChecker;
-use FacebookAdsV18\Object\Fields\EventFields;
-use FacebookAdsV18\Object\Values\EventCategoryValues;
-use FacebookAdsV18\Object\Values\EventEventStateFilterValues;
-use FacebookAdsV18\Object\Values\EventOnlineEventFormatValues;
-use FacebookAdsV18\Object\Values\EventTimeFilterValues;
-use FacebookAdsV18\Object\Values\EventTypeValues;
-use FacebookAdsV18\Object\Values\LiveVideoProjectionValues;
-use FacebookAdsV18\Object\Values\LiveVideoSpatialAudioFormatValues;
-use FacebookAdsV18\Object\Values\LiveVideoStatusValues;
-use FacebookAdsV18\Object\Values\LiveVideoStereoscopicModeValues;
-use FacebookAdsV18\Object\Values\LiveVideoStreamTypeValues;
+use FacebookAds\ApiRequest;
+use FacebookAds\Cursor;
+use FacebookAds\Http\RequestInterface;
+use FacebookAds\TypeChecker;
+use FacebookAds\Object\Fields\EventFields;
+use FacebookAds\Object\Values\EventCategoryValues;
+use FacebookAds\Object\Values\EventEventStateFilterValues;
+use FacebookAds\Object\Values\EventOnlineEventFormatValues;
+use FacebookAds\Object\Values\EventTimeFilterValues;
+use FacebookAds\Object\Values\EventTypeValues;
+use FacebookAds\Object\Values\LiveVideoProjectionValues;
+use FacebookAds\Object\Values\LiveVideoSpatialAudioFormatValues;
+use FacebookAds\Object\Values\LiveVideoStatusValues;
+use FacebookAds\Object\Values\LiveVideoStereoscopicModeValues;
+use FacebookAds\Object\Values\LiveVideoStreamTypeValues;
 
 /**
  * This class is auto-generated.

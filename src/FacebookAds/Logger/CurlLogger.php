@@ -22,13 +22,13 @@
  *
  */
 
-namespace FacebookAdsV18\Logger;
+namespace FacebookAds\Logger;
 
-use FacebookAdsV18\Http\FileParameter;
-use FacebookAdsV18\Http\Parameters;
-use FacebookAdsV18\Http\RequestInterface;
-use FacebookAdsV18\Http\ResponseInterface;
-use FacebookAdsV18\Logger\CurlLogger\JsonAwareParameters;
+use FacebookAds\Http\FileParameter;
+use FacebookAds\Http\Parameters;
+use FacebookAds\Http\RequestInterface;
+use FacebookAds\Http\ResponseInterface;
+use FacebookAds\Logger\CurlLogger\JsonAwareParameters;
 
 class CurlLogger implements LoggerInterface {
 

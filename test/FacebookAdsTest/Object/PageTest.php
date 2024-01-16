@@ -24,7 +24,7 @@
 
 namespace FacebookAdsTest\Object;
 
-use FacebookAdsV18\Object\Page;
+use FacebookAds\Object\Page;
 
 class PageTest extends AbstractCrudObjectTestCase {
 

@@ -7,16 +7,16 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-namespace FacebookAdsV18\Object;
+namespace FacebookAds\Object;
 
-use FacebookAdsV18\ApiRequest;
-use FacebookAdsV18\Cursor;
-use FacebookAdsV18\Http\RequestInterface;
-use FacebookAdsV18\TypeChecker;
-use FacebookAdsV18\Object\Fields\AdRuleFields;
-use FacebookAdsV18\Object\Values\AdRuleHistoryActionValues;
-use FacebookAdsV18\Object\Values\AdRuleStatusValues;
-use FacebookAdsV18\Object\Values\AdRuleUiCreationSourceValues;
+use FacebookAds\ApiRequest;
+use FacebookAds\Cursor;
+use FacebookAds\Http\RequestInterface;
+use FacebookAds\TypeChecker;
+use FacebookAds\Object\Fields\AdRuleFields;
+use FacebookAds\Object\Values\AdRuleHistoryActionValues;
+use FacebookAds\Object\Values\AdRuleStatusValues;
+use FacebookAds\Object\Values\AdRuleUiCreationSourceValues;
 
 /**
  * This class is auto-generated.

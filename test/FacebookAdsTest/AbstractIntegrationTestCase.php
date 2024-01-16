@@ -24,14 +24,14 @@
 
 namespace FacebookAdsTest;
 
-use FacebookAdsV18\Api;
-use FacebookAdsV18\Http\Adapter\CurlAdapter;
-use FacebookAdsV18\Http\Client;
-use FacebookAdsV18\Http\Exception\RequestException;
-use FacebookAdsV18\Logger\CurlLogger;
-use FacebookAdsV18\Logger\LoggerInterface;
-use FacebookAdsV18\Logger\NullLogger;
-use FacebookAdsV18\Session;
+use FacebookAds\Api;
+use FacebookAds\Http\Adapter\CurlAdapter;
+use FacebookAds\Http\Client;
+use FacebookAds\Http\Exception\RequestException;
+use FacebookAds\Logger\CurlLogger;
+use FacebookAds\Logger\LoggerInterface;
+use FacebookAds\Logger\NullLogger;
+use FacebookAds\Session;
 use FacebookAdsTest\Exception\PHPUnitRequestExceptionWrapper;
 
 /**

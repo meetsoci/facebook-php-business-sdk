@@ -7,22 +7,22 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-namespace FacebookAdsV18\Object;
+namespace FacebookAds\Object;
 
-use FacebookAdsV18\ApiRequest;
-use FacebookAdsV18\Cursor;
-use FacebookAdsV18\Http\RequestInterface;
-use FacebookAdsV18\TypeChecker;
-use FacebookAdsV18\Object\Fields\AdsPixelFields;
-use FacebookAdsV18\Object\Values\AdsPixelAutomaticMatchingFieldsValues;
-use FacebookAdsV18\Object\Values\AdsPixelDataUseSettingValues;
-use FacebookAdsV18\Object\Values\AdsPixelFirstPartyCookieStatusValues;
-use FacebookAdsV18\Object\Values\AdsPixelSortByValues;
-use FacebookAdsV18\Object\Values\AdsPixelStatsResultAggregationValues;
-use FacebookAdsV18\Object\Values\AdsPixelTasksValues;
-use FacebookAdsV18\Object\Values\DACheckConnectionMethodValues;
-use FacebookAdsV18\Object\Values\OfflineConversionDataSetUploadOrderValues;
-use FacebookAdsV18\Object\Values\OfflineConversionDataSetUploadSortByValues;
+use FacebookAds\ApiRequest;
+use FacebookAds\Cursor;
+use FacebookAds\Http\RequestInterface;
+use FacebookAds\TypeChecker;
+use FacebookAds\Object\Fields\AdsPixelFields;
+use FacebookAds\Object\Values\AdsPixelAutomaticMatchingFieldsValues;
+use FacebookAds\Object\Values\AdsPixelDataUseSettingValues;
+use FacebookAds\Object\Values\AdsPixelFirstPartyCookieStatusValues;
+use FacebookAds\Object\Values\AdsPixelSortByValues;
+use FacebookAds\Object\Values\AdsPixelStatsResultAggregationValues;
+use FacebookAds\Object\Values\AdsPixelTasksValues;
+use FacebookAds\Object\Values\DACheckConnectionMethodValues;
+use FacebookAds\Object\Values\OfflineConversionDataSetUploadOrderValues;
+use FacebookAds\Object\Values\OfflineConversionDataSetUploadSortByValues;
 
 /**
  * This class is auto-generated.
