@@ -28,8 +28,10 @@ class WhatsAppBusinessAccountFields extends AbstractEnum {
   const COUNTRY = 'country';
   const CREATION_TIME = 'creation_time';
   const CURRENCY = 'currency';
+  const HEALTH_STATUS = 'health_status';
   const ID = 'id';
   const IS_ENABLED_FOR_INSIGHTS = 'is_enabled_for_insights';
+  const LINKED_COMMERCE_ACCOUNT = 'linked_commerce_account';
   const MESSAGE_TEMPLATE_NAMESPACE = 'message_template_namespace';
   const NAME = 'name';
   const ON_BEHALF_OF_BUSINESS_INFO = 'on_behalf_of_business_info';
@@ -49,8 +51,10 @@ class WhatsAppBusinessAccountFields extends AbstractEnum {
       'country' => 'string',
       'creation_time' => 'int',
       'currency' => 'string',
+      'health_status' => 'WhatsAppBusinessHealthStatusForMessageSend',
       'id' => 'string',
       'is_enabled_for_insights' => 'bool',
+      'linked_commerce_account' => 'CommerceMerchantSettings',
       'message_template_namespace' => 'string',
       'name' => 'string',
       'on_behalf_of_business_info' => 'Object',

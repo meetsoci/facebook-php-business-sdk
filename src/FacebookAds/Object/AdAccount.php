@@ -23,6 +23,7 @@ use FacebookAds\Object\Values\AdAccountContentTypeValues;
 use FacebookAds\Object\Values\AdAccountCurrencyValues;
 use FacebookAds\Object\Values\AdAccountDeliveryEstimateOptimizationGoalValues;
 use FacebookAds\Object\Values\AdAccountMatchedSearchApplicationsEdgeDataAppStoreValues;
+use FacebookAds\Object\Values\AdAccountPermittedTasksValues;
 use FacebookAds\Object\Values\AdAccountSubtypeValues;
 use FacebookAds\Object\Values\AdAccountTargetingUnifiedAppStoreValues;
 use FacebookAds\Object\Values\AdAccountTargetingUnifiedLimitTypeValues;
@@ -43,7 +44,6 @@ use FacebookAds\Object\Values\AdCreativeDynamicAdVoiceValues;
 use FacebookAds\Object\Values\AdCreativeOperatorValues;
 use FacebookAds\Object\Values\AdDatePresetValues;
 use FacebookAds\Object\Values\AdExecutionOptionsValues;
-use FacebookAds\Object\Values\AdMetaRewardAdgroupStatusValues;
 use FacebookAds\Object\Values\AdOperatorValues;
 use FacebookAds\Object\Values\AdPlacePageSetLocationTypesValues;
 use FacebookAds\Object\Values\AdPlacePageSetTargetedAreaTypeValues;
@@ -131,6 +131,7 @@ class AdAccount extends AbstractCrudObject {
   protected static function getReferencedEnums() {
     $ref_enums = array();
     $ref_enums['Currency'] = AdAccountCurrencyValues::getInstance()->getValues();
+    $ref_enums['PermittedTasks'] = AdAccountPermittedTasksValues::getInstance()->getValues();
     $ref_enums['Tasks'] = AdAccountTasksValues::getInstance()->getValues();
     $ref_enums['ClaimObjective'] = AdAccountClaimObjectiveValues::getInstance()->getValues();
     $ref_enums['ContentType'] = AdAccountContentTypeValues::getInstance()->getValues();
@@ -813,7 +814,6 @@ class AdAccount extends AbstractCrudObject {
       'engagement_audience' => 'bool',
       'execution_options' => 'list<execution_options_enum>',
       'include_demolink_hashes' => 'bool',
-      'meta_reward_adgroup_status' => 'meta_reward_adgroup_status_enum',
       'name' => 'string',
       'priority' => 'unsigned int',
       'source_ad_id' => 'string',
@@ -822,7 +822,6 @@ class AdAccount extends AbstractCrudObject {
     );
     $enums = array(
       'execution_options_enum' => AdExecutionOptionsValues::getInstance()->getValues(),
-      'meta_reward_adgroup_status_enum' => AdMetaRewardAdgroupStatusValues::getInstance()->getValues(),
       'status_enum' => AdStatusValues::getInstance()->getValues(),
     );
 
@@ -836,103 +835,6 @@ class AdAccount extends AbstractCrudObject {
       Ad::getFieldsEnum()->getValues(),
       new TypeChecker($param_types, $enums),
       true
-    );
-    $request->addParams($params);
-    $request->addFields($fields);
-    return $pending ? $request : $request->execute();
-  }
-
-  public function createAdsConversionGoal(array $fields = array(), array $params = array(), $pending = false) {
-    $this->assureId();
-
-    $param_types = array(
-      'conversion_event_value_source' => 'conversion_event_value_source_enum',
-      'description' => 'string',
-      'goal_creation_method' => 'goal_creation_method_enum',
-      'goal_name' => 'string',
-      'performance_goal' => 'performance_goal_enum',
-      'single_channel_conversion_events' => 'list<map>',
-      'value_adjustment_rule' => 'map',
-    );
-    $enums = array(
-      'conversion_event_value_source_enum' => array(
-        'DATA_SOURCE',
-        'VALUE_RULE',
-      ),
-      'goal_creation_method_enum' => array(
-        'ADVERTISER_CREATED_UI',
-        'AUTO_MIGRATION',
-        'L2_ENHANCE_API_MIGRATION',
-      ),
-      'performance_goal_enum' => array(
-        'AD_OPTIMIZATION_GOAL_AD_RECALL_LIFT',
-        'AD_OPTIMIZATION_GOAL_APP_DOWNLOADS',
-        'AD_OPTIMIZATION_GOAL_APP_INSTALLS',
-        'AD_OPTIMIZATION_GOAL_APP_INSTALLS_AND_OFFSITE_CONVERSIONS',
-        'AD_OPTIMIZATION_GOAL_BRAND_AWARENESS',
-        'AD_OPTIMIZATION_GOAL_CLICKS',
-        'AD_OPTIMIZATION_GOAL_COMPLETED_VIDEO_VIEWS',
-        'AD_OPTIMIZATION_GOAL_CONVERSATIONS',
-        'AD_OPTIMIZATION_GOAL_DERIVED_EVENTS',
-        'AD_OPTIMIZATION_GOAL_DWELLS',
-        'AD_OPTIMIZATION_GOAL_ENGAGED_REACH',
-        'AD_OPTIMIZATION_GOAL_ENGAGED_USERS',
-        'AD_OPTIMIZATION_GOAL_EVENT_RESPONSES',
-        'AD_OPTIMIZATION_GOAL_EXTERNAL',
-        'AD_OPTIMIZATION_GOAL_IMPRESSIONS',
-        'AD_OPTIMIZATION_GOAL_INCREMENTAL_OFFSITE_CONVERSIONS',
-        'AD_OPTIMIZATION_GOAL_IN_APP_VALUE',
-        'AD_OPTIMIZATION_GOAL_JOB_APPLICATIONS',
-        'AD_OPTIMIZATION_GOAL_LANDING_PAGE_VIEWS',
-        'AD_OPTIMIZATION_GOAL_LEAD_GENERATION',
-        'AD_OPTIMIZATION_GOAL_MEDIA_DOWNLOADS',
-        'AD_OPTIMIZATION_GOAL_MESSAGING_APPOINTMENT_CONVERSION',
-        'AD_OPTIMIZATION_GOAL_MESSAGING_DEEP_CONVERSATION_AND_FOLLOW',
-        'AD_OPTIMIZATION_GOAL_MESSAGING_DEEP_CONVERSATION_AND_REPLY',
-        'AD_OPTIMIZATION_GOAL_MESSAGING_PURCHASE_CONVERSION',
-        'AD_OPTIMIZATION_GOAL_MID_FUNNEL_EVENT',
-        'AD_OPTIMIZATION_GOAL_MRC_VIDEO_VIEWS',
-        'AD_OPTIMIZATION_GOAL_MULTI_CONVERSIONS',
-        'AD_OPTIMIZATION_GOAL_NONE',
-        'AD_OPTIMIZATION_GOAL_OFFER_CLAIMS',
-        'AD_OPTIMIZATION_GOAL_OFFLINE_CONVERSIONS',
-        'AD_OPTIMIZATION_GOAL_OFFSITE_CLICKS',
-        'AD_OPTIMIZATION_GOAL_OFFSITE_CONVERSIONS',
-        'AD_OPTIMIZATION_GOAL_ONSITE_CONVERSIONS',
-        'AD_OPTIMIZATION_GOAL_PAGE_ENGAGEMENT',
-        'AD_OPTIMIZATION_GOAL_PAGE_FOLLOWS',
-        'AD_OPTIMIZATION_GOAL_PAGE_LIKES',
-        'AD_OPTIMIZATION_GOAL_POST_ENGAGEMENT',
-        'AD_OPTIMIZATION_GOAL_QUALITY_CALL',
-        'AD_OPTIMIZATION_GOAL_QUALITY_LEAD',
-        'AD_OPTIMIZATION_GOAL_REACH',
-        'AD_OPTIMIZATION_GOAL_REMINDERS_SET',
-        'AD_OPTIMIZATION_GOAL_REPLIES',
-        'AD_OPTIMIZATION_GOAL_RESEARCH_POLL_RESPONSES',
-        'AD_OPTIMIZATION_GOAL_RETENTION',
-        'AD_OPTIMIZATION_GOAL_RETURN_ON_AD_SPEND',
-        'AD_OPTIMIZATION_GOAL_SOCIAL_IMPRESSIONS',
-        'AD_OPTIMIZATION_GOAL_STORE_VISITS',
-        'AD_OPTIMIZATION_GOAL_SUBSCRIBERS',
-        'AD_OPTIMIZATION_GOAL_TICKET_PURCHASE',
-        'AD_OPTIMIZATION_GOAL_VALUE',
-        'AD_OPTIMIZATION_GOAL_VIDEO_LONG_VIEWS',
-        'AD_OPTIMIZATION_GOAL_VIDEO_VIEWS',
-        'AD_OPTIMIZATION_GOAL_VIDEO_VIEWS_15S',
-        'AD_OPTIMIZATION_GOAL_VISIT_INSTAGRAM_PROFILE',
-        'AD_OPTIMIZATION_GOAL_VISIT_INSTAGRAM_PROFILE_AND_PROFILE_ACTIONS',
-      ),
-    );
-
-    $request = new ApiRequest(
-      $this->api,
-      $this->data['id'],
-      RequestInterface::METHOD_POST,
-      '/ads_conversion_goal',
-      new AbstractCrudObject(),
-      'EDGE',
-      array(),
-      new TypeChecker($param_types, $enums)
     );
     $request->addParams($params);
     $request->addFields($fields);
@@ -1341,7 +1243,6 @@ class AdAccount extends AbstractCrudObject {
       'fun_fact_toastee_id' => 'unsigned int',
       'guide' => 'list<list<unsigned int>>',
       'guide_enabled' => 'bool',
-      'has_nickname' => 'bool',
       'holiday_card' => 'string',
       'initial_heading' => 'unsigned int',
       'initial_pitch' => 'unsigned int',
@@ -1474,6 +1375,32 @@ class AdAccount extends AbstractCrudObject {
       new Business(),
       'EDGE',
       Business::getFieldsEnum()->getValues(),
+      new TypeChecker($param_types, $enums)
+    );
+    $request->addParams($params);
+    $request->addFields($fields);
+    return $pending ? $request : $request->execute();
+  }
+
+  public function createAgency(array $fields = array(), array $params = array(), $pending = false) {
+    $this->assureId();
+
+    $param_types = array(
+      'business' => 'string',
+      'permitted_tasks' => 'list<permitted_tasks_enum>',
+    );
+    $enums = array(
+      'permitted_tasks_enum' => AdAccountPermittedTasksValues::getInstance()->getValues(),
+    );
+
+    $request = new ApiRequest(
+      $this->api,
+      $this->data['id'],
+      RequestInterface::METHOD_POST,
+      '/agencies',
+      new AdAccount(),
+      'EDGE',
+      AdAccount::getFieldsEnum()->getValues(),
       new TypeChecker($param_types, $enums)
     );
     $request->addParams($params);
@@ -1675,6 +1602,29 @@ class AdAccount extends AbstractCrudObject {
       new AdAsyncRequestSet(),
       'EDGE',
       AdAsyncRequestSet::getFieldsEnum()->getValues(),
+      new TypeChecker($param_types, $enums)
+    );
+    $request->addParams($params);
+    $request->addFields($fields);
+    return $pending ? $request : $request->execute();
+  }
+
+  public function getAudienceFunnel(array $fields = array(), array $params = array(), $pending = false) {
+    $this->assureId();
+
+    $param_types = array(
+    );
+    $enums = array(
+    );
+
+    $request = new ApiRequest(
+      $this->api,
+      $this->data['id'],
+      RequestInterface::METHOD_GET,
+      '/audience_funnel',
+      new AbstractCrudObject(),
+      'EDGE',
+      array(),
       new TypeChecker($param_types, $enums)
     );
     $request->addParams($params);
@@ -1915,6 +1865,30 @@ class AdAccount extends AbstractCrudObject {
     return $pending ? $request : $request->execute();
   }
 
+  public function getConnectedInstagramAccountsWithIabp(array $fields = array(), array $params = array(), $pending = false) {
+    $this->assureId();
+
+    $param_types = array(
+      'business_id' => 'string',
+    );
+    $enums = array(
+    );
+
+    $request = new ApiRequest(
+      $this->api,
+      $this->data['id'],
+      RequestInterface::METHOD_GET,
+      '/connected_instagram_accounts_with_iabp',
+      new InstagramUser(),
+      'EDGE',
+      InstagramUser::getFieldsEnum()->getValues(),
+      new TypeChecker($param_types, $enums)
+    );
+    $request->addParams($params);
+    $request->addFields($fields);
+    return $pending ? $request : $request->execute();
+  }
+
   public function getConversionGoals(array $fields = array(), array $params = array(), $pending = false) {
     $this->assureId();
 
@@ -1928,6 +1902,29 @@ class AdAccount extends AbstractCrudObject {
       $this->data['id'],
       RequestInterface::METHOD_GET,
       '/conversion_goals',
+      new AbstractCrudObject(),
+      'EDGE',
+      array(),
+      new TypeChecker($param_types, $enums)
+    );
+    $request->addParams($params);
+    $request->addFields($fields);
+    return $pending ? $request : $request->execute();
+  }
+
+  public function getCpaGuidance(array $fields = array(), array $params = array(), $pending = false) {
+    $this->assureId();
+
+    $param_types = array(
+    );
+    $enums = array(
+    );
+
+    $request = new ApiRequest(
+      $this->api,
+      $this->data['id'],
+      RequestInterface::METHOD_GET,
+      '/cpa_guidance',
       new AbstractCrudObject(),
       'EDGE',
       array(),
@@ -2004,6 +2001,7 @@ class AdAccount extends AbstractCrudObject {
       'subtype' => 'subtype_enum',
       'use_in_campaigns' => 'bool',
       'video_group_ids' => 'list<string>',
+      'whats_app_business_phone_number_id' => 'string',
     );
     $enums = array(
       'claim_objective_enum' => CustomAudienceClaimObjectiveValues::getInstance()->getValues(),
@@ -2973,6 +2971,8 @@ class AdAccount extends AbstractCrudObject {
       'allow_only_fat_head_interests' => 'bool',
       'app_store' => 'app_store_enum',
       'countries' => 'list<string>',
+      'is_account_level_brand_safety_exclusion' => 'bool',
+      'is_account_level_employer_exclusion' => 'bool',
       'is_exclusion' => 'bool',
       'limit_type' => 'limit_type_enum',
       'objective' => 'objective_enum',
@@ -3189,6 +3189,29 @@ class AdAccount extends AbstractCrudObject {
       $this->data['id'],
       RequestInterface::METHOD_DELETE,
       '/usersofanyaudience',
+      new AbstractCrudObject(),
+      'EDGE',
+      array(),
+      new TypeChecker($param_types, $enums)
+    );
+    $request->addParams($params);
+    $request->addFields($fields);
+    return $pending ? $request : $request->execute();
+  }
+
+  public function getValueAdjustmentRuleCollections(array $fields = array(), array $params = array(), $pending = false) {
+    $this->assureId();
+
+    $param_types = array(
+    );
+    $enums = array(
+    );
+
+    $request = new ApiRequest(
+      $this->api,
+      $this->data['id'],
+      RequestInterface::METHOD_GET,
+      '/value_adjustment_rule_collections',
       new AbstractCrudObject(),
       'EDGE',
       array(),

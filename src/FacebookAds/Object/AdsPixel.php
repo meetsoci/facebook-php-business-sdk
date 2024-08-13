@@ -107,6 +107,30 @@ class AdsPixel extends AbstractCrudObject {
     return $pending ? $request : $request->execute();
   }
 
+  public function createAhpConfig(array $fields = array(), array $params = array(), $pending = false) {
+    $this->assureId();
+
+    $param_types = array(
+      'applink_autosetup' => 'bool',
+    );
+    $enums = array(
+    );
+
+    $request = new ApiRequest(
+      $this->api,
+      $this->data['id'],
+      RequestInterface::METHOD_POST,
+      '/ahp_configs',
+      new AbstractCrudObject(),
+      'EDGE',
+      array(),
+      new TypeChecker($param_types, $enums)
+    );
+    $request->addParams($params);
+    $request->addFields($fields);
+    return $pending ? $request : $request->execute();
+  }
+
   public function getAssignedUsers(array $fields = array(), array $params = array(), $pending = false) {
     $this->assureId();
 
@@ -191,6 +215,7 @@ class AdsPixel extends AbstractCrudObject {
       'namespace_id' => 'string',
       'partner_agent' => 'string',
       'platforms' => 'list<map>',
+      'progress' => 'Object',
       'test_event_code' => 'string',
       'trace' => 'unsigned int',
       'upload_id' => 'string',
@@ -205,29 +230,6 @@ class AdsPixel extends AbstractCrudObject {
       $this->data['id'],
       RequestInterface::METHOD_POST,
       '/events',
-      new AbstractCrudObject(),
-      'EDGE',
-      array(),
-      new TypeChecker($param_types, $enums)
-    );
-    $request->addParams($params);
-    $request->addFields($fields);
-    return $pending ? $request : $request->execute();
-  }
-
-  public function createMeapitocapiconsolidationhelper(array $fields = array(), array $params = array(), $pending = false) {
-    $this->assureId();
-
-    $param_types = array(
-    );
-    $enums = array(
-    );
-
-    $request = new ApiRequest(
-      $this->api,
-      $this->data['id'],
-      RequestInterface::METHOD_POST,
-      '/meapitocapiconsolidationhelper',
       new AbstractCrudObject(),
       'EDGE',
       array(),
@@ -433,29 +435,6 @@ class AdsPixel extends AbstractCrudObject {
       new AdsPixelStatsResult(),
       'EDGE',
       AdsPixelStatsResult::getFieldsEnum()->getValues(),
-      new TypeChecker($param_types, $enums)
-    );
-    $request->addParams($params);
-    $request->addFields($fields);
-    return $pending ? $request : $request->execute();
-  }
-
-  public function createTelemetry(array $fields = array(), array $params = array(), $pending = false) {
-    $this->assureId();
-
-    $param_types = array(
-    );
-    $enums = array(
-    );
-
-    $request = new ApiRequest(
-      $this->api,
-      $this->data['id'],
-      RequestInterface::METHOD_POST,
-      '/telemetry',
-      new AbstractCrudObject(),
-      'EDGE',
-      array(),
       new TypeChecker($param_types, $enums)
     );
     $request->addParams($params);

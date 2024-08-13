@@ -22,12 +22,14 @@ use FacebookAds\Enum\AbstractEnum;
 
 class ShadowIGMediaBuilderFields extends AbstractEnum {
 
+  const COPYRIGHT_CHECK_STATUS = 'copyright_check_status';
   const ID = 'id';
   const STATUS = 'status';
   const STATUS_CODE = 'status_code';
 
   public function getFieldTypes() {
     return array(
+      'copyright_check_status' => 'IGVideoCopyrightCheckStatus',
       'id' => 'string',
       'status' => 'string',
       'status_code' => 'string',

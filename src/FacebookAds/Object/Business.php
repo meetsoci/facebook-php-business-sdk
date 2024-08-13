@@ -43,8 +43,8 @@ use FacebookAds\Object\Values\BusinessVerticalValues;
 use FacebookAds\Object\Values\CPASCollaborationRequestRequesterAgencyOrBrandValues;
 use FacebookAds\Object\Values\CustomConversionCustomEventTypeValues;
 use FacebookAds\Object\Values\OmegaCustomerTrxTypeValues;
+use FacebookAds\Object\Values\ProductCatalogAdditionalVerticalOptionValues;
 use FacebookAds\Object\Values\ProductCatalogVerticalValues;
-use FacebookAds\Object\Values\ProfilePictureSourceBreakingChangeValues;
 use FacebookAds\Object\Values\ProfilePictureSourceTypeValues;
 use FacebookAds\Object\Values\SystemUserRoleValues;
 use FacebookAds\Object\Values\WhatsAppBusinessPreVerifiedPhoneNumberCodeVerificationStatusValues;
@@ -1607,6 +1607,7 @@ class Business extends AbstractCrudObject {
       'sales_rep_email' => 'string',
       'seller_external_website_url' => 'string',
       'seller_targeting_countries' => 'list<string>',
+      'skip_partner_page_creation' => 'bool',
       'survey_business_type' => 'survey_business_type_enum',
       'survey_num_assets' => 'unsigned int',
       'survey_num_people' => 'unsigned int',
@@ -1640,6 +1641,7 @@ class Business extends AbstractCrudObject {
         'LUXURY',
         'MARKETING',
         'NON_PROFIT',
+        'NOT_SET',
         'ORGANIZATIONS_AND_ASSOCIATIONS',
         'OTHER',
         'PROFESSIONAL_SERVICES',
@@ -1770,6 +1772,8 @@ class Business extends AbstractCrudObject {
       'access_key' => 'string',
       'active' => 'bool',
       'endpoint' => 'string',
+      'fallback_domain' => 'string',
+      'fallback_domain_enabled' => 'bool',
       'host_business_id' => 'unsigned int',
       'host_external_id' => 'string',
       'pixel_id' => 'unsigned int',
@@ -2046,6 +2050,7 @@ class Business extends AbstractCrudObject {
 
     $param_types = array(
       'code' => 'string',
+      'entry_point' => 'string',
       'page_id' => 'int',
     );
     $enums = array(
@@ -2116,6 +2121,7 @@ class Business extends AbstractCrudObject {
     $this->assureId();
 
     $param_types = array(
+      'additional_vertical_option' => 'additional_vertical_option_enum',
       'catalog_segment_filter' => 'Object',
       'catalog_segment_product_set_id' => 'string',
       'da_display_settings' => 'Object',
@@ -2128,6 +2134,7 @@ class Business extends AbstractCrudObject {
       'vertical' => 'vertical_enum',
     );
     $enums = array(
+      'additional_vertical_option_enum' => ProductCatalogAdditionalVerticalOptionValues::getInstance()->getValues(),
       'vertical_enum' => ProductCatalogVerticalValues::getInstance()->getValues(),
     );
 
@@ -2411,14 +2418,12 @@ class Business extends AbstractCrudObject {
     $this->assureId();
 
     $param_types = array(
-      'breaking_change' => 'breaking_change_enum',
       'height' => 'int',
       'redirect' => 'bool',
       'type' => 'type_enum',
       'width' => 'int',
     );
     $enums = array(
-      'breaking_change_enum' => ProfilePictureSourceBreakingChangeValues::getInstance()->getValues(),
       'type_enum' => ProfilePictureSourceTypeValues::getInstance()->getValues(),
     );
 
@@ -2505,6 +2510,30 @@ class Business extends AbstractCrudObject {
       new BusinessAssetSharingAgreement(),
       'EDGE',
       BusinessAssetSharingAgreement::getFieldsEnum()->getValues(),
+      new TypeChecker($param_types, $enums)
+    );
+    $request->addParams($params);
+    $request->addFields($fields);
+    return $pending ? $request : $request->execute();
+  }
+
+  public function getSelfCertifiedWhatsappBusinessSubmissions(array $fields = array(), array $params = array(), $pending = false) {
+    $this->assureId();
+
+    $param_types = array(
+      'end_business_id' => 'string',
+    );
+    $enums = array(
+    );
+
+    $request = new ApiRequest(
+      $this->api,
+      $this->data['id'],
+      RequestInterface::METHOD_GET,
+      '/self_certified_whatsapp_business_submissions',
+      new WhatsAppBusinessPartnerClientVerificationSubmission(),
+      'EDGE',
+      WhatsAppBusinessPartnerClientVerificationSubmission::getFieldsEnum()->getValues(),
       new TypeChecker($param_types, $enums)
     );
     $request->addParams($params);
@@ -2729,7 +2758,6 @@ class Business extends AbstractCrudObject {
       'fun_fact_toastee_id' => 'unsigned int',
       'guide' => 'list<list<unsigned int>>',
       'guide_enabled' => 'bool',
-      'has_nickname' => 'bool',
       'holiday_card' => 'string',
       'initial_heading' => 'unsigned int',
       'initial_pitch' => 'unsigned int',
@@ -2825,6 +2853,7 @@ class Business extends AbstractCrudObject {
     $this->assureId();
 
     $param_types = array(
+      'entry_point' => 'string',
       'name' => 'string',
       'primary_page' => 'string',
       'timezone_id' => 'unsigned int',

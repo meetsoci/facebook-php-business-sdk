@@ -160,6 +160,8 @@ class WhatsAppBusinessAccount extends AbstractCrudObject {
     $enums = array(
       'conversation_categories_enum' => array(
         'AUTHENTICATION',
+        'AUTHENTICATION_INTERNATIONAL',
+        'FIXED_TEMPLATE_NOTIFY',
         'MARKETING',
         'MARKETING_OPTIMIZED_DELIVERY',
         'SERVICE',
@@ -212,7 +214,7 @@ class WhatsAppBusinessAccount extends AbstractCrudObject {
     return $pending ? $request : $request->execute();
   }
 
-  public function getExtensions(array $fields = array(), array $params = array(), $pending = false) {
+  public function getDccConfig(array $fields = array(), array $params = array(), $pending = false) {
     $this->assureId();
 
     $param_types = array(
@@ -224,34 +226,7 @@ class WhatsAppBusinessAccount extends AbstractCrudObject {
       $this->api,
       $this->data['id'],
       RequestInterface::METHOD_GET,
-      '/extensions',
-      new AbstractCrudObject(),
-      'EDGE',
-      array(),
-      new TypeChecker($param_types, $enums)
-    );
-    $request->addParams($params);
-    $request->addFields($fields);
-    return $pending ? $request : $request->execute();
-  }
-
-  public function createExtension(array $fields = array(), array $params = array(), $pending = false) {
-    $this->assureId();
-
-    $param_types = array(
-      'clone_extension_id' => 'string',
-      'clone_template' => 'string',
-      'data_channel_uri' => 'string',
-      'name' => 'string',
-    );
-    $enums = array(
-    );
-
-    $request = new ApiRequest(
-      $this->api,
-      $this->data['id'],
-      RequestInterface::METHOD_POST,
-      '/extensions',
+      '/dcc_config',
       new AbstractCrudObject(),
       'EDGE',
       array(),
@@ -289,12 +264,22 @@ class WhatsAppBusinessAccount extends AbstractCrudObject {
     $this->assureId();
 
     $param_types = array(
+      'categories' => 'list<categories_enum>',
       'clone_flow_id' => 'string',
-      'clone_template' => 'string',
-      'data_channel_uri' => 'string',
+      'endpoint_uri' => 'string',
       'name' => 'string',
     );
     $enums = array(
+      'categories_enum' => array(
+        'APPOINTMENT_BOOKING',
+        'CONTACT_US',
+        'CUSTOMER_SUPPORT',
+        'LEAD_GENERATION',
+        'OTHER',
+        'SIGN_IN',
+        'SIGN_UP',
+        'SURVEY',
+      ),
     );
 
     $request = new ApiRequest(
@@ -451,6 +436,8 @@ class WhatsAppBusinessAccount extends AbstractCrudObject {
       'components' => 'list<map>',
       'cta_url_link_tracking_opted_out' => 'bool',
       'language' => 'string',
+      'library_template_button_inputs' => 'list<map>',
+      'library_template_name' => 'string',
       'message_send_ttl_seconds' => 'unsigned int',
       'name' => 'string',
       'sub_category' => 'sub_category_enum',
@@ -635,6 +622,29 @@ class WhatsAppBusinessAccount extends AbstractCrudObject {
       $this->data['id'],
       RequestInterface::METHOD_GET,
       '/schedules',
+      new AbstractCrudObject(),
+      'EDGE',
+      array(),
+      new TypeChecker($param_types, $enums)
+    );
+    $request->addParams($params);
+    $request->addFields($fields);
+    return $pending ? $request : $request->execute();
+  }
+
+  public function createSetOboMobilityIntent(array $fields = array(), array $params = array(), $pending = false) {
+    $this->assureId();
+
+    $param_types = array(
+    );
+    $enums = array(
+    );
+
+    $request = new ApiRequest(
+      $this->api,
+      $this->data['id'],
+      RequestInterface::METHOD_POST,
+      '/set_obo_mobility_intent',
       new AbstractCrudObject(),
       'EDGE',
       array(),

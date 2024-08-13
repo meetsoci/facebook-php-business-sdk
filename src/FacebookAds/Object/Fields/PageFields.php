@@ -29,6 +29,7 @@ class PageFields extends AbstractEnum {
   const APP_ID = 'app_id';
   const ARTISTS_WE_LIKE = 'artists_we_like';
   const ATTIRE = 'attire';
+  const AVAILABLE_PROMO_OFFER_IDS = 'available_promo_offer_ids';
   const AWARDS = 'awards';
   const BAND_INTERESTS = 'band_interests';
   const BAND_MEMBERS = 'band_members';
@@ -36,6 +37,7 @@ class PageFields extends AbstractEnum {
   const BIO = 'bio';
   const BIRTHDAY = 'birthday';
   const BOOKING_AGENT = 'booking_agent';
+  const BREAKING_NEWS_USAGE = 'breaking_news_usage';
   const BUILT = 'built';
   const BUSINESS = 'business';
   const CAN_CHECKIN = 'can_checkin';
@@ -59,6 +61,7 @@ class PageFields extends AbstractEnum {
   const DIRECTED_BY = 'directed_by';
   const DISPLAY_SUBTEXT = 'display_subtext';
   const DISPLAYED_MESSAGE_RESPONSE_TIME = 'displayed_message_response_time';
+  const DOES_VIEWER_HAVE_PAGE_PERMISSION_LINK_IG = 'does_viewer_have_page_permission_link_ig';
   const EMAILS = 'emails';
   const ENGAGEMENT = 'engagement';
   const FAN_COUNT = 'fan_count';
@@ -73,9 +76,9 @@ class PageFields extends AbstractEnum {
   const GLOBAL_BRAND_PAGE_NAME = 'global_brand_page_name';
   const GLOBAL_BRAND_ROOT_ID = 'global_brand_root_id';
   const HAS_ADDED_APP = 'has_added_app';
+  const HAS_LEAD_ACCESS = 'has_lead_access';
   const HAS_TRANSITIONED_TO_NEW_PAGE_EXPERIENCE = 'has_transitioned_to_new_page_experience';
   const HAS_WHATSAPP_BUSINESS_NUMBER = 'has_whatsapp_business_number';
-  const HAS_WHATSAPP_ENTERPRISE_NUMBER_USING_CLOUD_API = 'has_whatsapp_enterprise_number_using_cloud_api';
   const HAS_WHATSAPP_NUMBER = 'has_whatsapp_number';
   const HOMETOWN = 'hometown';
   const HOURS = 'hours';
@@ -87,6 +90,8 @@ class PageFields extends AbstractEnum {
   const IS_CHAIN = 'is_chain';
   const IS_COMMUNITY_PAGE = 'is_community_page';
   const IS_ELIGIBLE_FOR_BRANDED_CONTENT = 'is_eligible_for_branded_content';
+  const IS_ELIGIBLE_FOR_DISABLE_CONNECT_IG_BTN_FOR_NON_PAGE_ADMIN_AM_WEB = 'is_eligible_for_disable_connect_ig_btn_for_non_page_admin_am_web';
+  const IS_ELIGIBLE_FOR_LIVE_BOOSTING_EXPANSION = 'is_eligible_for_live_boosting_expansion';
   const IS_MESSENGER_BOT_GET_STARTED_ENABLED = 'is_messenger_bot_get_started_enabled';
   const IS_MESSENGER_PLATFORM_BOT = 'is_messenger_platform_bot';
   const IS_OWNED = 'is_owned';
@@ -106,7 +111,6 @@ class PageFields extends AbstractEnum {
   const MERCHANT_REVIEW_STATUS = 'merchant_review_status';
   const MESSAGING_FEATURE_STATUS = 'messaging_feature_status';
   const MESSENGER_ADS_DEFAULT_ICEBREAKERS = 'messenger_ads_default_icebreakers';
-  const MESSENGER_ADS_DEFAULT_PAGE_WELCOME_MESSAGE = 'messenger_ads_default_page_welcome_message';
   const MESSENGER_ADS_DEFAULT_QUICK_REPLIES = 'messenger_ads_default_quick_replies';
   const MESSENGER_ADS_QUICK_REPLIES_TYPE = 'messenger_ads_quick_replies_type';
   const MINI_SHOP_STOREFRONT = 'mini_shop_storefront';
@@ -119,7 +123,6 @@ class PageFields extends AbstractEnum {
   const OFFER_ELIGIBLE = 'offer_eligible';
   const OVERALL_STAR_RATING = 'overall_star_rating';
   const OWNER_BUSINESS = 'owner_business';
-  const PAGE_ABOUT_STORY = 'page_about_story';
   const PAGE_TOKEN = 'page_token';
   const PARENT_PAGE = 'parent_page';
   const PARKING = 'parking';
@@ -180,6 +183,7 @@ class PageFields extends AbstractEnum {
       'app_id' => 'string',
       'artists_we_like' => 'string',
       'attire' => 'string',
+      'available_promo_offer_ids' => 'list<map<string, list<map<string, string>>>>',
       'awards' => 'string',
       'band_interests' => 'string',
       'band_members' => 'string',
@@ -187,6 +191,7 @@ class PageFields extends AbstractEnum {
       'bio' => 'string',
       'birthday' => 'string',
       'booking_agent' => 'string',
+      'breaking_news_usage' => 'Object',
       'built' => 'string',
       'business' => 'Object',
       'can_checkin' => 'bool',
@@ -210,6 +215,7 @@ class PageFields extends AbstractEnum {
       'directed_by' => 'string',
       'display_subtext' => 'string',
       'displayed_message_response_time' => 'string',
+      'does_viewer_have_page_permission_link_ig' => 'bool',
       'emails' => 'list<string>',
       'engagement' => 'Engagement',
       'fan_count' => 'unsigned int',
@@ -224,9 +230,9 @@ class PageFields extends AbstractEnum {
       'global_brand_page_name' => 'string',
       'global_brand_root_id' => 'string',
       'has_added_app' => 'bool',
+      'has_lead_access' => 'HasLeadAccess',
       'has_transitioned_to_new_page_experience' => 'bool',
       'has_whatsapp_business_number' => 'bool',
-      'has_whatsapp_enterprise_number_using_cloud_api' => 'bool',
       'has_whatsapp_number' => 'bool',
       'hometown' => 'string',
       'hours' => 'map<string, string>',
@@ -238,6 +244,8 @@ class PageFields extends AbstractEnum {
       'is_chain' => 'bool',
       'is_community_page' => 'bool',
       'is_eligible_for_branded_content' => 'bool',
+      'is_eligible_for_disable_connect_ig_btn_for_non_page_admin_am_web' => 'bool',
+      'is_eligible_for_live_boosting_expansion' => 'bool',
       'is_messenger_bot_get_started_enabled' => 'bool',
       'is_messenger_platform_bot' => 'bool',
       'is_owned' => 'bool',
@@ -257,7 +265,6 @@ class PageFields extends AbstractEnum {
       'merchant_review_status' => 'string',
       'messaging_feature_status' => 'MessagingFeatureStatus',
       'messenger_ads_default_icebreakers' => 'list<string>',
-      'messenger_ads_default_page_welcome_message' => 'MessengerDestinationPageWelcomeMessage',
       'messenger_ads_default_quick_replies' => 'list<string>',
       'messenger_ads_quick_replies_type' => 'string',
       'mini_shop_storefront' => 'Shop',
@@ -270,7 +277,6 @@ class PageFields extends AbstractEnum {
       'offer_eligible' => 'bool',
       'overall_star_rating' => 'float',
       'owner_business' => 'Business',
-      'page_about_story' => 'PageAboutStory',
       'page_token' => 'string',
       'parent_page' => 'Page',
       'parking' => 'PageParking',
