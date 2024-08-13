@@ -40,6 +40,7 @@ class EventAMAPITest extends AbstractUnitTestCase {
         'custom_data' => $custom_data->normalize(),
         'data_processing_options' => array('AMO'),
         'advanced_measurement_table' => 'test_am_table',
+        'app_data' => null
       );
 
       $event = (new Event())

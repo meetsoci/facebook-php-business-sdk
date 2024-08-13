@@ -31,6 +31,7 @@ class AbstractCrudObjectTest extends AbstractCrudObjectTestCase {
 
   public function testCreationWithNull() {
     $this->checkCreationSuccessWithID(null);
+    $this->assertTrue(true);
   }
 
   public function testCreationWithNegativeId() {
@@ -39,10 +40,12 @@ class AbstractCrudObjectTest extends AbstractCrudObjectTestCase {
 
   public function testCreationWithPositiveId() {
     $this->checkCreationSuccessWithID(100007309086878);
+    $this->assertTrue(true);
   }
 
   public function testCreationWithCorrectStringId() {
     $this->checkCreationSuccessWithID('100007309086878');
+    $this->assertTrue(true);
   }
 
   public function testCreationWithIncorrectNegativeStringId() {
@@ -55,6 +58,7 @@ class AbstractCrudObjectTest extends AbstractCrudObjectTestCase {
 
   public function testCreationSuccessWithAct_() {
     $this->checkCreationSuccessWithID('act_12341521352312');
+    $this->assertTrue(true);
   }
 
   public function testCreationFailureWithAct_() {
@@ -72,10 +76,7 @@ class AbstractCrudObjectTest extends AbstractCrudObjectTestCase {
     $this->assertInvalidArgumentException($id);
   }
 
-  /**
-   * @param mixed $id
-   */
-  public function assertInvalidArgumentException(mixed $id) {
+  public function assertInvalidArgumentException($id) {
     $has_throw_exception = false;
     try {
       new EmptyCrudObject($id);

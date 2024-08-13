@@ -28,7 +28,6 @@ use FacebookAdsTest\AbstractUnitTestCase;
 use FacebookAds\Object\ServerSide\Event;
 use FacebookAds\Object\ServerSide\UserData;
 use FacebookAds\Object\ServerSide\BatchProcessor;
-use FacebookAds\Api;
 use GuzzleHttp\Promise\Utils;
 use Mockery as m;
 

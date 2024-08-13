@@ -46,6 +46,7 @@ class EventTest extends AbstractUnitTestCase {
       'data_processing_options_country' => 1,
       'data_processing_options_state' => 2,
       'action_source' => ActionSource::WEBSITE,
+      'app_data' => null
     );
 
     $event = (new Event())
@@ -67,7 +68,7 @@ class EventTest extends AbstractUnitTestCase {
   public function testWhenOptOutIsTrue() {
     $event = (new Event())->setOptOut(true);
 
-    $this->assertEquals(array('opt_out' => true), $event->normalize());
+    $this->assertEquals(array('opt_out' => true, 'app_data' => null), $event->normalize());
   }
 
   public function testInvalidActionSource() {

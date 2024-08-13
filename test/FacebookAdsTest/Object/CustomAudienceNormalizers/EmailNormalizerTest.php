@@ -34,11 +34,11 @@ class EmailNormalizerTest extends AbstractUnitTestCase {
      */
     protected $emailNormalizer;
 
-    public function setUp() {
+    public function setup(): void {
         $this->emailNormalizer = new EmailNormalizer();
     }
 
-    public function testNormalizeData() {
+    public function normalizeDataProvider() {
         return array(
             array(
                 "foo@fb.com\t\r\n\0\x0B.",
@@ -48,7 +48,7 @@ class EmailNormalizerTest extends AbstractUnitTestCase {
     }
 
     /**
-     * @dataProvider testNormalizeData
+     * @dataProvider normalizeDataProvider
      */
     public function testNormalize($input, $expected) {
         $this->assertEquals(

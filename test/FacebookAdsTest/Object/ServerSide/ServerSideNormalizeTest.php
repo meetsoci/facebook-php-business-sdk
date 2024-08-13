@@ -22,7 +22,7 @@
  *
  */
 
-namespace FacebookAdsTest\Object;
+namespace FacebookAdsTest\Object\ServerSide;
 
 use FacebookAdsTest\AbstractUnitTestCase;
 use FacebookAds\Object\ServerSide\Normalizer;
