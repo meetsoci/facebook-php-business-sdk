@@ -141,7 +141,7 @@ class AttributionSetting implements ArrayAccess {
    * @param integer $offset Offset
    * @return mixed
    */
-  public function offsetGet($offset) : mixed {
+  public function offsetGet($offset) {
     return isset($this->container[$offset]) ? $this->container[$offset] : null;
   }
 
