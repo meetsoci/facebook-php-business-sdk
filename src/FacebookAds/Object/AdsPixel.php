@@ -469,6 +469,7 @@ class AdsPixel extends AbstractCrudObject {
     $this->assureId();
 
     $param_types = array(
+      'agent' => 'string',
       'aggregation' => 'aggregation_enum',
       'end_time' => 'datetime',
       'event' => 'string',
@@ -527,6 +528,8 @@ class AdsPixel extends AbstractCrudObject {
       'first_party_cookie_status' => 'first_party_cookie_status_enum',
       'name' => 'string',
       'server_events_business_ids' => 'list<string>',
+      'server_events_business_ids_add' => 'list<string>',
+      'server_events_business_ids_remove' => 'list<string>',
     );
     $enums = array(
       'automatic_matching_fields_enum' => AdsPixelAutomaticMatchingFieldsValues::getInstance()->getValues(),

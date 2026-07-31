@@ -209,13 +209,17 @@ class IGUserForIGOnlyAPI extends AbstractCrudObject {
 
     $param_types = array(
       'alt_text' => 'string',
+      'audio_configuration' => 'string',
       'audio_name' => 'string',
+      'branded_content_sponsor_ids' => 'list<unsigned int>',
       'caption' => 'string',
       'children' => 'list<string>',
       'collaborators' => 'list<string>',
       'cover_url' => 'string',
       'image_url' => 'string',
+      'is_ai_generated' => 'bool',
       'is_carousel_item' => 'bool',
+      'is_paid_partnership' => 'bool',
       'location_id' => 'string',
       'media_type' => 'string',
       'product_tags' => 'list<map>',
@@ -322,15 +326,20 @@ class IGUserForIGOnlyAPI extends AbstractCrudObject {
     $this->assureId();
 
     $param_types = array(
+      'folder' => 'folder_enum',
       'message' => 'Object',
       'messaging_type' => 'messaging_type_enum',
       'payload' => 'string',
       'recipient' => 'Object',
+      'reply_to' => 'Object',
       'sender_action' => 'sender_action_enum',
       'tag' => 'Object',
       'thread_control' => 'Object',
     );
     $enums = array(
+      'folder_enum' => array(
+        'PARTNERSHIP',
+      ),
       'messaging_type_enum' => array(
         'MESSAGE_TAG',
         'RESPONSE',
@@ -373,7 +382,6 @@ class IGUserForIGOnlyAPI extends AbstractCrudObject {
         'COMMANDS',
         'DESCRIPTION',
         'GET_STARTED',
-        'GREETING',
         'HOME_URL',
         'ICE_BREAKERS',
         'PERSISTENT_MENU',
@@ -437,6 +445,56 @@ class IGUserForIGOnlyAPI extends AbstractCrudObject {
       $this->data['id'],
       RequestInterface::METHOD_POST,
       '/messenger_profile',
+      new AbstractCrudObject(),
+      'EDGE',
+      array(),
+      new TypeChecker($param_types, $enums)
+    );
+    $request->addParams($params);
+    $request->addFields($fields);
+    return $pending ? $request : $request->execute();
+  }
+
+  public function createPassThreadControl(array $fields = array(), array $params = array(), $pending = false) {
+    $this->assureId();
+
+    $param_types = array(
+      'metadata' => 'string',
+      'recipient' => 'Object',
+      'target_app_id' => 'string',
+    );
+    $enums = array(
+    );
+
+    $request = new ApiRequest(
+      $this->api,
+      $this->data['id'],
+      RequestInterface::METHOD_POST,
+      '/passthreadcontrol',
+      new AbstractCrudObject(),
+      'EDGE',
+      array(),
+      new TypeChecker($param_types, $enums)
+    );
+    $request->addParams($params);
+    $request->addFields($fields);
+    return $pending ? $request : $request->execute();
+  }
+
+  public function createReleaseThreadControl(array $fields = array(), array $params = array(), $pending = false) {
+    $this->assureId();
+
+    $param_types = array(
+      'recipient' => 'Object',
+    );
+    $enums = array(
+    );
+
+    $request = new ApiRequest(
+      $this->api,
+      $this->data['id'],
+      RequestInterface::METHOD_POST,
+      '/releasethreadcontrol',
       new AbstractCrudObject(),
       'EDGE',
       array(),
@@ -524,6 +582,7 @@ class IGUserForIGOnlyAPI extends AbstractCrudObject {
     );
     $enums = array(
       'subscribed_fields_enum' => array(
+        'agent_messages',
         'comment_poll_response',
         'comments',
         'creator_marketplace_invited_creator_onboarding',
@@ -568,6 +627,9 @@ class IGUserForIGOnlyAPI extends AbstractCrudObject {
     $this->assureId();
 
     $param_types = array(
+      'media_type' => 'string',
+      'posted_after' => 'string',
+      'posted_before' => 'string',
     );
     $enums = array(
     );

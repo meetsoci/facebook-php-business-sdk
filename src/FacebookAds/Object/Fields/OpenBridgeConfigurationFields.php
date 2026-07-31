@@ -23,22 +23,26 @@ use FacebookAds\Enum\AbstractEnum;
 class OpenBridgeConfigurationFields extends AbstractEnum {
 
   const ACTIVE = 'active';
+  const ASSOCIATED_SGW_DATA_SOURCE_ID = 'associated_sgw_data_source_id';
   const BLOCKED_EVENT_TYPES = 'blocked_event_types';
   const BLOCKED_WEBSITES = 'blocked_websites';
   const BROWSER_AGENT = 'browser_agent';
+  const CAPI_PUBLISHING_STATE = 'capi_publishing_state';
   const CLOUD_PROVIDER = 'cloud_provider';
   const CLOUD_REGION = 'cloud_region';
   const DESTINATION_ID = 'destination_id';
   const ENDPOINT = 'endpoint';
+  const EVENT_ENRICHMENT_ADVERTISER_STATE = 'event_enrichment_advertiser_state';
+  const EVENT_ENRICHMENT_META_STATE = 'event_enrichment_meta_state';
   const EVENT_ENRICHMENT_STATE = 'event_enrichment_state';
   const FALLBACK_DOMAIN = 'fallback_domain';
-  const FIRST_PARTY_DOMAIN = 'first_party_domain';
   const HOST_BUSINESS_ID = 'host_business_id';
   const ID = 'id';
   const INSTANCE_ID = 'instance_id';
   const INSTANCE_VERSION = 'instance_version';
   const IS_SGW_INSTANCE = 'is_sgw_instance';
   const IS_SGW_PIXEL_FROM_META_PIXEL = 'is_sgw_pixel_from_meta_pixel';
+  const MPC_FALLBACK_DOMAIN = 'mpc_fallback_domain';
   const PARTNER_NAME = 'partner_name';
   const PIXEL_ID = 'pixel_id';
   const SGW_ACCOUNT_ID = 'sgw_account_id';
@@ -48,22 +52,26 @@ class OpenBridgeConfigurationFields extends AbstractEnum {
   public function getFieldTypes() {
     return array(
       'active' => 'bool',
+      'associated_sgw_data_source_id' => 'string',
       'blocked_event_types' => 'list<string>',
       'blocked_websites' => 'list<string>',
       'browser_agent' => 'list<string>',
+      'capi_publishing_state' => 'string',
       'cloud_provider' => 'string',
       'cloud_region' => 'string',
       'destination_id' => 'string',
       'endpoint' => 'string',
+      'event_enrichment_advertiser_state' => 'string',
+      'event_enrichment_meta_state' => 'string',
       'event_enrichment_state' => 'string',
       'fallback_domain' => 'string',
-      'first_party_domain' => 'string',
       'host_business_id' => 'string',
       'id' => 'string',
       'instance_id' => 'string',
       'instance_version' => 'string',
       'is_sgw_instance' => 'bool',
       'is_sgw_pixel_from_meta_pixel' => 'bool',
+      'mpc_fallback_domain' => 'string',
       'partner_name' => 'string',
       'pixel_id' => 'string',
       'sgw_account_id' => 'string',

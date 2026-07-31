@@ -15,11 +15,13 @@ use FacebookAds\Http\RequestInterface;
 use FacebookAds\TypeChecker;
 use FacebookAds\Object\Fields\CustomAudienceFields;
 use FacebookAds\Object\Values\CustomAudienceActionSourceValues;
+use FacebookAds\Object\Values\CustomAudienceAudienceLabelsValues;
 use FacebookAds\Object\Values\CustomAudienceClaimObjectiveValues;
 use FacebookAds\Object\Values\CustomAudienceContentTypeValues;
 use FacebookAds\Object\Values\CustomAudienceCustomerFileSourceValues;
 use FacebookAds\Object\Values\CustomAudienceSubscriptionInfoValues;
 use FacebookAds\Object\Values\CustomAudienceSubtypeValues;
+use FacebookAds\Object\Values\CustomAudienceUsageRestrictionValues;
 use FacebookAds\Object\Values\CustomAudienceUseForProductsValues;
 use FacebookAds\Object\Values\CustomAudienceTypes;
 use FacebookAds\Object\Fields\CustomAudienceMultikeySchemaFields;
@@ -65,11 +67,13 @@ class CustomAudience extends AbstractCrudObject {
 
   protected static function getReferencedEnums() {
     $ref_enums = array();
+    $ref_enums['AudienceLabels'] = CustomAudienceAudienceLabelsValues::getInstance()->getValues();
     $ref_enums['ClaimObjective'] = CustomAudienceClaimObjectiveValues::getInstance()->getValues();
     $ref_enums['ContentType'] = CustomAudienceContentTypeValues::getInstance()->getValues();
     $ref_enums['CustomerFileSource'] = CustomAudienceCustomerFileSourceValues::getInstance()->getValues();
     $ref_enums['SubscriptionInfo'] = CustomAudienceSubscriptionInfoValues::getInstance()->getValues();
     $ref_enums['Subtype'] = CustomAudienceSubtypeValues::getInstance()->getValues();
+    $ref_enums['UsageRestriction'] = CustomAudienceUsageRestrictionValues::getInstance()->getValues();
     $ref_enums['UseForProducts'] = CustomAudienceUseForProductsValues::getInstance()->getValues();
     $ref_enums['ActionSource'] = CustomAudienceActionSourceValues::getInstance()->getValues();
     return $ref_enums;
@@ -434,7 +438,9 @@ class CustomAudience extends AbstractCrudObject {
     $this->assureId();
 
     $param_types = array(
+      'acting_account_id' => 'unsigned int',
       'allowed_domains' => 'list<string>',
+      'audience_labels' => 'list<audience_labels_enum>',
       'claim_objective' => 'claim_objective_enum',
       'content_type' => 'content_type_enum',
       'countries' => 'string',
@@ -456,12 +462,15 @@ class CustomAudience extends AbstractCrudObject {
       'rule' => 'string',
       'rule_aggregation' => 'string',
       'tags' => 'list<string>',
+      'use_for_products' => 'list<use_for_products_enum>',
       'use_in_campaigns' => 'bool',
     );
     $enums = array(
+      'audience_labels_enum' => CustomAudienceAudienceLabelsValues::getInstance()->getValues(),
       'claim_objective_enum' => CustomAudienceClaimObjectiveValues::getInstance()->getValues(),
       'content_type_enum' => CustomAudienceContentTypeValues::getInstance()->getValues(),
       'customer_file_source_enum' => CustomAudienceCustomerFileSourceValues::getInstance()->getValues(),
+      'use_for_products_enum' => CustomAudienceUseForProductsValues::getInstance()->getValues(),
     );
 
     $request = new ApiRequest(

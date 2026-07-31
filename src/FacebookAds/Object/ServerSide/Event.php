@@ -25,6 +25,7 @@
 namespace FacebookAds\Object\ServerSide;
 
 use ArrayAccess;
+use FacebookAds\ParamBuilder;
 
 /**
  * Server-Side Event
@@ -54,6 +55,7 @@ class Event implements ArrayAccess {
     'messaging_channel' => 'string',
     'original_event_data' => 'FacebookAds\Object\ServerSide\OriginalEventData',
     'attribution_data' => 'FacebookAds\Object\ServerSide\AttributionData',
+    'referrer_url' => 'string',
   );
   /**
    * Array of attributes where the key is the local name, and the value is the original name
@@ -76,6 +78,7 @@ class Event implements ArrayAccess {
     'messaging_channel' => 'messaging_channel',
     'original_event_data' => 'original_event_data',
     'attribution_data' => 'attribution_data',
+    'referrer_url' => 'referrer_url',
   );
 
   /**
@@ -99,6 +102,7 @@ class Event implements ArrayAccess {
     'messaging_channel' => 'setMessagingChannel',
     'original_event_data' => 'setOriginalEventData',
     'attribution_data' => 'setAttributionData',
+    'referrer_url' => 'setReferrerUrl',
   );
   /**
    * Array of attributes to getter functions (for serialization of requests)
@@ -121,11 +125,18 @@ class Event implements ArrayAccess {
     'messaging_channel' => 'getMessagingChannel',
     'original_event_data' => 'getOriginalEventData',
     'attribution_data' => 'getAttributionData',
+    'referrer_url' => 'getReferrerUrl',
   );
   /**
    * Associative array for storing property values
    */
   protected $container = array();
+
+  protected $context = null;
+
+  protected $preference = null;
+
+  protected $param_builder = null;
 
   /**
    * Constructor
@@ -147,6 +158,7 @@ class Event implements ArrayAccess {
     $this->container['messaging_channel'] = isset($data['messaging_channel']) ? $data['messaging_channel'] : null;
     $this->container['original_event_data'] = isset($data['original_event_data']) ? $data['original_event_data'] : null;
     $this->container['attribution_data'] = isset($data['attribution_data']) ? $data['attribution_data'] : null;
+    $this->container['referrer_url'] = isset($data['referrer_url']) ? $data['referrer_url'] : null;
   }
 
   public static function paramTypes() {
@@ -232,6 +244,18 @@ class Event implements ArrayAccess {
    */
   public function setEventSourceUrl($event_source_url) {
     $this->container['event_source_url'] = $event_source_url;
+
+    return $this;
+  }
+
+  /**
+   * Sets the referrer URL of the browser request that triggered the event
+   * @param string $referrer_url The referrer URL of the browser request that
+   *      triggered the event.
+   * @return $this
+   */
+  public function setReferrerUrl($referrer_url) {
+    $this->container['referrer_url'] = $referrer_url;
 
     return $this;
   }
@@ -394,11 +418,14 @@ class Event implements ArrayAccess {
    * @return array
    */
   public function normalize() {
+    $this->applyParamBuilderDefaults();
+
     $normalized_payload = array();
 
     $normalized_payload['event_name'] = $this->getEventName();
     $normalized_payload['event_time'] = $this->getEventTime();
     $normalized_payload['event_source_url'] = $this->getEventSourceUrl();
+    $normalized_payload['referrer_url'] = $this->getReferrerUrl();
     $normalized_payload['opt_out'] = $this->getOptOut();
     $normalized_payload['event_id'] = $this->getEventId();
     $normalized_payload['user_data'] = isset($this->container['user_data']) ? $this->getUserData()->normalize() : null;
@@ -447,6 +474,14 @@ class Event implements ArrayAccess {
    */
   public function getEventSourceUrl() {
     return $this->container['event_source_url'];
+  }
+
+  /**
+   * Gets the referrer URL of the browser request that triggered the event.
+   * @return string
+   */
+  public function getReferrerUrl() {
+    return $this->container['referrer_url'];
   }
 
   /**
@@ -581,6 +616,77 @@ class Event implements ArrayAccess {
    */
   public function getAttributionData() {
     return $this->container['attribution_data'];
+  }
+
+  /**
+   * Sets the request context and optional preference for automatic data extraction.
+   * Stores the context and constructs a CAPI ParamBuilder; extraction of
+   * parameters (fbc, fbp, client_ip_address, ...) into UserData is deferred
+   * until normalize() runs at send time, so call order with setUserData()
+   * does not matter. The preference object controls which data are allowed
+   * to be auto-set. If no preference is provided, all fields default to true.
+   * @param mixed $context The context object (e.g. HTTP request object)
+   * @param Preference|null $preference Optional preference object to control auto-extraction
+   * @return $this
+   */
+  public function setRequestContext($context, ?Preference $preference = null) {
+    $this->context = $context;
+    $this->preference = $preference ?? new Preference();
+    $this->param_builder = new ParamBuilder();
+    $this->param_builder->processRequestFromContext($context);
+    return $this;
+  }
+
+  /**
+   * Fills empty UserData and Event fields from the ParamBuilder-extracted
+   * values, gated by Preference. No-op when setRequestContext was never
+   * called. Idempotent: only fills fields that are currently empty, so the
+   * caller's explicit values always take precedence regardless of call order.
+   */
+  private function applyParamBuilderDefaults() {
+    if ($this->param_builder === null) {
+      return;
+    }
+    $user_data = $this->container['user_data'] ?? new UserData();
+    $builder_fbc = $this->param_builder->getFbc();
+    if ($this->preference->isFbcAllowed() && !$user_data->getFbc() && $builder_fbc) {
+      $user_data->setFbc($builder_fbc);
+    }
+    $builder_fbp = $this->param_builder->getFbp();
+    if ($this->preference->isFbpAllowed() && !$user_data->getFbp() && $builder_fbp) {
+      $user_data->setFbp($builder_fbp);
+    }
+    $builder_ip = $this->param_builder->getClientIpAddress();
+    if ($this->preference->isClientIpAddressAllowed() && !$user_data->getClientIpAddress() && $builder_ip) {
+      $user_data->setClientIpAddress($builder_ip);
+    }
+    $this->container['user_data'] = $user_data;
+
+    $builder_event_source_url = $this->param_builder->getEventSourceUrl();
+    if ($this->preference->isEventSourceUrlAllowed() && !$this->getEventSourceUrl() && $builder_event_source_url) {
+      $this->setEventSourceUrl($builder_event_source_url);
+    }
+
+    $builder_referrer_url = $this->param_builder->getReferrerUrl();
+    if ($this->preference->isReferrerUrlAllowed() && !$this->getReferrerUrl() && $builder_referrer_url) {
+      $this->setReferrerUrl($builder_referrer_url);
+    }
+  }
+
+  /**
+   * Gets the request context object.
+   * @return mixed
+   */
+  public function getRequestContext() {
+    return $this->context;
+  }
+
+  /**
+   * Gets the Preference object.
+   * @return Preference|null
+   */
+  public function getPreference() {
+    return $this->preference;
   }
 
   /**

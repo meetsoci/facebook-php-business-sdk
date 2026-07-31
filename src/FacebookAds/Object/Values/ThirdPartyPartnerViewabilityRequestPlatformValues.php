@@ -25,4 +25,5 @@ class ThirdPartyPartnerViewabilityRequestPlatformValues extends AbstractEnum {
   const AUDIENCE_NETWORK = 'AUDIENCE_NETWORK';
   const FACEBOOK = 'FACEBOOK';
   const INSTAGRAM = 'INSTAGRAM';
+  const THREADS = 'THREADS';
 }

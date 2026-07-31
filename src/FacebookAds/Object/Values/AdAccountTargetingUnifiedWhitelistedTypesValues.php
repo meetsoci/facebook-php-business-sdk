@@ -28,6 +28,7 @@ class AdAccountTargetingUnifiedWhitelistedTypesValues extends AbstractEnum {
   const AGE_RANGE = 'age_range';
   const ALTERNATE_AUTO_TARGETING_OPTION = 'alternate_auto_targeting_option';
   const APP_INSTALL_STATE = 'app_install_state';
+  const AUDIENCE_CONCEPTS = 'audience_concepts';
   const AUDIENCE_NETWORK_POSITIONS = 'audience_network_positions';
   const BEHAVIORS = 'behaviors';
   const BRAND_SAFETY_CONTENT_FILTER_LEVELS = 'brand_safety_content_filter_levels';
@@ -53,6 +54,7 @@ class AdAccountTargetingUnifiedWhitelistedTypesValues extends AbstractEnum {
   const EDUCATION_SCHOOLS = 'education_schools';
   const EDUCATION_STATUSES = 'education_statuses';
   const EFFECTIVE_AUDIENCE_NETWORK_POSITIONS = 'effective_audience_network_positions';
+  const EFFECTIVE_BRAND_SAFETY_CONTENT_FILTER_LEVELS = 'effective_brand_safety_content_filter_levels';
   const EFFECTIVE_DEVICE_PLATFORMS = 'effective_device_platforms';
   const EFFECTIVE_FACEBOOK_POSITIONS = 'effective_facebook_positions';
   const EFFECTIVE_INSTAGRAM_POSITIONS = 'effective_instagram_positions';
@@ -91,6 +93,7 @@ class AdAccountTargetingUnifiedWhitelistedTypesValues extends AbstractEnum {
   const GENDERS = 'genders';
   const GENERATION = 'generation';
   const GEO_LOCATIONS = 'geo_locations';
+  const HASHTAG_INTERACTIONS = 'hashtag_interactions';
   const HOME_OWNERSHIP = 'home_ownership';
   const HOME_TYPE = 'home_type';
   const HOME_VALUE = 'home_value';
@@ -130,6 +133,7 @@ class AdAccountTargetingUnifiedWhitelistedTypesValues extends AbstractEnum {
   const PRODUCT_AUDIENCE_SPECS = 'product_audience_specs';
   const PROSPECTING_AUDIENCE = 'prospecting_audience';
   const PUBLISHER_PLATFORMS = 'publisher_platforms';
+  const PURCHASE_INTENT = 'purchase_intent';
   const RADIUS = 'radius';
   const REGION_KEYS = 'region_keys';
   const REGIONS = 'regions';
