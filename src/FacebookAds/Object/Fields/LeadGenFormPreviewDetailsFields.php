@@ -24,7 +24,6 @@ class LeadGenFormPreviewDetailsFields extends AbstractEnum {
 
   const BOOK_ON_WEBSITE_TEXT = 'book_on_website_text';
   const CALL_BUSINESS_TEXT = 'call_business_text';
-  const CALL_TO_ACTION_TITLE = 'call_to_action_title';
   const CHAT_ON_MESSENGER_TEXT = 'chat_on_messenger_text';
   const CHAT_ON_WHATSAPP_TEXT = 'chat_on_whatsapp_text';
   const CONTACT_INFORMATION_TEXT = 'contact_information_text';
@@ -62,6 +61,9 @@ class LeadGenFormPreviewDetailsFields extends AbstractEnum {
   const RETURN_TO_FACEBOOK_TEXT = 'return_to_facebook_text';
   const REVIEW_YOUR_INFO_TEXT = 'review_your_info_text';
   const SECURE_SHARING_TEXT = 'secure_sharing_text';
+  const SECURE_SHARING_TEXT_FOR_EMBEDDED_BOOKING = 'secure_sharing_text_for_embedded_booking';
+  const SECURE_SHARING_TEXT_FOR_EMBEDDED_BOOKING_CALENDLY = 'secure_sharing_text_for_embedded_booking_calendly';
+  const SECURE_SHARING_TEXT_FOR_EMBEDDED_BOOKING_GHL = 'secure_sharing_text_for_embedded_booking_ghl';
   const SECURE_SHARING_TEXT_FOR_OPTIONAL_PRIVACY_POLICY = 'secure_sharing_text_for_optional_privacy_policy';
   const SLIDE_TO_SUBMIT_TEXT = 'slide_to_submit_text';
   const SOCIAL_PROOF_SECTION_HEADERS = 'social_proof_section_headers';
@@ -74,7 +76,6 @@ class LeadGenFormPreviewDetailsFields extends AbstractEnum {
     return array(
       'book_on_website_text' => 'string',
       'call_business_text' => 'string',
-      'call_to_action_title' => 'string',
       'chat_on_messenger_text' => 'string',
       'chat_on_whatsapp_text' => 'string',
       'contact_information_text' => 'string',
@@ -112,6 +113,9 @@ class LeadGenFormPreviewDetailsFields extends AbstractEnum {
       'return_to_facebook_text' => 'string',
       'review_your_info_text' => 'string',
       'secure_sharing_text' => 'string',
+      'secure_sharing_text_for_embedded_booking' => 'string',
+      'secure_sharing_text_for_embedded_booking_calendly' => 'string',
+      'secure_sharing_text_for_embedded_booking_ghl' => 'string',
       'secure_sharing_text_for_optional_privacy_policy' => 'string',
       'slide_to_submit_text' => 'string',
       'social_proof_section_headers' => 'list<map<string, string>>',

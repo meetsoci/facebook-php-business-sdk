@@ -31,6 +31,7 @@ class AdAccountUserSettingsFields extends AbstractEnum {
   const ADS_MANAGER_FOOTER_ROW_TOAST_IMPRESSIONS = 'ads_manager_footer_row_toast_impressions';
   const AUTO_REVIEW_VIDEO_CAPTION = 'auto_review_video_caption';
   const BUDGET_OPTIMIZATION_QUICK_VIEW_CREATED = 'budget_optimization_quick_view_created';
+  const BUDGET_POOL_QV_CREATED = 'budget_pool_qv_created';
   const CAMPAIGN_OVERVIEW_COLUMNS = 'campaign_overview_columns';
   const COLUMN_SUGGESTION_STATUS = 'column_suggestion_status';
   const CONDITIONAL_FORMATTING_RULES = 'conditional_formatting_rules';
@@ -56,7 +57,6 @@ class AdAccountUserSettingsFields extends AbstractEnum {
   const IS_3P_AUTH_SETTING_SET = 'is_3p_auth_setting_set';
   const IS_ADS_MANAGER_FOOTER_ROW_PREFERENCE_SET = 'is_ads_manager_footer_row_preference_set';
   const IS_ADS_MANAGER_FOOTER_ROW_SHOWN = 'is_ads_manager_footer_row_shown';
-  const IS_TEXT_VARIATION_NUX_CLOSE = 'is_text_variation_nux_close';
   const LAST_USED_COLUMNS = 'last_used_columns';
   const LAST_USED_PE_FILTERS = 'last_used_pe_filters';
   const LAST_USED_WEBSITE_URLS = 'last_used_website_urls';
@@ -80,7 +80,6 @@ class AdAccountUserSettingsFields extends AbstractEnum {
   const SHOULD_LOGOUT_OF_3P_SOURCING = 'should_logout_of_3p_sourcing';
   const SHOULD_SHOW_SHOPS_ADS_METRICS_ONBOARDING_TOUR = 'should_show_shops_ads_metrics_onboarding_tour';
   const SHOW_ARCHIVED_DATA = 'show_archived_data';
-  const SHOW_TEXT_VARIATION_NUX_TOOLTIP = 'show_text_variation_nux_tooltip';
   const SYD_CAMPAIGN_TRENDS_ACTIVEMETRIC = 'syd_campaign_trends_activemetric';
   const SYD_CAMPAIGN_TRENDS_ATTRIBUTION = 'syd_campaign_trends_attribution';
   const SYD_CAMPAIGN_TRENDS_METRICS = 'syd_campaign_trends_metrics';
@@ -108,6 +107,7 @@ class AdAccountUserSettingsFields extends AbstractEnum {
       'ads_manager_footer_row_toast_impressions' => 'int',
       'auto_review_video_caption' => 'bool',
       'budget_optimization_quick_view_created' => 'bool',
+      'budget_pool_qv_created' => 'bool',
       'campaign_overview_columns' => 'list<string>',
       'column_suggestion_status' => 'string',
       'conditional_formatting_rules' => 'list<string>',
@@ -133,7 +133,6 @@ class AdAccountUserSettingsFields extends AbstractEnum {
       'is_3p_auth_setting_set' => 'bool',
       'is_ads_manager_footer_row_preference_set' => 'bool',
       'is_ads_manager_footer_row_shown' => 'bool',
-      'is_text_variation_nux_close' => 'bool',
       'last_used_columns' => 'Object',
       'last_used_pe_filters' => 'list<Object>',
       'last_used_website_urls' => 'list<string>',
@@ -157,7 +156,6 @@ class AdAccountUserSettingsFields extends AbstractEnum {
       'should_logout_of_3p_sourcing' => 'bool',
       'should_show_shops_ads_metrics_onboarding_tour' => 'bool',
       'show_archived_data' => 'bool',
-      'show_text_variation_nux_tooltip' => 'bool',
       'syd_campaign_trends_activemetric' => 'string',
       'syd_campaign_trends_attribution' => 'string',
       'syd_campaign_trends_metrics' => 'list<string>',

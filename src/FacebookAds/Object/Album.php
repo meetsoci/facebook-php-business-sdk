@@ -140,6 +140,7 @@ class Album extends AbstractCrudObject {
     $this->assureId();
 
     $param_types = array(
+      'attribution_id_v2' => 'string',
       'feedback_source' => 'string',
       'nectar_module' => 'string',
       'notify' => 'bool',
@@ -226,6 +227,7 @@ class Album extends AbstractCrudObject {
       'privacy' => 'string',
       'profile_id' => 'int',
       'provenance_info' => 'map',
+      'provenance_metadata' => 'map',
       'proxied_app_id' => 'string',
       'published' => 'bool',
       'qn' => 'string',

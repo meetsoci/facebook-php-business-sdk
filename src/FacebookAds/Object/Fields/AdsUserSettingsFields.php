@@ -23,6 +23,7 @@ use FacebookAds\Enum\AbstractEnum;
 class AdsUserSettingsFields extends AbstractEnum {
 
   const A_PLUS_C_SURVEY_SEEN = 'a_plus_c_survey_seen';
+  const ADAPTIVE_GEO_EXCL_BANNER_SEEN_TS = 'adaptive_geo_excl_banner_seen_ts';
   const ADD_OVERLAYS_OPT_IN_STATUS = 'add_overlays_opt_in_status';
   const ADGROUP_NAME_TEMPLATE = 'adgroup_name_template';
   const ADS_CS_CATALOG_OPT_OUT_TIMESTAMP = 'ads_cs_catalog_opt_out_timestamp';
@@ -42,6 +43,7 @@ class AdsUserSettingsFields extends AbstractEnum {
   const APLUSC_OPT_OUT_FRICTION = 'aplusc_opt_out_friction';
   const APLUSC_VIDEOFILTER_OPT_IN_STATUS = 'aplusc_videofilter_opt_in_status';
   const APLUSC_VIDEOUNCROP_OPT_IN_STATUS = 'aplusc_videouncrop_opt_in_status';
+  const APP_DETAILS_DATA_OPT_IN_STATUS = 'app_details_data_opt_in_status';
   const AUTOFLOW_LITE_OPT_IN_STATUS = 'autoflow_lite_opt_in_status';
   const AUTOFLOW_LITE_SHOULD_OPT_IN = 'autoflow_lite_should_opt_in';
   const BLENDED_ADS_CREATION_DEFAULTING_OPT_IN_STATUS = 'blended_ads_creation_defaulting_opt_in_status';
@@ -53,14 +55,18 @@ class AdsUserSettingsFields extends AbstractEnum {
   const CONNECTED_SOURCES_CATALOG_OPT_IN_STATUS = 'connected_sources_catalog_opt_in_status';
   const CREATE_CTA_STICKER_OPT_IN_STATUS = 'create_cta_sticker_opt_in_status';
   const CREATIVE_FLEX_OPT_IN_STATUS = 'creative_flex_opt_in_status';
+  const DA_ADAPT_IMAGES_OPT_IN_STATUS = 'da_adapt_images_opt_in_status';
   const DA_ADD_OVERLAYS_OPT_IN_STATUS = 'da_add_overlays_opt_in_status';
   const DA_CREATIVE_FLEX_OPT_IN_STATUS = 'da_creative_flex_opt_in_status';
   const DA_HIDE_PRICE_OPT_IN_STATUS = 'da_hide_price_opt_in_status';
   const DA_MANUAL_MEDIA_NUX_IMPRESSIONS = 'da_manual_media_nux_impressions';
+  const DCO_TO_MMU_OPT_OUT_STATUS = 'dco_to_mmu_opt_out_status';
   const DEFAULT_CREATION_MODE = 'default_creation_mode';
   const DYNAMIC_PARTNERSHIP_ADS_OPT_IN_STATUS = 'dynamic_partnership_ads_opt_in_status';
   const ENHANCE_CTA_TEXT_EXTRACTION_OPT_IN_STATUS = 'enhance_cta_text_extraction_opt_in_status';
   const EXPORT_FORMAT_DEFAULT = 'export_format_default';
+  const FEEDBACK_SURVEYS = 'feedback_surveys';
+  const FF_TO_MMU_OPT_OUT_STATUS = 'ff_to_mmu_opt_out_status';
   const FOCUS_MODE_DEFAULT = 'focus_mode_default';
   const GEN_AI_ALPHA_TEST_STATUS = 'gen_ai_alpha_test_status';
   const GEN_AI_AUTO_SELECT_OPT_IN_STATUS = 'gen_ai_auto_select_opt_in_status';
@@ -69,6 +75,7 @@ class AdsUserSettingsFields extends AbstractEnum {
   const IMAGE_BRIGHTNESS_AND_CONTRAST_OPT_IN_STATUS = 'image_brightness_and_contrast_opt_in_status';
   const IMAGE_EXPANSION_OPT_IN_STATUS = 'image_expansion_opt_in_status';
   const IMAGE_TEMPLATES_TEXT_EXTRACTION_OPT_IN_STATUS = 'image_templates_text_extraction_opt_in_status';
+  const IMAGE_TEXT_TRANSLATION_OPT_IN_STATUS = 'image_text_translation_opt_in_status';
   const IS_ADS_AI_CONSENTED = 'is_ads_ai_consented';
   const IS_CBO_DEFAULT_ON = 'is_cbo_default_on';
   const IS_SE_REMOVAL_GUIDANCE_DISMISSED = 'is_se_removal_guidance_dismissed';
@@ -76,11 +83,17 @@ class AdsUserSettingsFields extends AbstractEnum {
   const LAST_VISITED_TIME = 'last_visited_time';
   const METADATA_BRAND_KIT_LAST_OPT_OUT_TIMESTAMP = 'metadata_brand_kit_last_opt_out_timestamp';
   const METADATA_BRAND_KIT_OPT_IN_STATUS = 'metadata_brand_kit_opt_in_status';
+  const MULTI_MEDIA_OPT_OUT_STATUS = 'multi_media_opt_out_status';
   const MUSIC_ON_REELS_OPT_IN = 'music_on_reels_opt_in';
   const MUTED_CBO_MIDFLIGHT_EDUCATION_MESSAGES = 'muted_cbo_midflight_education_messages';
   const ONSITE_DESTINATION_OPTIMIZATION_OPT_IN = 'onsite_destination_optimization_opt_in';
   const OPEN_TABS = 'open_tabs';
   const PAC_RELAXATION_OPT_IN_STATUS = 'pac_relaxation_opt_in_status';
+  const PCAU_CAT_OPTOUT_SURVEY_IMPR = 'pcau_cat_optout_survey_impr';
+  const PCAU_CAT_OPTOUT_SURVEY_RESP_TS = 'pcau_cat_optout_survey_resp_ts';
+  const PE_AI_RELEVANCY_OPT_OUT_TS = 'pe_ai_relevancy_opt_out_ts';
+  const PE_SHOW_PRODUCTS_SURVEY_IMPR = 'pe_show_products_survey_impr';
+  const PE_SHOW_PRODUCTS_SURVEY_RESP_TS = 'pe_show_products_survey_resp_ts';
   const PLACEMENT_GROUP_SQUARE_OPT_IN_STATUS = 'placement_group_square_opt_in_status';
   const PLACEMENT_GROUP_VERTICAL_OPT_IN_STATUS = 'placement_group_vertical_opt_in_status';
   const PREVIOUSLY_SEEN_RECOMMENDATIONS = 'previously_seen_recommendations';
@@ -110,6 +123,8 @@ class AdsUserSettingsFields extends AbstractEnum {
   const SYD_CAMPAIGN_TRENDS_METRIC = 'syd_campaign_trends_metric';
   const TEXT_OPTIMIZATIONS_TEXT_EXTRACTION_OPT_IN_STATUS = 'text_optimizations_text_extraction_opt_in_status';
   const TEXT_TRANSLATION_OPT_IN_STATUS = 'text_translation_opt_in_status';
+  const TEXT_UNIFICATION_OPT_IN_STATUS = 'text_unification_opt_in_status';
+  const TEXT_UNIFICATION_OPT_IN_STATUS_V2 = 'text_unification_opt_in_status_v2';
   const TEXT_VARIATIONS_STICKY_OPT_IN_STATUS = 'text_variations_sticky_opt_in_status';
   const TOTAL_COUPON_SYD_DISMISSALS = 'total_coupon_syd_dismissals';
   const TOTAL_COUPON_UPSELL_DISMISSALS = 'total_coupon_upsell_dismissals';
@@ -117,6 +132,8 @@ class AdsUserSettingsFields extends AbstractEnum {
   const USE_PE_CREATE_FLOW = 'use_pe_create_flow';
   const USE_STEPPER_PRIMARY_ENTRY = 'use_stepper_primary_entry';
   const USER = 'user';
+  const VIDEO_TO_IMAGE_OPT_IN_STATUS = 'video_to_image_opt_in_status';
+  const VOICEOVER_TRANS_OPT_IN_STATUS = 'voiceover_trans_opt_in_status';
   const WEBSITE_MEDIA_OPT_IN_STATUS = 'website_media_opt_in_status';
   const WEBSITE_REVIEWS_DATA_OPT_IN_STATUS = 'website_reviews_data_opt_in_status';
   const WEBSITE_SELLING_POINTS_DATA_OPT_IN_STATUS = 'website_selling_points_data_opt_in_status';
@@ -124,6 +141,7 @@ class AdsUserSettingsFields extends AbstractEnum {
   public function getFieldTypes() {
     return array(
       'a_plus_c_survey_seen' => 'bool',
+      'adaptive_geo_excl_banner_seen_ts' => 'list<map<string, int>>',
       'add_overlays_opt_in_status' => 'string',
       'adgroup_name_template' => 'Object',
       'ads_cs_catalog_opt_out_timestamp' => 'list<map<string, int>>',
@@ -143,6 +161,7 @@ class AdsUserSettingsFields extends AbstractEnum {
       'aplusc_opt_out_friction' => 'list<string>',
       'aplusc_videofilter_opt_in_status' => 'string',
       'aplusc_videouncrop_opt_in_status' => 'string',
+      'app_details_data_opt_in_status' => 'string',
       'autoflow_lite_opt_in_status' => 'string',
       'autoflow_lite_should_opt_in' => 'bool',
       'blended_ads_creation_defaulting_opt_in_status' => 'string',
@@ -154,14 +173,18 @@ class AdsUserSettingsFields extends AbstractEnum {
       'connected_sources_catalog_opt_in_status' => 'string',
       'create_cta_sticker_opt_in_status' => 'string',
       'creative_flex_opt_in_status' => 'string',
+      'da_adapt_images_opt_in_status' => 'string',
       'da_add_overlays_opt_in_status' => 'string',
       'da_creative_flex_opt_in_status' => 'string',
       'da_hide_price_opt_in_status' => 'string',
       'da_manual_media_nux_impressions' => 'int',
+      'dco_to_mmu_opt_out_status' => 'string',
       'default_creation_mode' => 'string',
       'dynamic_partnership_ads_opt_in_status' => 'string',
       'enhance_cta_text_extraction_opt_in_status' => 'string',
       'export_format_default' => 'string',
+      'feedback_surveys' => 'list<string>',
+      'ff_to_mmu_opt_out_status' => 'string',
       'focus_mode_default' => 'string',
       'gen_ai_alpha_test_status' => 'int',
       'gen_ai_auto_select_opt_in_status' => 'string',
@@ -170,6 +193,7 @@ class AdsUserSettingsFields extends AbstractEnum {
       'image_brightness_and_contrast_opt_in_status' => 'string',
       'image_expansion_opt_in_status' => 'string',
       'image_templates_text_extraction_opt_in_status' => 'string',
+      'image_text_translation_opt_in_status' => 'string',
       'is_ads_ai_consented' => 'bool',
       'is_cbo_default_on' => 'bool',
       'is_se_removal_guidance_dismissed' => 'bool',
@@ -177,11 +201,17 @@ class AdsUserSettingsFields extends AbstractEnum {
       'last_visited_time' => 'datetime',
       'metadata_brand_kit_last_opt_out_timestamp' => 'int',
       'metadata_brand_kit_opt_in_status' => 'string',
+      'multi_media_opt_out_status' => 'string',
       'music_on_reels_opt_in' => 'list<map<string, string>>',
       'muted_cbo_midflight_education_messages' => 'list<string>',
       'onsite_destination_optimization_opt_in' => 'string',
       'open_tabs' => 'list<string>',
       'pac_relaxation_opt_in_status' => 'string',
+      'pcau_cat_optout_survey_impr' => 'int',
+      'pcau_cat_optout_survey_resp_ts' => 'datetime',
+      'pe_ai_relevancy_opt_out_ts' => 'datetime',
+      'pe_show_products_survey_impr' => 'int',
+      'pe_show_products_survey_resp_ts' => 'datetime',
       'placement_group_square_opt_in_status' => 'string',
       'placement_group_vertical_opt_in_status' => 'string',
       'previously_seen_recommendations' => 'list<string>',
@@ -211,6 +241,8 @@ class AdsUserSettingsFields extends AbstractEnum {
       'syd_campaign_trends_metric' => 'string',
       'text_optimizations_text_extraction_opt_in_status' => 'string',
       'text_translation_opt_in_status' => 'string',
+      'text_unification_opt_in_status' => 'string',
+      'text_unification_opt_in_status_v2' => 'string',
       'text_variations_sticky_opt_in_status' => 'string',
       'total_coupon_syd_dismissals' => 'int',
       'total_coupon_upsell_dismissals' => 'int',
@@ -218,6 +250,8 @@ class AdsUserSettingsFields extends AbstractEnum {
       'use_pe_create_flow' => 'bool',
       'use_stepper_primary_entry' => 'bool',
       'user' => 'User',
+      'video_to_image_opt_in_status' => 'string',
+      'voiceover_trans_opt_in_status' => 'string',
       'website_media_opt_in_status' => 'string',
       'website_reviews_data_opt_in_status' => 'string',
       'website_selling_points_data_opt_in_status' => 'string',

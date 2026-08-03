@@ -18,6 +18,8 @@ use FacebookAds\Object\Values\IGUserExportForCAMCreatorCountriesValues;
 use FacebookAds\Object\Values\IGUserExportForCAMCreatorGenderValues;
 use FacebookAds\Object\Values\IGUserExportForCAMMajorAudienceCountriesValues;
 use FacebookAds\Object\Values\IGUserExportForCAMMajorAudienceGenderValues;
+use FacebookAds\Object\Values\IGUserExportForCAMPlatformValues;
+use FacebookAds\Object\Values\IGUserExportForCAMRecommendationTypeValues;
 
 /**
  * This class is auto-generated.
@@ -43,6 +45,8 @@ class IGUserExportForCAM extends AbstractCrudObject {
     $ref_enums['CreatorGender'] = IGUserExportForCAMCreatorGenderValues::getInstance()->getValues();
     $ref_enums['MajorAudienceCountries'] = IGUserExportForCAMMajorAudienceCountriesValues::getInstance()->getValues();
     $ref_enums['MajorAudienceGender'] = IGUserExportForCAMMajorAudienceGenderValues::getInstance()->getValues();
+    $ref_enums['Platform'] = IGUserExportForCAMPlatformValues::getInstance()->getValues();
+    $ref_enums['RecommendationType'] = IGUserExportForCAMRecommendationTypeValues::getInstance()->getValues();
     return $ref_enums;
   }
 
@@ -77,6 +81,7 @@ class IGUserExportForCAM extends AbstractCrudObject {
       'breakdown' => 'breakdown_enum',
       'metrics' => 'list<metrics_enum>',
       'period' => 'period_enum',
+      'platform' => 'list<platform_enum>',
       'time_range' => 'time_range_enum',
     );
     $enums = array(
@@ -99,6 +104,10 @@ class IGUserExportForCAM extends AbstractCrudObject {
         'DAY',
         'OVERALL',
       ),
+      'platform_enum' => array(
+        'FACEBOOK',
+        'INSTAGRAM',
+      ),
       'time_range_enum' => array(
         'LAST_14_DAYS',
         'LAST_90_DAYS',
@@ -113,6 +122,29 @@ class IGUserExportForCAM extends AbstractCrudObject {
       $this->data['id'],
       RequestInterface::METHOD_GET,
       '/insights',
+      new AbstractCrudObject(),
+      'EDGE',
+      array(),
+      new TypeChecker($param_types, $enums)
+    );
+    $request->addParams($params);
+    $request->addFields($fields);
+    return $pending ? $request : $request->execute();
+  }
+
+  public function getPastPartnershipAdsMedia(array $fields = array(), array $params = array(), $pending = false) {
+    $this->assureId();
+
+    $param_types = array(
+    );
+    $enums = array(
+    );
+
+    $request = new ApiRequest(
+      $this->api,
+      $this->data['id'],
+      RequestInterface::METHOD_GET,
+      '/past_partnership_ads_media',
       new AbstractCrudObject(),
       'EDGE',
       array(),
@@ -139,29 +171,6 @@ class IGUserExportForCAM extends AbstractCrudObject {
       new AbstractCrudObject(),
       'EDGE',
       array(),
-      new TypeChecker($param_types, $enums)
-    );
-    $request->addParams($params);
-    $request->addFields($fields);
-    return $pending ? $request : $request->execute();
-  }
-
-  public function getSelf(array $fields = array(), array $params = array(), $pending = false) {
-    $this->assureId();
-
-    $param_types = array(
-    );
-    $enums = array(
-    );
-
-    $request = new ApiRequest(
-      $this->api,
-      $this->data['id'],
-      RequestInterface::METHOD_GET,
-      '/',
-      new IGUserExportForCAM(),
-      'NODE',
-      IGUserExportForCAM::getFieldsEnum()->getValues(),
       new TypeChecker($param_types, $enums)
     );
     $request->addParams($params);

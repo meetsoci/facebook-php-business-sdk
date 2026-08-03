@@ -29,6 +29,7 @@ class AdsActionStatsFields extends AbstractEnum {
   const FIELD_1D_EV_ALL_CONVERSIONS = '1d_ev_all_conversions';
   const FIELD_1D_EV_FIRST_CONVERSION = '1d_ev_first_conversion';
   const FIELD_1D_PASSBACK = '1d_passback';
+  const FIELD_1D_SEQUENCED = '1d_sequenced';
   const FIELD_1D_VIEW = '1d_view';
   const FIELD_1D_VIEW_ALL_CONVERSIONS = '1d_view_all_conversions';
   const FIELD_1D_VIEW_FIRST_CONVERSION = '1d_view_first_conversion';
@@ -36,6 +37,7 @@ class AdsActionStatsFields extends AbstractEnum {
   const FIELD_28D_CLICK_ALL_CONVERSIONS = '28d_click_all_conversions';
   const FIELD_28D_CLICK_FIRST_CONVERSION = '28d_click_first_conversion';
   const FIELD_28D_PASSBACK = '28d_passback';
+  const FIELD_28D_SEQUENCED = '28d_sequenced';
   const FIELD_28D_VIEW = '28d_view';
   const FIELD_28D_VIEW_ALL_CONVERSIONS = '28d_view_all_conversions';
   const FIELD_28D_VIEW_FIRST_CONVERSION = '28d_view_first_conversion';
@@ -43,6 +45,7 @@ class AdsActionStatsFields extends AbstractEnum {
   const FIELD_7D_CLICK_ALL_CONVERSIONS = '7d_click_all_conversions';
   const FIELD_7D_CLICK_FIRST_CONVERSION = '7d_click_first_conversion';
   const FIELD_7D_PASSBACK = '7d_passback';
+  const FIELD_7D_SEQUENCED = '7d_sequenced';
   const FIELD_7D_VIEW = '7d_view';
   const FIELD_7D_VIEW_ALL_CONVERSIONS = '7d_view_all_conversions';
   const FIELD_7D_VIEW_FIRST_CONVERSION = '7d_view_first_conversion';
@@ -64,6 +67,7 @@ class AdsActionStatsFields extends AbstractEnum {
   const ACTION_VIDEO_ASSET_ID = 'action_video_asset_id';
   const ACTION_VIDEO_SOUND = 'action_video_sound';
   const ACTION_VIDEO_TYPE = 'action_video_type';
+  const CUSTOM = 'custom';
   const DDA = 'dda';
   const INCREMENTALITY = 'incrementality';
   const INCREMENTALITY_ALL_CONVERSIONS = 'incrementality_all_conversions';
@@ -71,6 +75,7 @@ class AdsActionStatsFields extends AbstractEnum {
   const INLINE = 'inline';
   const INTERACTIVE_COMPONENT_STICKER_ID = 'interactive_component_sticker_id';
   const INTERACTIVE_COMPONENT_STICKER_RESPONSE = 'interactive_component_sticker_response';
+  const PROMOTED_PRODUCT_SET_RESULT = 'promoted_product_set_result';
   const SKAN_CLICK = 'skan_click';
   const SKAN_CLICK_SECOND_POSTBACK = 'skan_click_second_postback';
   const SKAN_CLICK_THIRD_POSTBACK = 'skan_click_third_postback';
@@ -88,6 +93,7 @@ class AdsActionStatsFields extends AbstractEnum {
       '1d_ev_all_conversions' => 'string',
       '1d_ev_first_conversion' => 'string',
       '1d_passback' => 'string',
+      '1d_sequenced' => 'string',
       '1d_view' => 'string',
       '1d_view_all_conversions' => 'string',
       '1d_view_first_conversion' => 'string',
@@ -95,6 +101,7 @@ class AdsActionStatsFields extends AbstractEnum {
       '28d_click_all_conversions' => 'string',
       '28d_click_first_conversion' => 'string',
       '28d_passback' => 'string',
+      '28d_sequenced' => 'string',
       '28d_view' => 'string',
       '28d_view_all_conversions' => 'string',
       '28d_view_first_conversion' => 'string',
@@ -102,6 +109,7 @@ class AdsActionStatsFields extends AbstractEnum {
       '7d_click_all_conversions' => 'string',
       '7d_click_first_conversion' => 'string',
       '7d_passback' => 'string',
+      '7d_sequenced' => 'string',
       '7d_view' => 'string',
       '7d_view_all_conversions' => 'string',
       '7d_view_first_conversion' => 'string',
@@ -123,6 +131,7 @@ class AdsActionStatsFields extends AbstractEnum {
       'action_video_asset_id' => 'string',
       'action_video_sound' => 'string',
       'action_video_type' => 'string',
+      'custom' => 'string',
       'dda' => 'string',
       'incrementality' => 'string',
       'incrementality_all_conversions' => 'string',
@@ -130,6 +139,7 @@ class AdsActionStatsFields extends AbstractEnum {
       'inline' => 'string',
       'interactive_component_sticker_id' => 'string',
       'interactive_component_sticker_response' => 'string',
+      'promoted_product_set_result' => 'string',
       'skan_click' => 'string',
       'skan_click_second_postback' => 'string',
       'skan_click_third_postback' => 'string',

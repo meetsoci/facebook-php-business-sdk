@@ -23,10 +23,11 @@ use FacebookAds\Enum\AbstractEnum;
 class AdSetFields extends AbstractEnum {
 
   const ACCOUNT_ID = 'account_id';
+  const AD_SET_GOAL = 'ad_set_goal';
   const ADLABELS = 'adlabels';
   const ADSET_SCHEDULE = 'adset_schedule';
-  const ANCHOR_EVENT_ATTRIBUTION_WINDOW_DAYS = 'anchor_event_attribution_window_days';
   const ASSET_FEED_ID = 'asset_feed_id';
+  const ATTRIBUTION_COUNT_TYPE = 'attribution_count_type';
   const ATTRIBUTION_SPEC = 'attribution_spec';
   const AUTOMATIC_MANUAL_STATE = 'automatic_manual_state';
   const BID_ADJUSTMENTS = 'bid_adjustments';
@@ -42,7 +43,10 @@ class AdSetFields extends AbstractEnum {
   const CAMPAIGN_ATTRIBUTION = 'campaign_attribution';
   const CAMPAIGN_ID = 'campaign_id';
   const CONFIGURED_STATUS = 'configured_status';
+  const COST_BIDDING_MODE = 'cost_bidding_mode';
   const CREATED_TIME = 'created_time';
+  const CREATIVE_DIVERSITY_LABEL = 'creative_diversity_label';
+  const CREATIVE_DIVERSITY_SCORE = 'creative_diversity_score';
   const CREATIVE_SEQUENCE = 'creative_sequence';
   const CREATIVE_SEQUENCE_REPETITION_PATTERN = 'creative_sequence_repetition_pattern';
   const DAILY_BUDGET = 'daily_budget';
@@ -60,16 +64,23 @@ class AdSetFields extends AbstractEnum {
   const INSTAGRAM_USER_ID = 'instagram_user_id';
   const IS_BA_SKIP_DELAYED_ELIGIBLE = 'is_ba_skip_delayed_eligible';
   const IS_BUDGET_SCHEDULE_ENABLED = 'is_budget_schedule_enabled';
+  const IS_DC_FOLLOW_OPTIMIZED = 'is_dc_follow_optimized';
   const IS_DYNAMIC_CREATIVE = 'is_dynamic_creative';
   const IS_INCREMENTAL_ATTRIBUTION_ENABLED = 'is_incremental_attribution_enabled';
+  const IS_ORGANIC_AD_JOINT_OPTIMIZED = 'is_organic_ad_joint_optimized';
+  const IS_SEQUENCED_CONVERSION_CREATION = 'is_sequenced_conversion_creation';
   const ISSUES_INFO = 'issues_info';
   const LEARNING_STAGE_INFO = 'learning_stage_info';
   const LIFETIME_BUDGET = 'lifetime_budget';
   const LIFETIME_IMPS = 'lifetime_imps';
   const LIFETIME_MIN_SPEND_TARGET = 'lifetime_min_spend_target';
   const LIFETIME_SPEND_CAP = 'lifetime_spend_cap';
+  const LIVE_VIDEO_AD_CAMPAIGN_CONFIG = 'live_video_ad_campaign_config';
+  const LOW_CREATIVE_REACH = 'low_creative_reach';
   const MAX_BUDGET_SPEND_PERCENTAGE = 'max_budget_spend_percentage';
+  const META_MOMENT_MAKER_SPEC = 'meta_moment_maker_spec';
   const MIN_BUDGET_SPEND_PERCENTAGE = 'min_budget_spend_percentage';
+  const MULTI_EVENT_CONVERSION_ATTRIBUTION_WINDOW_SECONDS = 'multi_event_conversion_attribution_window_seconds';
   const MULTI_OPTIMIZATION_GOAL_WEIGHT = 'multi_optimization_goal_weight';
   const NAME = 'name';
   const OPTIMIZATION_GOAL = 'optimization_goal';
@@ -81,10 +92,12 @@ class AdSetFields extends AbstractEnum {
   const RECURRING_BUDGET_SEMANTICS = 'recurring_budget_semantics';
   const REGIONAL_REGULATED_CATEGORIES = 'regional_regulated_categories';
   const REGIONAL_REGULATION_IDENTITIES = 'regional_regulation_identities';
+  const RELATIVE_VALUE = 'relative_value';
   const REVIEW_FEEDBACK = 'review_feedback';
   const RF_PREDICTION_ID = 'rf_prediction_id';
   const SOURCE_ADSET = 'source_adset';
   const SOURCE_ADSET_ID = 'source_adset_id';
+  const SPECIAL_AD_CATEGORIES = 'special_ad_categories';
   const START_TIME = 'start_time';
   const STATUS = 'status';
   const TARGETING = 'targeting';
@@ -114,10 +127,11 @@ class AdSetFields extends AbstractEnum {
   public function getFieldTypes() {
     return array(
       'account_id' => 'string',
+      'ad_set_goal' => 'AdCampaignGoal',
       'adlabels' => 'list<AdLabel>',
       'adset_schedule' => 'list<DayPart>',
-      'anchor_event_attribution_window_days' => 'int',
       'asset_feed_id' => 'string',
+      'attribution_count_type' => 'string',
       'attribution_spec' => 'list<AttributionSpec>',
       'automatic_manual_state' => 'string',
       'bid_adjustments' => 'AdBidAdjustments',
@@ -133,7 +147,10 @@ class AdSetFields extends AbstractEnum {
       'campaign_attribution' => 'string',
       'campaign_id' => 'string',
       'configured_status' => 'ConfiguredStatus',
+      'cost_bidding_mode' => 'string',
       'created_time' => 'datetime',
+      'creative_diversity_label' => 'list<string>',
+      'creative_diversity_score' => 'list<string>',
       'creative_sequence' => 'list<string>',
       'creative_sequence_repetition_pattern' => 'string',
       'daily_budget' => 'string',
@@ -151,16 +168,23 @@ class AdSetFields extends AbstractEnum {
       'instagram_user_id' => 'string',
       'is_ba_skip_delayed_eligible' => 'bool',
       'is_budget_schedule_enabled' => 'bool',
+      'is_dc_follow_optimized' => 'bool',
       'is_dynamic_creative' => 'bool',
       'is_incremental_attribution_enabled' => 'bool',
+      'is_organic_ad_joint_optimized' => 'bool',
+      'is_sequenced_conversion_creation' => 'bool',
       'issues_info' => 'list<AdCampaignIssuesInfo>',
       'learning_stage_info' => 'AdCampaignLearningStageInfo',
       'lifetime_budget' => 'string',
       'lifetime_imps' => 'int',
       'lifetime_min_spend_target' => 'string',
       'lifetime_spend_cap' => 'string',
+      'live_video_ad_campaign_config' => 'LiveVideoAdCampaignConfig',
+      'low_creative_reach' => 'list<string>',
       'max_budget_spend_percentage' => 'string',
+      'meta_moment_maker_spec' => 'MetaMomentMakerConfig',
       'min_budget_spend_percentage' => 'string',
+      'multi_event_conversion_attribution_window_seconds' => 'int',
       'multi_optimization_goal_weight' => 'string',
       'name' => 'string',
       'optimization_goal' => 'OptimizationGoal',
@@ -172,10 +196,12 @@ class AdSetFields extends AbstractEnum {
       'recurring_budget_semantics' => 'bool',
       'regional_regulated_categories' => 'list<string>',
       'regional_regulation_identities' => 'RegionalRegulationIdentities',
+      'relative_value' => 'string',
       'review_feedback' => 'string',
       'rf_prediction_id' => 'string',
       'source_adset' => 'AdSet',
       'source_adset_id' => 'string',
+      'special_ad_categories' => 'list<string>',
       'start_time' => 'datetime',
       'status' => 'Status',
       'targeting' => 'Targeting',

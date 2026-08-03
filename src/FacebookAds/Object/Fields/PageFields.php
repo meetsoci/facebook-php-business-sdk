@@ -124,6 +124,7 @@ class PageFields extends AbstractEnum {
   const OFFER_ELIGIBLE = 'offer_eligible';
   const OVERALL_STAR_RATING = 'overall_star_rating';
   const OWNER_BUSINESS = 'owner_business';
+  const PAGE_BACKED_THREADS_ACCOUNT_ID = 'page_backed_threads_account_id';
   const PAGE_TOKEN = 'page_token';
   const PARENT_PAGE = 'parent_page';
   const PARKING = 'parking';
@@ -138,6 +139,7 @@ class PageFields extends AbstractEnum {
   const PREFERRED_AUDIENCE = 'preferred_audience';
   const PRESS_CONTACT = 'press_contact';
   const PRICE_RANGE = 'price_range';
+  const PRIORITY_HOURS = 'priority_hours';
   const PRIVACY_INFO_URL = 'privacy_info_url';
   const PRODUCED_BY = 'produced_by';
   const PRODUCTS = 'products';
@@ -279,6 +281,7 @@ class PageFields extends AbstractEnum {
       'offer_eligible' => 'bool',
       'overall_star_rating' => 'float',
       'owner_business' => 'Business',
+      'page_backed_threads_account_id' => 'string',
       'page_token' => 'string',
       'parent_page' => 'Page',
       'parking' => 'PageParking',
@@ -293,6 +296,7 @@ class PageFields extends AbstractEnum {
       'preferred_audience' => 'Targeting',
       'press_contact' => 'string',
       'price_range' => 'string',
+      'priority_hours' => 'list<map<string, string>>',
       'privacy_info_url' => 'string',
       'produced_by' => 'string',
       'products' => 'string',
